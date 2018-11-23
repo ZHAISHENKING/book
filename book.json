@@ -65,7 +65,7 @@
             "shortName": "gitbookuse"
         },
         "github": {
-            "url": "https://github.com/zhangjikai/gitbook-use"
+            "url": "https://github.com/ZHAISHENKING/book.git"
         },
         "include-codeblock": {
             "template": "ace",
@@ -117,7 +117,7 @@
             "skipFirstH1": true
         },
         "edit-link": {
-            "base": "https://github.com/zhangjikai/gitbook-use/edit/master",
+            "base": "https://github.com/ZHAISHENKING/book/edit/masterr",
             "label": "编辑本页"
         },
         "sitemap-general": {
@@ -141,31 +141,5 @@
             "fade": false,
             "style": "flat"
         },
-
-        "versions": {
-            "options": [
-                {
-                    "value": "http://gitbook.zhangjikai.com",
-                    "text": "v3.2.3"
-                },
-                {
-                    "value": "http://gitbook.zhangjikai.com/v2/",
-                    "text": "v2.6.4"
-                }
-            ]
-        },
-
-        "rss": {
-            "title": "GitBook 使用教程",
-            "description": "记录 GitBook 的配置和一些插件的使用",
-            "author": "Jikai Zhang",
-            "feed_url": "http://gitbook.zhangjikai.com/rss",
-            "site_url": "http://gitbook.zhangjikai.com/",
-            "managingEditor": "me@zhangjikai.com",
-            "webMaster": "me@zhangjikai.com",
-            "categories": [
-                "gitbook"
-            ]
-        }
     }
 }
