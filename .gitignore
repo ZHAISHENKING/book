@@ -1,5 +1,5 @@
-node_moudles/
 _book/
+node_modules/
 *.jpg
 *.png
 *.mp4
