@@ -105,7 +105,7 @@ host    all     your_database_name        your_ip/32   md5
 ```bash
 # 基础命令
 # 导入数据库
-docker exec 9721ad9c8b8e psql -U onlinejudge onlinejudge < /root/db_backup_2018_08_22_16_39_20.sql
+docker exec -i 9721ad9c8b8e psql -U onlinejudge onlinejudge < /root/db_backup_2018_08_22_16_39_20.sql
 # 导出数据库
 pg_dump -h 192.168.100.110 -p 5432 -U user1 -x -s -f dump.sql postgres
 # 交互模式进入数据库
@@ -114,6 +114,9 @@ docker exec -it 9721ad9c8b8e psql -U onlinejudge onlinejudge
 # 删除所有表
 DROP SCHEMA public CASCADE;
 CREATE SCHEMA public;
+
+# 删除表
+drop table userprofile;
 # 恢复默认授权
 GRANT ALL ON SCHEMA public TO postgres;
 GRANT ALL ON SCHEMA public TO public;

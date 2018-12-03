@@ -61,3 +61,21 @@ cd /home/ubuntu/ultrabear-oj/OnlineJudgeDeploy/backup
 rsync -a -v db_backup_xx.sql root@xx.xx.xx.xx:~/
 ```
 
+
+
+## 自动化部署
+
+常规流程
+
+**前端部署**
+
+前端修改—>打包—>后端更换dist文件—>Dockerfile打包镜像—>修改docker-compose.yml文件—>重启
+
+**后端部署**
+
+后端修改—>Dockerfile打包镜像—>修改docker-compose.yml文件—>重启
+
+**安全部分**
+
+
+
