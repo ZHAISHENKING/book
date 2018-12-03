@@ -86,7 +86,6 @@
 * [boss直聘](爬虫/boss直聘.md)
 * [csdn爬虫](爬虫/csdn爬虫.md)
 * [get.post请求及cookie](爬虫/get.post请求及cookie.md)
-* [Ip](爬虫/ip.md)
 * [pyspider使用](爬虫/pyspider使用.md)
 * [scrapy入门](爬虫/scrapy入门.md)
 * [scrapy实战](爬虫/scrapy实战.md)
