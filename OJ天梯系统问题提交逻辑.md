@@ -23,6 +23,16 @@
 - userladder下ladder的pass_rate字段更新为通过问题数/ladder总问题数
 - 单个level下所有问题全部通过，解锁下个level
 
+场景四:
+
+UserLadder表需记录的字段
+
+- user
+- ladder 
+- ladder_speed(ladder进度)
+- Level_speed(level进度)
+- 
+
 Q&A
 
 level在lock状态时所属问题不能提交，不能查看
