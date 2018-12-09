@@ -1,5 +1,51 @@
 # gitbook
 
+[TOC]
+
+## 自动生成`SUMMARY.md`
+
+### 方法一
+
+`book.json`中加入
+
+```json
+{
+        "title" : "公共服务组文档库",
+        "theme-default": {
+            "showLevel": true
+        },
+        "plugins": ["summary", "toggle-chapters", "theme-comscore"]
+    }
+```
+
+插件说明
+
+Summary：自动生成SUMMARY.md
+
+toggle-chapters： 菜单可折叠
+
+Theme-comscore: 主题插件 修改表格与标题颜色
+
+**注意事项**
+
+1. 每个新增的目录中加入README.md否则菜单则为不可折叠
+2. 同个目录下的文件采用自然排序来决定菜单生成的前后顺序, 故在文件或目录前加入 "数字-" 如 "0-" 或 "1-" 来排序菜单的前后顺序.
+3. 菜单由目录自动生成, 菜单名称依赖md文件中的标题, 故每个md文件中必须添加标题, 否则无法生成目录.
+
+### 方法二
+
+使用自动化生成工具`summarybuilder`
+
+安装
+
+```bash
+npm i -g summarybuilder
+```
+
+使用
+
+<center><img src="http://qiniu.s001.xin/21okr.jpg" width=600></center>
+
 ## 定制化插件
 
 创建`book.json`
