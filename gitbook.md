@@ -195,7 +195,7 @@ vi book.json
 
 ```
 
-执行`gitbook`
+执行`gitbook install`
 
 ## 部署
 
@@ -224,7 +224,7 @@ git commit -m "ignore files"
 ```bash
 cp -r _book/* .
 git add .
-git commit -, "publish book"
+git commit -m "publish book"
 ```
 
 上传
