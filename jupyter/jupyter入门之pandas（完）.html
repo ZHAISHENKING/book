@@ -1,0 +1,2517 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>jupyter入门之pandas（完） · GitBook 使用教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zhaishen">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-versions-select/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="jupyter入门之图像处理.html" />
+    
+    
+    <link rel="prev" href="jupyter入门之pandas.html" />
+    
+
+    
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    <script src="../gitbook/gitbook-plugin-graph/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-graph/function-plot.js"></script>    
+
+    
+        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://oj.s001.xin" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">Jupyter</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="jupyter入门之Matplotlib.html">
+            
+                <a href="jupyter入门之Matplotlib.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    jupyter入门之Matplotlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="jupyter入门之numpy.html">
+            
+                <a href="jupyter入门之numpy.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    jupyter入门之numpy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="jupyter入门之pandas.html">
+            
+                <a href="jupyter入门之pandas.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    jupyter入门之pandas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="jupyter入门之pandas（完）.html">
+            
+                <a href="jupyter入门之pandas（完）.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    jupyter入门之pandas（完）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="jupyter入门之图像处理.html">
+            
+                <a href="jupyter入门之图像处理.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    jupyter入门之图像处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">python基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../python基础/Dateutil.html">
+            
+                <a href="../python基础/Dateutil.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    Dateutil
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../python基础/ZIP.html">
+            
+                <a href="../python基础/ZIP.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    ZIP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">前端</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../前端/vue-cli 3.0版本webpack打包.html">
+            
+                <a href="../前端/vue-cli 3.0版本webpack打包.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    vue-cli 3.0版本webpack打包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../前端/前端vue优化.html">
+            
+                <a href="../前端/前端vue优化.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    前端vue优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">后端</li>
+        
+        
+    
+
+    
+        
+        <li class="header">django整理</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../后端/django整理/crm管理系统.html">
+            
+                <a href="../后端/django整理/crm管理系统.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    crm管理系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../后端/django整理/Django Debug Toolbar的安装及使用.html">
+            
+                <a href="../后端/django整理/Django Debug Toolbar的安装及使用.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Django Debug Toolbar的安装及使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../后端/django整理/Django-redis.html">
+            
+                <a href="../后端/django整理/Django-redis.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    Django Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../后端/django整理/django中将重要信息存储并引用.html">
+            
+                <a href="../后端/django整理/django中将重要信息存储并引用.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    django中将重要信息存储并引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../后端/django整理/drf技术扩展.html">
+            
+                <a href="../后端/django整理/drf技术扩展.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    drf技术扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../后端/django整理/memcached.html">
+            
+                <a href="../后端/django整理/memcached.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    Memcached
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../后端/django整理/Nginx+Gunicorn部署django.html">
+            
+                <a href="../后端/django整理/Nginx+Gunicorn部署django.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    Nginx+Gunicorn部署django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="../后端/django整理/七牛云存储资源.html">
+            
+                <a href="../后端/django整理/七牛云存储资源.html">
+            
+                    
+                        <b>5.8.</b>
+                    
+                    七牛云存储资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="../后端/django整理/数据库索引相关操作.html">
+            
+                <a href="../后端/django整理/数据库索引相关操作.html">
+            
+                    
+                        <b>5.9.</b>
+                    
+                    数据库索引相关操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="../后端/django整理/用户权限验证.html">
+            
+                <a href="../后端/django整理/用户权限验证.html">
+            
+                    
+                        <b>5.10.</b>
+                    
+                    用户权限验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="../后端/django整理/简约博客.html">
+            
+                <a href="../后端/django整理/简约博客.html">
+            
+                    
+                        <b>5.11.</b>
+                    
+                    简约博客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="../后端/django整理/项目总结.html">
+            
+                <a href="../后端/django整理/项目总结.html">
+            
+                    
+                        <b>5.12.</b>
+                    
+                    项目总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">flask整理</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../后端/flask整理/Flask+Vue快速打造个人网站（一）.html">
+            
+                <a href="../后端/flask整理/Flask+Vue快速打造个人网站（一）.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    Flask+Vue快速打造个人网站（一）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../后端/flask整理/Flask+Vue快速打造个人网站（三）.html">
+            
+                <a href="../后端/flask整理/Flask+Vue快速打造个人网站（三）.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    Flask+Vue快速打造个人网站（三）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../后端/flask整理/Flask+Vue快速打造个人网站（二）.html">
+            
+                <a href="../后端/flask整理/Flask+Vue快速打造个人网站（二）.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    Flask+Vue快速打造个人网站（二）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../后端/flask整理/flask应用.html">
+            
+                <a href="../后端/flask整理/flask应用.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    flask应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../后端/flask整理/flask进阶.html">
+            
+                <a href="../后端/flask整理/flask进阶.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    flask进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../后端/flask整理/iSurvey.html">
+            
+                <a href="../后端/flask整理/iSurvey.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    I Survey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../后端/flask整理/python脚本实现Mp4在Safari播放.html">
+            
+                <a href="../后端/flask整理/python脚本实现Mp4在Safari播放.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    python脚本实现Mp4在Safari播放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="../后端/flask整理/uwsgi部署flask项目.html">
+            
+                <a href="../后端/flask整理/uwsgi部署flask项目.html">
+            
+                    
+                        <b>6.8.</b>
+                    
+                    uwsgi部署flask项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="../后端/flask整理/上传文件接口.html">
+            
+                <a href="../后端/flask整理/上传文件接口.html">
+            
+                    
+                        <b>6.9.</b>
+                    
+                    上传文件接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="../后端/flask整理/常见认证机制.html">
+            
+                <a href="../后端/flask整理/常见认证机制.html">
+            
+                    
+                        <b>6.10.</b>
+                    
+                    常见认证机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="../后端/Celery.html">
+            
+                <a href="../后端/Celery.html">
+            
+                    
+                        <b>6.11.</b>
+                    
+                    Celery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="../后端/token机制.html">
+            
+                <a href="../后端/token机制.html">
+            
+                    
+                        <b>6.12.</b>
+                    
+                    token机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="../后端/web安全防范.html">
+            
+                <a href="../后端/web安全防范.html">
+            
+                    
+                        <b>6.13.</b>
+                    
+                    web安全防范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="../后端/关于主流web框架选择问题.html">
+            
+                <a href="../后端/关于主流web框架选择问题.html">
+            
+                    
+                        <b>6.14.</b>
+                    
+                    关于主流web框架选择问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="../后端/前后端分离项目之python后端部署前的操作.html">
+            
+                <a href="../后端/前后端分离项目之python后端部署前的操作.html">
+            
+                    
+                        <b>6.15.</b>
+                    
+                    前后端分离项目之python后端部署前的操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.16" data-path="../后端/后台框架选型.html">
+            
+                <a href="../后端/后台框架选型.html">
+            
+                    
+                        <b>6.16.</b>
+                    
+                    后台框架选型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.17" data-path="../后端/后端记录.html">
+            
+                <a href="../后端/后端记录.html">
+            
+                    
+                        <b>6.17.</b>
+                    
+                    后端记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.18" data-path="../后端/多人协作项目git免密登录.html">
+            
+                <a href="../后端/多人协作项目git免密登录.html">
+            
+                    
+                        <b>6.18.</b>
+                    
+                    多人协作项目git免密登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">工具</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../工具/gitbook入门.html">
+            
+                <a href="../工具/gitbook入门.html">
+            
+                    
+                        <b>7.1.</b>
+                    
+                    gitbook入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../工具/markdown.html">
+            
+                <a href="../工具/markdown.html">
+            
+                    
+                        <b>7.2.</b>
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">常见坑</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../常见坑/pip安装遇到的坑.html">
+            
+                <a href="../常见坑/pip安装遇到的坑.html">
+            
+                    
+                        <b>8.1.</b>
+                    
+                    pip安装遇到的坑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../常见坑/Reactive-native 运行错误.html">
+            
+                <a href="../常见坑/Reactive-native 运行错误.html">
+            
+                    
+                        <b>8.2.</b>
+                    
+                    Reactive-native 运行错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../常见坑/服务器错误排查.html">
+            
+                <a href="../常见坑/服务器错误排查.html">
+            
+                    
+                        <b>8.3.</b>
+                    
+                    服务器错误排查
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">扩展</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../扩展/Item2.html">
+            
+                <a href="../扩展/Item2.html">
+            
+                    
+                        <b>9.1.</b>
+                    
+                    Item 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="../扩展/MAC上比较好用的开发工具.html">
+            
+                <a href="../扩展/MAC上比较好用的开发工具.html">
+            
+                    
+                        <b>9.2.</b>
+                    
+                    MAC上比较好用的开发工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="../扩展/RPC,微服务架构.html">
+            
+                <a href="../扩展/RPC,微服务架构.html">
+            
+                    
+                        <b>9.3.</b>
+                    
+                    RPC,微服务架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="../扩展/with关键字与上下文管理.html">
+            
+                <a href="../扩展/with关键字与上下文管理.html">
+            
+                    
+                        <b>9.4.</b>
+                    
+                    with关键字与上下文管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="../扩展/前端高级工程师进阶扩展.html">
+            
+                <a href="../扩展/前端高级工程师进阶扩展.html">
+            
+                    
+                        <b>9.5.</b>
+                    
+                    前端高级工程师进阶扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">数据库</li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../数据库/mongo.html">
+            
+                <a href="../数据库/mongo.html">
+            
+                    
+                        <b>10.1.</b>
+                    
+                    Mongo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="../数据库/MongoEngine.html">
+            
+                <a href="../数据库/MongoEngine.html">
+            
+                    
+                        <b>10.2.</b>
+                    
+                    Mongo Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="../数据库/NoSQL数据库.html">
+            
+                <a href="../数据库/NoSQL数据库.html">
+            
+                    
+                        <b>10.3.</b>
+                    
+                    NoSQL数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="../数据库/postgresql.html">
+            
+                <a href="../数据库/postgresql.html">
+            
+                    
+                        <b>10.4.</b>
+                    
+                    Postgresql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="../数据库/related-name.html">
+            
+                <a href="../数据库/related-name.html">
+            
+                    
+                        <b>10.5.</b>
+                    
+                    Related Name
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">机器学习</li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../机器学习/SVM与K-Means.html">
+            
+                <a href="../机器学习/SVM与K-Means.html">
+            
+                    
+                        <b>11.1.</b>
+                    
+                    SVM与K-Means
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="../机器学习/TensorFlow.html">
+            
+                <a href="../机器学习/TensorFlow.html">
+            
+                    
+                        <b>11.2.</b>
+                    
+                    Tensor Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="../机器学习/决策树与贝叶斯.html">
+            
+                <a href="../机器学习/决策树与贝叶斯.html">
+            
+                    
+                        <b>11.3.</b>
+                    
+                    决策树与贝叶斯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="../机器学习/特征工程.html">
+            
+                <a href="../机器学习/特征工程.html">
+            
+                    
+                        <b>11.4.</b>
+                    
+                    特征工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.5" data-path="../机器学习/用机器学习的方法来学习机器学习.html">
+            
+                <a href="../机器学习/用机器学习的方法来学习机器学习.html">
+            
+                    
+                        <b>11.5.</b>
+                    
+                    用机器学习的方法来学习机器学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.6" data-path="../机器学习/题海.html">
+            
+                <a href="../机器学习/题海.html">
+            
+                    
+                        <b>11.6.</b>
+                    
+                    题海
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">爬虫</li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="../爬虫/10 分布式爬虫.html">
+            
+                <a href="../爬虫/10 分布式爬虫.html">
+            
+                    
+                        <b>12.1.</b>
+                    
+                    10 分布式爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.2" data-path="../爬虫/boss直聘.html">
+            
+                <a href="../爬虫/boss直聘.html">
+            
+                    
+                        <b>12.2.</b>
+                    
+                    boss直聘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.3" data-path="../爬虫/csdn爬虫.html">
+            
+                <a href="../爬虫/csdn爬虫.html">
+            
+                    
+                        <b>12.3.</b>
+                    
+                    csdn爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.4" data-path="../爬虫/get.post请求及cookie.html">
+            
+                <a href="../爬虫/get.post请求及cookie.html">
+            
+                    
+                        <b>12.4.</b>
+                    
+                    get.post请求及cookie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.5" data-path="../爬虫/pyspider使用.html">
+            
+                <a href="../爬虫/pyspider使用.html">
+            
+                    
+                        <b>12.5.</b>
+                    
+                    pyspider使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.6" data-path="../爬虫/scrapy入门.html">
+            
+                <a href="../爬虫/scrapy入门.html">
+            
+                    
+                        <b>12.6.</b>
+                    
+                    scrapy入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.7" data-path="../爬虫/scrapy实战.html">
+            
+                <a href="../爬虫/scrapy实战.html">
+            
+                    
+                        <b>12.7.</b>
+                    
+                    scrapy实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.8" data-path="../爬虫/selenium使用.html">
+            
+                <a href="../爬虫/selenium使用.html">
+            
+                    
+                        <b>12.8.</b>
+                    
+                    selenium使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.9" data-path="../爬虫/spider项目.html">
+            
+                <a href="../爬虫/spider项目.html">
+            
+                    
+                        <b>12.9.</b>
+                    
+                    spider项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.10" data-path="../爬虫/tinyproxy代理服务器的搭建.html">
+            
+                <a href="../爬虫/tinyproxy代理服务器的搭建.html">
+            
+                    
+                        <b>12.10.</b>
+                    
+                    tinyproxy代理服务器的搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.11" data-path="../爬虫/tinyproxy定时任务.html">
+            
+                <a href="../爬虫/tinyproxy定时任务.html">
+            
+                    
+                        <b>12.11.</b>
+                    
+                    tinyproxy定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.12" data-path="../爬虫/使用CrawlSpider做通用爬虫.html">
+            
+                <a href="../爬虫/使用CrawlSpider做通用爬虫.html">
+            
+                    
+                        <b>12.12.</b>
+                    
+                    使用CrawlSpider做通用爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.13" data-path="../爬虫/如何使你的爬虫更健壮.html">
+            
+                <a href="../爬虫/如何使你的爬虫更健壮.html">
+            
+                    
+                        <b>12.13.</b>
+                    
+                    如何使你的爬虫更健壮
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.14" data-path="../爬虫/常用工具、多线程及分布式.html">
+            
+                <a href="../爬虫/常用工具、多线程及分布式.html">
+            
+                    
+                        <b>12.14.</b>
+                    
+                    常用工具、多线程及分布式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.15" data-path="../爬虫/异步IO.html">
+            
+                <a href="../爬虫/异步IO.html">
+            
+                    
+                        <b>12.15.</b>
+                    
+                    异步IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.16" data-path="../爬虫/爬虫常见问题.html">
+            
+                <a href="../爬虫/爬虫常见问题.html">
+            
+                    
+                        <b>12.16.</b>
+                    
+                    爬虫常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.17" data-path="../爬虫/爬虫进阶（入门）.html">
+            
+                <a href="../爬虫/爬虫进阶（入门）.html">
+            
+                    
+                        <b>12.17.</b>
+                    
+                    爬虫进阶（入门）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.18" data-path="../爬虫/简单爬虫.html">
+            
+                <a href="../爬虫/简单爬虫.html">
+            
+                    
+                        <b>12.18.</b>
+                    
+                    简单爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.19" data-path="../爬虫/线程锁.html">
+            
+                <a href="../爬虫/线程锁.html">
+            
+                    
+                        <b>12.19.</b>
+                    
+                    线程锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.20" data-path="../爬虫/进程线程.html">
+            
+                <a href="../爬虫/进程线程.html">
+            
+                    
+                        <b>12.20.</b>
+                    
+                    进程线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.21" data-path="../爬虫/进程线程协程简单关系.html">
+            
+                <a href="../爬虫/进程线程协程简单关系.html">
+            
+                    
+                        <b>12.21.</b>
+                    
+                    进程线程协程简单关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">电子书</li>
+        
+        
+    
+        <li class="chapter " data-level="13.1" data-path="../电子书/《GitHub入门与实践》一书小记.html">
+            
+                <a href="../电子书/《GitHub入门与实践》一书小记.html">
+            
+                    
+                        <b>13.1.</b>
+                    
+                    《GitHub入门与实践》一书小记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">运维</li>
+        
+        
+    
+        <li class="chapter " data-level="14.1" data-path="../运维/centos新服务器使用.html">
+            
+                <a href="../运维/centos新服务器使用.html">
+            
+                    
+                        <b>14.1.</b>
+                    
+                    centos新服务器使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.2" data-path="../运维/docker+django.html">
+            
+                <a href="../运维/docker+django.html">
+            
+                    
+                        <b>14.2.</b>
+                    
+                    Docker Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.3" data-path="../运维/Doker了解.html">
+            
+                <a href="../运维/Doker了解.html">
+            
+                    
+                        <b>14.3.</b>
+                    
+                    Doker了解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.4" data-path="../运维/Linux Pro.html">
+            
+                <a href="../运维/Linux Pro.html">
+            
+                    
+                        <b>14.4.</b>
+                    
+                    Linux Pro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.5" data-path="../运维/LinuxPro（二）.html">
+            
+                <a href="../运维/LinuxPro（二）.html">
+            
+                    
+                        <b>14.5.</b>
+                    
+                    LinuxPro（二）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.6" data-path="../运维/osi模型：应表会传网数物 七层协议模型.html">
+            
+                <a href="../运维/osi模型：应表会传网数物 七层协议模型.html">
+            
+                    
+                        <b>14.6.</b>
+                    
+                    osi模型：应表会传网数物 七层协议模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.7" data-path="../运维/shell，解放我的双手.html">
+            
+                <a href="../运维/shell，解放我的双手.html">
+            
+                    
+                        <b>14.7.</b>
+                    
+                    shell，解放我的双手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.8" data-path="../运维/ssh免密登陆.html">
+            
+                <a href="../运维/ssh免密登陆.html">
+            
+                    
+                        <b>14.8.</b>
+                    
+                    ssh免密登陆
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.9" data-path="../运维/supervisor.html">
+            
+                <a href="../运维/supervisor.html">
+            
+                    
+                        <b>14.9.</b>
+                    
+                    Supervisor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.10" data-path="../运维/supervisor管理进程.html">
+            
+                <a href="../运维/supervisor管理进程.html">
+            
+                    
+                        <b>14.10.</b>
+                    
+                    supervisor管理进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.11" data-path="../运维/使用dockerfile自定义镜像.html">
+            
+                <a href="../运维/使用dockerfile自定义镜像.html">
+            
+                    
+                        <b>14.11.</b>
+                    
+                    使用dockerfile自定义镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.12" data-path="../运维/使用supervisor进行scrapy-redis部署.html">
+            
+                <a href="../运维/使用supervisor进行scrapy-redis部署.html">
+            
+                    
+                        <b>14.12.</b>
+                    
+                    使用supervisor进行scrapy-redis部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.13" data-path="../运维/开发模式.html">
+            
+                <a href="../运维/开发模式.html">
+            
+                    
+                        <b>14.13.</b>
+                    
+                    开发模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.14" data-path="../运维/管理容器.html">
+            
+                <a href="../运维/管理容器.html">
+            
+                    
+                        <b>14.14.</b>
+                    
+                    管理容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">面试点</li>
+        
+        
+    
+        <li class="chapter " data-level="15.1" data-path="../面试点/基础面试.html">
+            
+                <a href="../面试点/基础面试.html">
+            
+                    
+                        <b>15.1.</b>
+                    
+                    基础面试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.2" data-path="../面试点/目前掌握的技术.html">
+            
+                <a href="../面试点/目前掌握的技术.html">
+            
+                    
+                        <b>15.2.</b>
+                    
+                    目前掌握的技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.3" data-path="../面试点/直击痛点的python面试题.html">
+            
+                <a href="../面试点/直击痛点的python面试题.html">
+            
+                    
+                        <b>15.3.</b>
+                    
+                    直击痛点的python面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.4" data-path="../面试点/项目面试.html">
+            
+                <a href="../面试点/项目面试.html">
+            
+                    
+                        <b>15.4.</b>
+                    
+                    项目面试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >jupyter入门之pandas（完）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#&#x9644;&#x4EF6;">&#x9644;&#x4EF6;</a></li><ul><li><a href="#&#x5BFC;&#x5165;&#x6570;&#x636E;">&#x5BFC;&#x5165;&#x6570;&#x636E;</a></li><li><a href="#&#x5BFC;&#x51FA;&#x6570;&#x636E;">&#x5BFC;&#x51FA;&#x6570;&#x636E;</a></li><li><a href="#&#x521B;&#x5EFA;&#x6D4B;&#x8BD5;&#x5BF9;&#x8C61;">&#x521B;&#x5EFA;&#x6D4B;&#x8BD5;&#x5BF9;&#x8C61;</a></li><li><a href="#&#x67E5;&#x770B;&#x3001;&#x68C0;&#x67E5;&#x6570;&#x636E;">&#x67E5;&#x770B;&#x3001;&#x68C0;&#x67E5;&#x6570;&#x636E;</a></li><li><a href="#&#x6570;&#x636E;&#x9009;&#x53D6;">&#x6570;&#x636E;&#x9009;&#x53D6;</a></li><li><a href="#&#x6570;&#x636E;&#x6E05;&#x7406;">&#x6570;&#x636E;&#x6E05;&#x7406;</a></li><li><a href="#&#x6570;&#x636E;&#x5904;&#x7406;&#xFF1A;filter&#x3001;sort&#x548C;groupby">&#x6570;&#x636E;&#x5904;&#x7406;&#xFF1A;Filter&#x3001;Sort&#x548C;GroupBy</a></li><li><a href="#&#x6570;&#x636E;&#x5408;&#x5E76;">&#x6570;&#x636E;&#x5408;&#x5E76;</a></li><li><a href="#&#x6570;&#x636E;&#x7EDF;&#x8BA1;">&#x6570;&#x636E;&#x7EDF;&#x8BA1;</a></li></ul></ul></div><a href="#&#x9644;&#x4EF6;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="pandas&#x9AD8;&#x7EA7;&#x64CD;&#x4F5C;"><a name="pandas&#x9AD8;&#x7EA7;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#pandas&#x9AD8;&#x7EA7;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>pandas&#x9AD8;&#x7EA7;&#x64CD;&#x4F5C;</h2>
+<hr>
+<h3 id="pandas&#x6570;&#x636E;&#x5904;&#x7406;"><a name="pandas&#x6570;&#x636E;&#x5904;&#x7406;" class="anchor-navigation-ex-anchor" href="#pandas&#x6570;&#x636E;&#x5904;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>pandas&#x6570;&#x636E;&#x5904;&#x7406;</h3>
+<h4 id="1-&#x5220;&#x9664;&#x91CD;&#x590D;&#x5143;&#x7D20;"><a name="1-&#x5220;&#x9664;&#x91CD;&#x590D;&#x5143;&#x7D20;" class="anchor-navigation-ex-anchor" href="#1-&#x5220;&#x9664;&#x91CD;&#x590D;&#x5143;&#x7D20;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x5220;&#x9664;&#x91CD;&#x590D;&#x5143;&#x7D20;</h4>
+<blockquote>
+<p>&#x4F7F;&#x7528;<code>duplicated</code>&#x51FD;&#x6570;&#x68C0;&#x6D4B;&#x91CD;&#x590D;&#x7684;&#x884C;&#xFF0C;&#x8FD4;&#x56DE;&#x5143;&#x7D20;&#x4E3A;&#x5E03;&#x5C14;&#x7C7B;&#x578B;&#x7684;Series&#x5BF9;&#x8C61;&#xFF0C;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x5BF9;&#x5E94;&#x4E00;&#x884C;&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x884C;&#x4E0D;&#x662F;&#x7B2C;&#x4E00;&#x6B21;&#x51FA;&#x73B0;&#xFF0C;&#x5219;&#x5143;&#x7D20;&#x4E3A;True</p>
+<ul>
+<li>&#x4F7F;&#x7528;<code>drop_duplicates()</code>&#x51FD;&#x6570;&#x5220;&#x9664;&#x91CD;&#x590D;&#x7684;&#x884C;</li>
+<li>&#x4F7F;&#x7528;<code>duplicated()</code>&#x51FD;&#x6570;&#x67E5;&#x770B;&#x91CD;&#x590D;&#x7684;&#x884C;</li>
+<li>&#x5982;&#x679C;&#x4F7F;&#x7528;<strong>pd.concat([df1,df2],axis = 1)</strong>&#x751F;&#x6210;&#x65B0;&#x7684;DataFrame&#xFF0C;&#x65B0;&#x7684;df&#x4E2D;columns&#x76F8;&#x540C;&#xFF0C;&#x4F7F;&#x7528;duplicate()&#x548C;drop_duplicates()&#x90FD;&#x4F1A;&#x51FA;&#x95EE;&#x9898;</li>
+</ul>
+</blockquote>
+<pre><code class="lang-python">df.duplicated(keep=<span class="hljs-string">&apos;last&apos;</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">0</span>     <span class="hljs-keyword">True</span>
+    <span class="hljs-number">1</span>    <span class="hljs-keyword">False</span>
+    <span class="hljs-number">2</span>     <span class="hljs-keyword">True</span>
+    <span class="hljs-number">3</span>    <span class="hljs-keyword">False</span>
+    <span class="hljs-number">4</span>    <span class="hljs-keyword">False</span>
+    dtype: bool
+df.drop_duplicates(keep=<span class="hljs-string">&apos;last&apos;</span>)
+<span class="hljs-comment"># &#x4F7F;&#x7528;drop&#x51FD;&#x6570;&#x5220;&#x9664;&#x91CD;&#x590D;&#x5143;&#x7D20;</span>
+df.drop(df[df.duplicated()].index)
+</code></pre>
+<h4 id="2-&#x6620;&#x5C04;"><a name="2-&#x6620;&#x5C04;" class="anchor-navigation-ex-anchor" href="#2-&#x6620;&#x5C04;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x6620;&#x5C04;</h4>
+<blockquote>
+<p>&#x6620;&#x5C04;&#x7684;&#x542B;&#x4E49;&#xFF1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6620;&#x5C04;&#x5173;&#x7CFB;&#x5217;&#x8868;&#xFF0C;&#x628A;values&#x5143;&#x7D20;&#x548C;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x6807;&#x7B7E;&#x6216;&#x8005;&#x5B57;&#x7B26;&#x4E32;&#x7ED1;&#x5B9A;</p>
+<p>&#x5305;&#x542B;&#x4E09;&#x79CD;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<ul>
+<li>replace()&#x51FD;&#x6570;&#xFF1A;&#x66FF;&#x6362;&#x5143;&#x7D20;&#xFF08;DataFrame\Series&#x7684;&#x51FD;&#x6570;)</li>
+<li>&#x6700;&#x91CD;&#x8981;&#xFF1A;map()&#x51FD;&#x6570;&#xFF1A;&#x65B0;&#x5EFA;&#x4E00;&#x5217;(Series&#x7684;&#x51FD;&#x6570;)</li>
+<li>rename()&#x51FD;&#x6570;&#xFF1A;&#x66FF;&#x6362;&#x7D22;&#x5F15;(DataFrame&#x7684;&#x51FD;&#x6570;)</li>
+</ul>
+</blockquote>
+<ul>
+<li>DateFrame&#x53EF;&#x4EE5;&#x5B58;&#x5728;&#x591A;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;</li>
+<li>Series&#x3001;numpy&#x53EA;&#x80FD;&#x5B58;&#x5728;&#x4E00;&#x79CD;&#x7C7B;&#x578B;</li>
+<li>DateFrame&#x8D4B;&#x503C;&#x65F6;&#x5982;&#x679C;&#x6709;None&#xFF0C;&#x663E;&#x793A;&#x65B9;&#x5F0F;&#x53D6;&#x51B3;&#x4E8E;&#x8BE5;&#x5217;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x5982;&#x679C;&#x4E3A;object&#xFF0C;&#x5219;&#x4E3A;None&#xFF0C;&#x5982;&#x679C;&#x662F;float,&#x5219;&#x663E;&#x793A;np.nan</li>
+</ul>
+<h5 id="1-replace&#x51FD;&#x6570;-&#x66FF;&#x6362;&#x5143;&#x7D20;"><a name="1-replace&#x51FD;&#x6570;-&#x66FF;&#x6362;&#x5143;&#x7D20;" class="anchor-navigation-ex-anchor" href="#1-replace&#x51FD;&#x6570;-&#x66FF;&#x6362;&#x5143;&#x7D20;"><i class="fa fa-link" aria-hidden="true"></i></a>1) replace()&#x51FD;&#x6570;: &#x66FF;&#x6362;&#x5143;&#x7D20;</h5>
+<p>&#x4F7F;&#x7528;replace()&#x51FD;&#x6570;&#xFF0C;&#x5BF9;values&#x8FDB;&#x884C;&#x66FF;&#x6362;&#x64CD;&#x4F5C;</p>
+<p><strong>Series&#x66FF;&#x6362;&#x64CD;&#x4F5C;</strong></p>
+<ul>
+<li>&#x5355;&#x503C;&#x66FF;&#x6362;<ul>
+<li>&#x666E;&#x901A;&#x66FF;&#x6362;</li>
+<li>&#x5B57;&#x5178;&#x66FF;&#x6362;</li>
+</ul>
+</li>
+<li>&#x591A;&#x503C;&#x66FF;&#x6362;<ul>
+<li>&#x5217;&#x8868;&#x66FF;&#x6362;</li>
+<li>&#x5B57;&#x5178;&#x66FF;&#x6362;(&#x63A8;&#x8350;)</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-python">s = Series(data=[np.nan,<span class="hljs-string">&apos;&#x5C0F;&#x4E03;&apos;</span>,<span class="hljs-number">19</span>,<span class="hljs-number">10</span>])
+<span class="hljs-meta">&gt;&gt;&gt; </span>   <span class="hljs-number">0</span>       NaN
+    <span class="hljs-number">1</span>        &#x5C0F;&#x4E03;
+    <span class="hljs-number">2</span>        <span class="hljs-number">19</span>
+    <span class="hljs-number">3</span>        <span class="hljs-number">10</span>
+    dtype: object
+s.replace(to_replace={<span class="hljs-string">&apos;&#x5C0F;&#x4E03;&apos;</span>:<span class="hljs-string">&apos;&#x5F20;&#x5B66;&#x53CB;&apos;</span>,<span class="hljs-number">19</span>:<span class="hljs-number">21</span>})
+<span class="hljs-meta">&gt;&gt;&gt; </span>   <span class="hljs-number">0</span>    NaN
+    <span class="hljs-number">1</span>    &#x5F20;&#x5B66;&#x53CB;
+    <span class="hljs-number">2</span>     <span class="hljs-number">21</span>
+    <span class="hljs-number">3</span>     <span class="hljs-number">10</span>
+    dtype: object
+</code></pre>
+<blockquote>
+<p><strong>Series&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
+<ul>
+<li>method&#xFF1A;&#x5BF9;&#x6307;&#x5B9A;&#x7684;&#x503C;&#x4F7F;&#x7528;&#x76F8;&#x90BB;&#x7684;&#x503C;&#x586B;&#x5145;</li>
+<li>limit&#xFF1A;&#x8BBE;&#x5B9A;&#x586B;&#x5145;&#x6B21;&#x6570;</li>
+<li>to_replace: &#x65E7;&#x503C;</li>
+</ul>
+</blockquote>
+<p><strong>DataFrame&#x66FF;&#x6362;&#x64CD;&#x4F5C;</strong></p>
+<ul>
+<li>&#x5355;&#x503C;&#x66FF;&#x6362;<ul>
+<li>&#x666E;&#x901A;&#x66FF;&#x6362;</li>
+<li>&#x6309;&#x5217;&#x6307;&#x5B9A;&#x5355;&#x503C;&#x66FF;&#x6362;{&#x5217;&#x6807;&#x7B7E;&#xFF1A;&#x66FF;&#x6362;&#x503C;}</li>
+</ul>
+</li>
+<li>&#x591A;&#x503C;&#x66FF;&#x6362;<ul>
+<li>&#x5217;&#x8868;&#x66FF;&#x6362;</li>
+<li>&#x5355;&#x5B57;&#x5178;&#x66FF;&#x6362;&#xFF08;&#x63A8;&#x8350;&#xFF09;</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># replace&#x51FD;&#x6570;&#x4E2D;&#x4E0D;&#x80FD;&#x63A5;&#x6536;None&#x5BF9;&#x8C61;</span>
+df.replace(to_replace=np.nan,value=<span class="hljs-number">19</span>)
+<span class="hljs-comment"># &#x63A5;&#x6536;&#x952E;&#x503C;&#x5BF9;</span>
+df.replace(to_replace={<span class="hljs-string">&apos;boy&apos;</span>:np.nan},value=<span class="hljs-keyword">True</span>)
+<span class="hljs-comment"># &#x591A;&#x503C;&#x66FF;&#x6362;</span>
+df.replace(to_replace=[<span class="hljs-string">&apos;tom&apos;</span>,<span class="hljs-string">&apos;tomGG&apos;</span>],value=[<span class="hljs-string">&apos;TOM&apos;</span>,<span class="hljs-string">&apos;TOMGG&apos;</span>])
+<span class="hljs-comment"># &#x63A8;&#x8350;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x80FD;&#x6EE1;&#x8DB3;&#x6240;&#x6709;&#x8868;&#x683C;&#x66FF;&#x6362;&#x76EE;&#x7684;&#x7684;&#x5B57;&#x5178;&#x6765;&#x8FDB;&#x884C;&#x66FF;&#x6362;,&#x4FBF;&#x4E8E;&#x540E;&#x671F;&#x7EF4;&#x62A4;</span>
+df.replace(to_replace={<span class="hljs-string">&apos;dancer&apos;</span>:<span class="hljs-string">&apos;DANCER&apos;</span>,<span class="hljs-string">&apos;lucy&apos;</span>:<span class="hljs-string">&apos;&#x738B;&#x6DD1;&#x82AC;&apos;</span>,<span class="hljs-keyword">True</span>:<span class="hljs-string">&apos;&#x662F;&apos;</span>,<span class="hljs-string">&apos;nosuch&apos;</span>:<span class="hljs-string">&apos;hahaha&apos;</span>})
+</code></pre>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;DataFrame&#x4E2D;&#xFF0C;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;method&#x548C;limit&#x53C2;&#x6570;</strong></p>
+<h5 id="2-map&#x51FD;&#x6570;&#xFF1A;&#x65B0;&#x5EFA;&#x4E00;&#x5217;"><a name="2-map&#x51FD;&#x6570;&#xFF1A;&#x65B0;&#x5EFA;&#x4E00;&#x5217;" class="anchor-navigation-ex-anchor" href="#2-map&#x51FD;&#x6570;&#xFF1A;&#x65B0;&#x5EFA;&#x4E00;&#x5217;"><i class="fa fa-link" aria-hidden="true"></i></a>2) map()&#x51FD;&#x6570;&#xFF1A;&#x65B0;&#x5EFA;&#x4E00;&#x5217;</h5>
+<blockquote>
+<ul>
+<li>map()&#x53EF;&#x4EE5;&#x6620;&#x5C04;&#x65B0;&#x4E00;&#x5217;&#x6570;&#x636E;</li>
+<li>map()&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>lambd</code>&#x8868;&#x8FBE;&#x5F0F;</li>
+<li>map()&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x65B9;&#x6CD5;</li>
+</ul>
+<p><strong>&#x6CE8;&#x610F;</strong></p>
+<ul>
+<li>map()&#x4E2D;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;sum&#x4E4B;&#x7C7B;&#x7684;&#x51FD;&#x6570;&#xFF0C;for&#x5FAA;&#x73AF;</li>
+<li>map(&#x5B57;&#x5178;) &#x5B57;&#x5178;&#x7684;&#x952E;&#x8981;&#x8DB3;&#x4EE5;&#x5339;&#x914D;<code>&#x6240;&#x6709;</code>&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5426;&#x5219;&#x51FA;&#x73B0;NaN</li>
+</ul>
+</blockquote>
+<pre><code class="lang-python">dic = {
+    <span class="hljs-string">&apos;name&apos;</span>:[<span class="hljs-string">&apos;dancer&apos;</span>,<span class="hljs-string">&apos;lucy&apos;</span>,<span class="hljs-string">&apos;mery&apos;</span>,<span class="hljs-string">&apos;tom&apos;</span>],
+    <span class="hljs-string">&apos;age&apos;</span>:[<span class="hljs-number">19</span>,<span class="hljs-number">20</span>,<span class="hljs-number">18</span>,<span class="hljs-number">25</span>],
+    <span class="hljs-string">&apos;score&apos;</span>:[<span class="hljs-number">90.8</span>,<span class="hljs-number">109</span>,<span class="hljs-number">87.2</span>,<span class="hljs-number">99</span>],
+    <span class="hljs-string">&apos;boy&apos;</span>:[<span class="hljs-keyword">True</span>,<span class="hljs-keyword">False</span>,<span class="hljs-keyword">False</span>,<span class="hljs-keyword">None</span>],
+    <span class="hljs-string">&apos;oldname&apos;</span>:[<span class="hljs-string">&apos;dancer&apos;</span>,<span class="hljs-string">&apos;lucy&apos;</span>,<span class="hljs-string">&apos;&#x738B;&#x4E8C;&#x72D7;&apos;</span>,<span class="hljs-string">&apos;tomGG&apos;</span>]
+}
+df = DataFrame(data=dic)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/pandas/repdf.png" width="350"></p>
+<pre><code class="lang-python">dic = {
+    <span class="hljs-string">&apos;dancer&apos;</span>:<span class="hljs-string">&apos;&#x5F20;&#x5B66;&#x53CB;&apos;</span>,
+    <span class="hljs-string">&apos;lucy&apos;</span>:<span class="hljs-string">&apos;&#x5F20;&#x66FC;&#x7389;&apos;</span>,
+    <span class="hljs-string">&apos;mery&apos;</span>:<span class="hljs-string">&apos;&#x5218;&#x8BD7;&#x8BD7;&apos;</span>,
+    <span class="hljs-string">&apos;tom&apos;</span>:<span class="hljs-string">&apos;&#x90D1;&#x51EF;&apos;</span>
+}
+<span class="hljs-comment"># &#x666E;&#x901A;&#x7684;&#x503C;&#x4E4B;&#x95F4;&#x7684;&#x6620;&#x5C04;,&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x5B57;&#x5178;</span>
+df[<span class="hljs-string">&apos;oldname&apos;</span>] = df[<span class="hljs-string">&apos;name&apos;</span>].map(dic)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/pandas/repdf1.png" width="350"></p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x81EA;&#x5B9A;&#x4E49;&#x65B9;&#x6CD5;&#x4F7F;&#x7528;map</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trans_func</span><span class="hljs-params">(x)</span>:</span>
+    <span class="hljs-keyword">if</span> x&gt;=<span class="hljs-number">20</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;&#x6210;&#x5E74;&apos;</span>
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;&#x672A;&#x6210;&#x5E74;&apos;</span>
+<span class="hljs-comment"># &#x81EA;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5904;&#x7406;&#x4E00;&#x4E9B;&#x590D;&#x6742;&#x7684;&#x903B;&#x8F91;</span>
+df[<span class="hljs-string">&apos;&#x5E74;&#x7EAA;&apos;</span>] = df.age.map(trans_func)
+</code></pre>
+<h5 id="3-transform"><a name="3-transform" class="anchor-navigation-ex-anchor" href="#3-transform"><i class="fa fa-link" aria-hidden="true"></i></a>3) transform()</h5>
+<p>transform&#x4E0E;map&#x7C7B;&#x4F3C;</p>
+<pre><code class="lang-python">&#x5E74;&#x9F84;&#x5217;&#x52A0;<span class="hljs-number">1</span>
+df.age = df.age.transform(<span class="hljs-keyword">lambda</span> x:x<span class="hljs-number">-1</span>)
+</code></pre>
+<h5 id="4-rename&#x51FD;&#x6570;&#x66FF;&#x6362;&#x7D22;&#x5F15;"><a name="4-rename&#x51FD;&#x6570;&#x66FF;&#x6362;&#x7D22;&#x5F15;" class="anchor-navigation-ex-anchor" href="#4-rename&#x51FD;&#x6570;&#x66FF;&#x6362;&#x7D22;&#x5F15;"><i class="fa fa-link" aria-hidden="true"></i></a>4) rename()&#x51FD;&#x6570;:&#x66FF;&#x6362;&#x7D22;&#x5F15;</h5>
+<blockquote>
+<p>&#x4F7F;&#x7528;rename()&#x51FD;&#x6570;&#x66FF;&#x6362;&#x884C;&#x7D22;&#x5F15;</p>
+<ul>
+<li>mapper &#x66FF;&#x6362;&#x6240;&#x6709;&#x7D22;&#x5F15;</li>
+<li>index &#x66FF;&#x6362;&#x884C;&#x7D22;&#x5F15;</li>
+<li>columns &#x66FF;&#x6362;&#x5217;&#x7D22;&#x5F15;</li>
+<li>level &#x6307;&#x5B9A;&#x591A;&#x7EF4;&#x7D22;&#x5F15;&#x7684;&#x7EF4;&#x5EA6;</li>
+</ul>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x66FF;&#x6362;&#x5217;&#x7D22;&#x5F15;</span>
+df2.rename(columns={<span class="hljs-string">&apos;oldname&apos;</span>:<span class="hljs-string">&apos;&#x66FE;&#x7528;&#x540D;2&apos;</span>})
+<span class="hljs-comment"># &#x66FF;&#x6362;&#x884C;&#x7D22;&#x5F15;</span>
+df2.rename(index={<span class="hljs-string">&apos;&#x4E0A;&#x5B66;&#x671F;&apos;</span>:<span class="hljs-string">&apos;first&apos;</span>,<span class="hljs-string">&apos;&#x4E0B;&#x5B66;&#x671F;&apos;</span>:<span class="hljs-string">&apos;last&apos;</span>})
+<span class="hljs-comment"># mapper&#x9ED8;&#x8BA4;&#x66FF;&#x6362;&#x884C;&#x7D22;&#x5F15;,level&#x6307;&#x5B9A;&#x66FF;&#x6362;&#x7684;&#x7D22;&#x5F15;&#x5C42;&#x7EA7;,&#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;&#x5C31;&#x5168;&#x90E8;&#x5C42;&#x7EA7;&#x90FD;&#x8FDB;&#x884C;&#x66FF;&#x6362;</span>
+df2.rename(mapper={<span class="hljs-string">&apos;&#x4E0A;&#x5B66;&#x671F;&apos;</span>:<span class="hljs-string">&apos;&#x7B2C;&#x4E00;&#x5B66;&#x671F;&apos;</span>,<span class="hljs-string">&apos;dan&apos;</span>:<span class="hljs-string">&apos;DAN&apos;</span>},level=<span class="hljs-number">1</span>)
+<span class="hljs-comment"># &#x540C;&#x65F6;&#x66FF;&#x6362;&#x884C;&#x548C;&#x5217;&#x7D22;&#x5F15;</span>
+df2.rename(index={<span class="hljs-string">&apos;&#x4E0A;&#x5B66;&#x671F;&apos;</span>:<span class="hljs-string">&apos;first&apos;</span>},columns={<span class="hljs-string">&apos;&#x66FE;&#x7528;&#x540D;&apos;</span>:<span class="hljs-string">&apos;&#x66FE;&#x7528;&#x540D;1&apos;</span>})
+</code></pre>
+<h4 id="3-&#x4F7F;&#x7528;&#x805A;&#x5408;&#x64CD;&#x4F5C;&#x5BF9;&#x6570;&#x636E;&#x5F02;&#x5E38;&#x503C;&#x68C0;&#x6D4B;&#x548C;&#x8FC7;&#x6EE4;"><a name="3-&#x4F7F;&#x7528;&#x805A;&#x5408;&#x64CD;&#x4F5C;&#x5BF9;&#x6570;&#x636E;&#x5F02;&#x5E38;&#x503C;&#x68C0;&#x6D4B;&#x548C;&#x8FC7;&#x6EE4;" class="anchor-navigation-ex-anchor" href="#3-&#x4F7F;&#x7528;&#x805A;&#x5408;&#x64CD;&#x4F5C;&#x5BF9;&#x6570;&#x636E;&#x5F02;&#x5E38;&#x503C;&#x68C0;&#x6D4B;&#x548C;&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x4F7F;&#x7528;&#x805A;&#x5408;&#x64CD;&#x4F5C;&#x5BF9;&#x6570;&#x636E;&#x5F02;&#x5E38;&#x503C;&#x68C0;&#x6D4B;&#x548C;&#x8FC7;&#x6EE4;</h4>
+<ul>
+<li>&#x4F7F;&#x7528;<code>describe()</code>&#x51FD;&#x6570;&#x67E5;&#x770B;&#x6BCF;&#x4E00;&#x5217;&#x7684;&#x63CF;&#x8FF0;&#x6027;&#x7EDF;&#x8BA1;&#x91CF;</li>
+<li>&#x4F7F;&#x7528;<code>std()</code>&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x6C42;&#x5F97;DataFrame&#x5BF9;&#x8C61;&#x6BCF;&#x4E00;&#x5217;&#x7684;&#x6807;&#x51C6;&#x5DEE;</li>
+</ul>
+<pre><code class="lang-python">data = np.random.randint(<span class="hljs-number">0</span>,<span class="hljs-number">100</span>,size=(<span class="hljs-number">6</span>,<span class="hljs-number">6</span>))
+df = DataFrame(data=data)
+df
+</code></pre>
+<p><img src="http://qiniu.s001.xin/pandas/des.png" width="250"></p>
+<p>&#x4F7F;&#x7528;<code>df.describe()</code>&#x4E4B;&#x540E;</p>
+<p><img src="http://qiniu.s001.xin/pandas/des1.png" width="450"></p>
+<h4 id="4-&#x6392;&#x5E8F;"><a name="4-&#x6392;&#x5E8F;" class="anchor-navigation-ex-anchor" href="#4-&#x6392;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x6392;&#x5E8F;</h4>
+<blockquote>
+<p><strong>&#x4F7F;&#x7528;take()&#x51FD;&#x6570;&#x6392;&#x5E8F;</strong></p>
+<ul>
+<li>take()&#x51FD;&#x6570;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;<code>&#x7D22;&#x5F15;</code>&#x5217;&#x8868;&#xFF0C;&#x7528;&#x6570;&#x5B57;&#x8868;&#x793A;</li>
+<li>eg:df.take([1,3,4,2,5])</li>
+<li>&#x53EF;&#x4EE5;&#x501F;&#x52A9;<code>np.random.permutation()</code>&#x51FD;&#x6570;&#x968F;&#x673A;&#x6392;&#x5E8F;</li>
+</ul>
+</blockquote>
+<pre><code class="lang-python">df = DataFrame(data=np.random.randint(<span class="hljs-number">0</span>,<span class="hljs-number">10</span>,size=(<span class="hljs-number">5</span>,<span class="hljs-number">5</span>)),
+              index = list(<span class="hljs-string">&apos;ABCDE&apos;</span>),
+              columns = list(<span class="hljs-string">&apos;&#x7532;&#x4E59;&#x4E19;&#x4E01;&#x620A;&apos;</span>))
+df
+</code></pre>
+<p><img src="http://qiniu.s001.xin/pandas/sort.png" width="250"></p>
+<pre><code class="lang-python">df.take([<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>,<span class="hljs-number">1</span>],axis=<span class="hljs-number">1</span>)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/pandas/sort1.png" width="250"></p>
+<p><strong>&#x5C0F;&#x6280;&#x5DE7;&#xFF1A;&#x5F53;DataFrame&#x89C4;&#x6A21;&#x8DB3;&#x591F;&#x5927;&#x65F6;&#xFF0C;&#x76F4;&#x63A5;&#x4F7F;&#x7528;<code>np.random.randint()</code>&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x914D;&#x5408;take()&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x968F;&#x673A;&#x62BD;&#x6837;</strong></p>
+<h4 id="5-&#x6570;&#x636E;&#x5206;&#x7C7B;&#x5904;&#x7406;&#xFF08;&#x91CD;&#x70B9;&#xFF09;"><a name="5-&#x6570;&#x636E;&#x5206;&#x7C7B;&#x5904;&#x7406;&#xFF08;&#x91CD;&#x70B9;&#xFF09;" class="anchor-navigation-ex-anchor" href="#5-&#x6570;&#x636E;&#x5206;&#x7C7B;&#x5904;&#x7406;&#xFF08;&#x91CD;&#x70B9;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x6570;&#x636E;&#x5206;&#x7C7B;&#x5904;&#x7406;&#xFF08;&#x91CD;&#x70B9;&#xFF09;</h4>
+<blockquote>
+<p>&#x6570;&#x636E;&#x805A;&#x5408;&#x662F;&#x6570;&#x636E;&#x5904;&#x7406;&#x7684;&#x6700;&#x540E;&#x4E00;&#x6B65;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x8981;&#x4F7F;&#x6BCF;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x7684;&#x6570;&#x503C;&#x3002;</p>
+<p>&#x6570;&#x636E;&#x5206;&#x7C7B;&#x5904;&#x7406;&#xFF1A;</p>
+<ul>
+<li>&#x5206;&#x7EC4;&#xFF1A;&#x5148;&#x628A;&#x6570;&#x636E;&#x5206;&#x4E3A;&#x51E0;&#x7EC4;</li>
+<li>&#x7528;&#x51FD;&#x6570;&#x5904;&#x7406;&#xFF1A;&#x4E3A;&#x4E0D;&#x540C;&#x7EC4;&#x7684;&#x6570;&#x636E;&#x5E94;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x51FD;&#x6570;&#x4EE5;&#x8F6C;&#x6362;&#x6570;&#x636E;</li>
+<li>&#x5408;&#x5E76;&#xFF1A;&#x628A;&#x4E0D;&#x540C;&#x7EC4;&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x5408;&#x5E76;&#x8D77;&#x6765;</li>
+</ul>
+<p>&#x6570;&#x636E;&#x5206;&#x7C7B;&#x5904;&#x7406;&#x7684;&#x6838;&#x5FC3;&#xFF1A;</p>
+<ul>
+<li><code>groupby()</code>&#x51FD;&#x6570;</li>
+<li><code>groups</code>&#x5C5E;&#x6027;&#x67E5;&#x770B;&#x5206;&#x7EC4;&#x60C5;&#x51B5;</li>
+</ul>
+</blockquote>
+<pre><code class="lang-python">df = DataFrame({<span class="hljs-string">&apos;item&apos;</span>:[<span class="hljs-string">&apos;&#x82F9;&#x679C;&apos;</span>,<span class="hljs-string">&apos;&#x9999;&#x8549;&apos;</span>,<span class="hljs-string">&apos;&#x6A58;&#x5B50;&apos;</span>,<span class="hljs-string">&apos;&#x9999;&#x8549;&apos;</span>,<span class="hljs-string">&apos;&#x6A58;&#x5B50;&apos;</span>,<span class="hljs-string">&apos;&#x82F9;&#x679C;&apos;</span>],
+                <span class="hljs-string">&apos;price&apos;</span>:[<span class="hljs-number">4</span>,<span class="hljs-number">3</span>,<span class="hljs-number">3</span>,<span class="hljs-number">2.5</span>,<span class="hljs-number">4</span>,<span class="hljs-number">2</span>],
+               <span class="hljs-string">&apos;color&apos;</span>:[<span class="hljs-string">&apos;red&apos;</span>,<span class="hljs-string">&apos;yellow&apos;</span>,<span class="hljs-string">&apos;yellow&apos;</span>,<span class="hljs-string">&apos;green&apos;</span>,<span class="hljs-string">&apos;green&apos;</span>,<span class="hljs-string">&apos;green&apos;</span>],
+               <span class="hljs-string">&apos;weight&apos;</span>:[<span class="hljs-number">12</span>,<span class="hljs-number">20</span>,<span class="hljs-number">50</span>,<span class="hljs-number">30</span>,<span class="hljs-number">20</span>,<span class="hljs-number">44</span>]})
+
+df
+</code></pre>
+<p><img src="http://qiniu.s001.xin/pandas/group.png" width="250"></p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x4EE5;&#x989C;&#x8272;&#x5206;&#x7C7B;</span>
+df.groupby(<span class="hljs-string">&apos;color&apos;</span>).groups
+<span class="hljs-meta">&gt;&gt;&gt; </span>{<span class="hljs-string">&apos;green&apos;</span>: Int64Index([<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>], dtype=<span class="hljs-string">&apos;int64&apos;</span>),
+     <span class="hljs-string">&apos;red&apos;</span>: Int64Index([<span class="hljs-number">0</span>], dtype=<span class="hljs-string">&apos;int64&apos;</span>),
+     <span class="hljs-string">&apos;yellow&apos;</span>: Int64Index([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>], dtype=<span class="hljs-string">&apos;int64&apos;</span>)}
+
+<span class="hljs-comment"># &#x67E5;&#x770B;&#x5404;&#x79CD;&#x989C;&#x8272;&#x6C34;&#x679C;&#x91CD;&#x91CF;&#x7684;&#x603B;&#x548C;</span>
+df.groupby(<span class="hljs-string">&apos;color&apos;</span>)[<span class="hljs-string">&apos;weight&apos;</span>].sum()
+<span class="hljs-meta">&gt;&gt;&gt; </span>   color
+    green     <span class="hljs-number">94</span>
+    red       <span class="hljs-number">12</span>
+    yellow    <span class="hljs-number">70</span>
+    Name: weight, dtype: int64
+</code></pre>
+<ul>
+<li>&#x6839;&#x636E;item&#x5206;&#x7EC4; &#x67E5;&#x770B;&#x7ED3;&#x679C;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x6309;item&#x5206;&#x7C7B;&#x53D6;price&#x7684;&#x5E73;&#x5747;&#x503C;</span>
+price_mean = DataFrame(df.groupby(<span class="hljs-string">&apos;item&apos;</span>)[<span class="hljs-string">&apos;price&apos;</span>].mean())
+<span class="hljs-comment"># &#x5E73;&#x5747;&#x4EF7;&#x683C;Series</span>
+price_mean.rename(columns={<span class="hljs-string">&apos;price&apos;</span>:<span class="hljs-string">&apos;mean_prcie&apos;</span>},inplace=<span class="hljs-keyword">True</span>)
+<span class="hljs-comment"># &#x5408;&#x5E76;&#x5BF9;&#x8C61; </span>
+pd.merge(df,price_mean,left_on=<span class="hljs-string">&apos;item&apos;</span>,right_index=<span class="hljs-keyword">True</span>,how=<span class="hljs-string">&apos;outer&apos;</span>)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/pandas/group1.png" width="300"></p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x591A;&#x4E2A;&#x5206;&#x7EC4;&#x6761;&#x4EF6;,&#x5F97;&#x5230;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x591A;&#x7EA7;&#x7D22;&#x5F15;&#x7684;&#x5206;&#x7EC4;&#x8868;</span>
+df.groupby([<span class="hljs-string">&apos;color&apos;</span>,<span class="hljs-string">&apos;item&apos;</span>]).sum()
+</code></pre>
+<p><img src="http://qiniu.s001.xin/pandas/group2.png" width="250"></p>
+<p><strong>&#x603B;&#x7ED3;</strong></p>
+<ul>
+<li>&#x6570;&#x636E;&#x7C7B;&#x578B;&#x662F;&#x79BB;&#x6563;&#x7684;&#x53EF;&#x4EE5;&#x5206;&#x7EC4;&#xFF0C;&#x8FDE;&#x7EED;&#x7684;&#x6CA1;&#x6709;&#x610F;&#x4E49;</li>
+<li>&#x4F7F;&#x7528;&#x5217;&#x8868;&#x8FDB;&#x884C;&#x591A;&#x5217;&#x5206;&#x7EC4;&#xFF0C;&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x591A;&#x5C42;&#x7EA7;&#x7D22;&#x5F15;</li>
+</ul>
+<h4 id="6-&#x9AD8;&#x7EA7;&#x6570;&#x636E;&#x805A;&#x5408;"><a name="6-&#x9AD8;&#x7EA7;&#x6570;&#x636E;&#x805A;&#x5408;" class="anchor-navigation-ex-anchor" href="#6-&#x9AD8;&#x7EA7;&#x6570;&#x636E;&#x805A;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>6. &#x9AD8;&#x7EA7;&#x6570;&#x636E;&#x805A;&#x5408;</h4>
+<blockquote>
+<p>&#x4F7F;&#x7528;groupby&#x5206;&#x7EC4;&#x540E;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;transform&#x548C;apply&#x63D0;&#x4F9B;&#x81EA;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x66F4;&#x591A;&#x7684;&#x8FD0;&#x7B97;</p>
+<pre><code class="lang-python">df.groupby(&apos;item&apos;)[&apos;price&apos;].sum() &lt;==&gt; df.groupby(&apos;item&apos;)[&apos;price&apos;].apply(sum)
+</code></pre>
+<ul>
+<li>transform&#x548C;apply&#x90FD;&#x4F1A;&#x8FDB;&#x884C;&#x8FD0;&#x7B97;&#xFF0C;&#x5728;transform&#x6216;&#x8005;apply&#x4E2D;&#x4F20;&#x5165;&#x51FD;&#x6570;&#x5373;&#x53EF;</li>
+<li>transform&#x548C;apply&#x4E5F;&#x53EF;&#x4EE5;&#x4F20;&#x5165;&#x4E00;&#x4E2A;lambda&#x8868;&#x8FBE;&#x5F0F;</li>
+</ul>
+</blockquote>
+<p>&#x6211;&#x4EEC;&#x6765;&#x5199;&#x4E2A;&#x4F8B;&#x5B50;&#x611F;&#x53D7;&#x4E0B;transform&#x548C;apply,&#x6570;&#x636E;&#x8FD8;&#x7528;&#x5230;&#x4E0A;&#x9762;&#x7684;&#x6C34;&#x679C;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_func</span><span class="hljs-params">(items)</span>:</span>
+    result = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> items:
+        result += item
+    <span class="hljs-keyword">return</span> result
+
+<span class="hljs-comment"># &#x7ED3;&#x679C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8DDF;&#x539F;&#x59CB;&#x8868;&#x5408;&#x5E76;&#x64CD;&#x4F5C;</span>
+df.groupby(<span class="hljs-string">&apos;color&apos;</span>)[<span class="hljs-string">&apos;weight&apos;</span>].apply(test_func)
+&gt;&gt;&gt;color
+    green     <span class="hljs-number">94</span>
+    red       <span class="hljs-number">12</span>
+    yellow    <span class="hljs-number">70</span>
+    Name: weight, dtype: int64
+
+<span class="hljs-comment"># &#x7ED3;&#x679C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8DDF;&#x539F;&#x59CB;&#x8868;&#x7EA7;&#x8054;&#x64CD;&#x4F5C;</span>
+df.groupby(<span class="hljs-string">&apos;color&apos;</span>)[<span class="hljs-string">&apos;weight&apos;</span>].transform(test_func)
+<span class="hljs-meta">&gt;&gt;&gt; </span>   <span class="hljs-number">0</span>    <span class="hljs-number">12</span>
+    <span class="hljs-number">1</span>    <span class="hljs-number">70</span>
+    <span class="hljs-number">2</span>    <span class="hljs-number">70</span>
+    <span class="hljs-number">3</span>    <span class="hljs-number">94</span>
+    <span class="hljs-number">4</span>    <span class="hljs-number">94</span>
+    <span class="hljs-number">5</span>    <span class="hljs-number">94</span>
+    Name: weight, dtype: int64
+</code></pre>
+<p><strong>&#x6CE8;&#x610F;</strong></p>
+<ul>
+<li>transform &#x4F1A;&#x81EA;&#x52A8;&#x5339;&#x914D;&#x5217;&#x7D22;&#x5F15;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x4E0D;&#x53BB;&#x91CD;</li>
+<li>apply &#x4F1A;&#x6839;&#x636E;&#x5206;&#x7EC4;&#x60C5;&#x51B5;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x53BB;&#x91CD;</li>
+</ul>
+<h3 id="&#x6570;&#x636E;&#x52A0;&#x8F7D;"><a name="&#x6570;&#x636E;&#x52A0;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x52A0;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x52A0;&#x8F7D;</h3>
+<blockquote>
+<p>&#x5C06;&#x8868;&#x683C;&#x6570;&#x636E;&#x8BFB;&#x53D6;&#x4E3A;DataFrame&#x5BF9;&#x8C61;</p>
+<ul>
+<li>read_csv</li>
+<li>read_table</li>
+</ul>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-comment"># sep &#x786E;&#x8BA4;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x7684;&#x95F4;&#x9694;&#x7B26;&#x53F7;</span>
+<span class="hljs-comment"># &#x5982;&#x679C;&#x6587;&#x4EF6;&#x6CA1;&#x6709;&#x5217;&#x6807;&#x7B7E;&#xFF0C;&#x5E94;&#x8BE5;&#x8BBE;&#x7F6E;header&#x4E3A;None</span>
+table = pd.read_csv(<span class="hljs-string">&apos;./data/type-.txt&apos;</span>,sep=<span class="hljs-string">&apos;-&apos;</span>,header=<span class="hljs-keyword">None</span>)
+</code></pre>
+<p><strong>&#x4F7F;&#x7528;read_excel()&#x8BFB;&#x53D6;excel&#x8868;&#x683C;</strong></p>
+<pre><code class="lang-python">table1 = pd.read_csv(<span class="hljs-string">&apos;./data/type_comma&apos;</span>)
+</code></pre>
+<p><strong>&#x5199;&#x5165;excel&#x6587;&#x4EF6;</strong></p>
+<pre><code class="lang-python">table1.to_excel(<span class="hljs-string">&apos;dancer.xls&apos;</span>)
+</code></pre>
+<p><strong>&#x8BFB;&#x53D6;sqlite&#x6587;&#x4EF6;</strong></p>
+<blockquote>
+<p>&#x5BFC;&#x5305; import sqlite3 as sqlite3</p>
+<ul>
+<li>&#x8FDE;&#x63A5;&#x6570;&#x636E;&#x5E93;
+sqlite3.connect(&apos;dbpath&apos;)</li>
+<li>&#x8BFB;&#x53D6;table&#x5185;&#x5BB9;
+pd.read_sql(&quot;SQL&#x8BED;&#x53E5;&quot;, con)</li>
+<li>&#x5199;&#x5165;&#x6570;&#x636E;&#x5E93;&#x6587;&#x4EF6; df&#x5BF9;&#x8C61;.to_sql(&apos;tablename&apos;,connection)</li>
+<li>&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93; connection.execute(SQL&#x8BED;&#x53E5;)</li>
+</ul>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-comment"># SQL Server&#x9609;&#x5272;&#x7248; &#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93; &#x652F;&#x6301;SQL&#x8BED;&#x53E5; &#x5E94;&#x7528;&#x5728;&#x79FB;&#x52A8;&#x7AEF;</span>
+<span class="hljs-comment"># &#x6587;&#x4EF6;&#x8F7B;&#x91CF;&#x7EA7;</span>
+<span class="hljs-keyword">import</span> sqlite3 <span class="hljs-keyword">as</span> sqlite3
+connection = sqlite3.connect(<span class="hljs-string">&apos;./data/weather_2012.sqlite&apos;</span>)
+<span class="hljs-comment"># &#x8BFB;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x5185;&#x5BB9;</span>
+<span class="hljs-comment"># select * from weatehr_2012</span>
+weather = pd.read_sql(<span class="hljs-string">&apos;select * from weather_2012&apos;</span>,connection,index_col=<span class="hljs-string">&apos;index&apos;</span>)
+<span class="hljs-comment"># &#x5199;&#x5165;&#x6570;&#x636E;&#x5E93;</span>
+table1.to_sql(<span class="hljs-string">&apos;dancer&apos;</span>,connection)
+<span class="hljs-comment"># &#x8BFB;&#x53D6;dancer&#xFF0C;&#x67E5;&#x770B;&#x662F;&#x5426;&#x5199;&#x5165;&#x6210;&#x529F;</span>
+pd.read_sql(<span class="hljs-string">&apos;select * from dancer&apos;</span>,connection)
+<span class="hljs-comment"># &#x5220;&#x9664;&#x4E00;&#x4E2A;&#x8868;</span>
+<span class="hljs-comment"># drop table name</span>
+connection.execute(<span class="hljs-string">&apos;drop table dancer&apos;</span>)
+<span class="hljs-comment"># &#x8BBE;&#x7F6E;&#x884C;&#x7D22;&#x5F15;</span>
+weather.set_index(<span class="hljs-string">&apos;index&apos;</span>)
+</code></pre>
+<h3 id="&#x4EA4;&#x53C9;&#x8868;&#x548C;&#x900F;&#x89C6;&#x8868;"><a name="&#x4EA4;&#x53C9;&#x8868;&#x548C;&#x900F;&#x89C6;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x4EA4;&#x53C9;&#x8868;&#x548C;&#x900F;&#x89C6;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EA4;&#x53C9;&#x8868;&#x548C;&#x900F;&#x89C6;&#x8868;</h3>
+<blockquote>
+<p>&#x5927;&#x5BB6;&#x4E4B;&#x524D;&#x5DF2;&#x7ECF;&#x5BF9;&#x5206;&#x7EC4;&#x8868;&#x6709;&#x4E86;&#x4E86;&#x89E3;&#xFF0C;&#x7528;<code>groupby</code>&#x5206;&#x7EC4;</p>
+<p>&#x800C;&#x900F;&#x89C6;&#x8868;&#x4E5F;&#x662F;&#x7528;&#x6765;&#x5206;&#x7EC4;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x5206;&#x7EC4;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x884C;&#x3001;&#x5217;&#x3001;&#x884C;&#x5217;</p>
+</blockquote>
+<pre><code class="lang-python">...&#x4E09;&#x5251;&#x5BA2;&#x5BFC;&#x5165;
+
+df = DataFrame({<span class="hljs-string">&apos;item&apos;</span>:[<span class="hljs-string">&apos;&#x82F9;&#x679C;&apos;</span>,<span class="hljs-string">&apos;&#x9999;&#x8549;&apos;</span>,<span class="hljs-string">&apos;&#x6A58;&#x5B50;&apos;</span>,<span class="hljs-string">&apos;&#x9999;&#x8549;&apos;</span>,<span class="hljs-string">&apos;&#x6A58;&#x5B50;&apos;</span>,<span class="hljs-string">&apos;&#x82F9;&#x679C;&apos;</span>],
+                <span class="hljs-string">&apos;price&apos;</span>:[<span class="hljs-number">4</span>,<span class="hljs-number">3</span>,<span class="hljs-number">3</span>,<span class="hljs-number">2.5</span>,<span class="hljs-number">4</span>,<span class="hljs-number">2</span>],
+               <span class="hljs-string">&apos;color&apos;</span>:[<span class="hljs-string">&apos;red&apos;</span>,<span class="hljs-string">&apos;yellow&apos;</span>,<span class="hljs-string">&apos;yellow&apos;</span>,<span class="hljs-string">&apos;green&apos;</span>,<span class="hljs-string">&apos;green&apos;</span>,<span class="hljs-string">&apos;green&apos;</span>],
+               <span class="hljs-string">&apos;weight&apos;</span>:[<span class="hljs-number">12</span>,<span class="hljs-number">20</span>,<span class="hljs-number">50</span>,<span class="hljs-number">30</span>,<span class="hljs-number">20</span>,<span class="hljs-number">44</span>]})
+</code></pre>
+<p><img src="http://qiniu.s001.xin/pandas/group.png" width="250"></p>
+<p><strong>&#x900F;&#x89C6;&#x8868;</strong></p>
+<blockquote>
+<p>&#x5404;&#x79CD;&#x7535;&#x5B50;&#x8868;&#x683C;&#x7A0B;&#x5E8F;&#x548C;&#x5176;&#x4ED6;&#x6570;&#x636E;&#x5206;&#x6790;&#x8F6F;&#x4EF6;&#x4E2D;&#x4E00;&#x79CD;&#x5E38;&#x89C1;&#x7684;&#x6570;&#x636E;&#x6C47;&#x603B;&#x5DE5;&#x5177;&#x3002;&#x5B83;&#x6839;&#x636E;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x952E;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x805A;&#x5408;&#xFF0C;&#x5E76;&#x6839;&#x636E;&#x884C;&#x548C;&#x5217;&#x4E0A;&#x7684;&#x5206;&#x7EC4;&#x952E;&#x5C06;&#x6570;&#x636E;&#x5206;&#x914D;&#x5230;&#x5404;&#x4E2A;&#x77E9;&#x5F62;&#x533A;&#x57DF;&#x4E2D;</p>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x884C;&#x5206;&#x7EC4;&#x900F;&#x89C6;&#x8868;</span>
+df.pivot_table(index=<span class="hljs-string">&apos;color&apos;</span>,aggfunc=<span class="hljs-string">&apos;sum&apos;</span>)[<span class="hljs-string">&apos;weight&apos;</span>]
+<span class="hljs-comment"># &#x5217;&#x5206;&#x7EC4;&#x900F;&#x89C6;&#x8868;</span>
+df.pivot_table(columns=<span class="hljs-string">&apos;color&apos;</span>,aggfunc=<span class="hljs-string">&apos;sum&apos;</span>).loc[<span class="hljs-string">&apos;weight&apos;</span>]
+<span class="hljs-comment"># &#x884C;&#x5217;&#x5206;&#x7EC4;</span>
+<span class="hljs-comment"># &#x884C;&#x5217;&#x5206;&#x7EC4;&#x7684;&#x900F;&#x89C6;&#x8868; &#x540C;&#x65F6;&#x8BBE;&#x5B9A;index&#x3001;columns&#x53C2;&#x6570;</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">myfunction</span><span class="hljs-params">(x)</span>:</span>
+    mysum = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> x:
+        mysum += item
+    <span class="hljs-keyword">return</span> mysum
+</code></pre>
+<p>aggfunc&#xFF1A;&#x8BBE;&#x7F6E;&#x5E94;&#x7528;&#x5728;&#x6BCF;&#x4E2A;&#x533A;&#x57DF;&#x7684;&#x805A;&#x5408;&#x51FD;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;np.mean</p>
+<p>fill_value&#xFF1A;&#x66FF;&#x6362;&#x7ED3;&#x679C;&#x4E2D;&#x7684;&#x7F3A;&#x5931;&#x503C; </p>
+<p><strong>&#x4EA4;&#x53C9;&#x8868;</strong></p>
+<blockquote>
+<p>&#x662F;&#x4E00;&#x79CD;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x5206;&#x7EC4;&#x9891;&#x7387;&#x7684;&#x7279;&#x6B8A;&#x900F;&#x89C6;&#x56FE;,&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x6C47;&#x603B; </p>
+<p><code>pd.crosstab(index,colums)</code></p>
+<ul>
+<li>index:&#x5206;&#x7EC4;&#x6570;&#x636E;&#xFF0C;&#x4EA4;&#x53C9;&#x8868;&#x7684;&#x884C;&#x7D22;&#x5F15;</li>
+<li>columns:&#x4EA4;&#x53C9;&#x8868;&#x7684;&#x5217;&#x7D22;&#x5F15;</li>
+</ul>
+</blockquote>
+<pre><code class="lang-python">pd.crosstab(df.color,df.item)
+<span class="hljs-meta">&gt;&gt;&gt; </span>item    &#x6A58;&#x5B50;    &#x82F9;&#x679C;    &#x9999;&#x8549;
+    color            
+    green    <span class="hljs-number">1</span>    <span class="hljs-number">1</span>    <span class="hljs-number">1</span>
+    red        <span class="hljs-number">0</span>    <span class="hljs-number">1</span>    <span class="hljs-number">0</span>
+    yellow    <span class="hljs-number">1</span>    <span class="hljs-number">0</span>    <span class="hljs-number">1</span>
+</code></pre>
+<h1 id="&#x9644;&#x4EF6;"><a name="&#x9644;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x9644;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9644;&#x4EF6;</h1>
+<hr>
+<p><strong>pandas&#x5E38;&#x7528;&#x51FD;&#x6570;&#x901F;&#x67E5;&#x8868;</strong></p>
+<h2 id="&#x5BFC;&#x5165;&#x6570;&#x636E;"><a name="&#x5BFC;&#x5165;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x5BFC;&#x5165;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BFC;&#x5165;&#x6570;&#x636E;</h2>
+<ul>
+<li>pd.read_csv(filename)&#xFF1A;&#x4ECE;CSV&#x6587;&#x4EF6;&#x5BFC;&#x5165;&#x6570;&#x636E;</li>
+<li>pd.read_table(filename)&#xFF1A;&#x4ECE;&#x9650;&#x5B9A;&#x5206;&#x9694;&#x7B26;&#x7684;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x5BFC;&#x5165;&#x6570;&#x636E;</li>
+<li>pd.read_excel(filename)&#xFF1A;&#x4ECE;Excel&#x6587;&#x4EF6;&#x5BFC;&#x5165;&#x6570;&#x636E;</li>
+<li>pd.read_sql(query, connection_object)&#xFF1A;&#x4ECE;SQL&#x8868;/&#x5E93;&#x5BFC;&#x5165;&#x6570;&#x636E;</li>
+<li>pd.read_json(json_string)&#xFF1A;&#x4ECE;JSON&#x683C;&#x5F0F;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5BFC;&#x5165;&#x6570;&#x636E;</li>
+<li>pd.read_html(url)&#xFF1A;&#x89E3;&#x6790;URL&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x8005;HTML&#x6587;&#x4EF6;&#xFF0C;&#x62BD;&#x53D6;&#x5176;&#x4E2D;&#x7684;tables&#x8868;&#x683C;</li>
+<li>pd.read_clipboard()&#xFF1A;&#x4ECE;&#x4F60;&#x7684;&#x7C98;&#x8D34;&#x677F;&#x83B7;&#x53D6;&#x5185;&#x5BB9;&#xFF0C;&#x5E76;&#x4F20;&#x7ED9;read_table()</li>
+<li>pd.DataFrame(dict)&#xFF1A;&#x4ECE;&#x5B57;&#x5178;&#x5BF9;&#x8C61;&#x5BFC;&#x5165;&#x6570;&#x636E;&#xFF0C;Key&#x662F;&#x5217;&#x540D;&#xFF0C;Value&#x662F;&#x6570;&#x636E;</li>
+</ul>
+<h2 id="&#x5BFC;&#x51FA;&#x6570;&#x636E;"><a name="&#x5BFC;&#x51FA;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x5BFC;&#x51FA;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BFC;&#x51FA;&#x6570;&#x636E;</h2>
+<ul>
+<li>df.to_csv(filename)&#xFF1A;&#x5BFC;&#x51FA;&#x6570;&#x636E;&#x5230;CSV&#x6587;&#x4EF6;</li>
+<li>df.to_excel(filename)&#xFF1A;&#x5BFC;&#x51FA;&#x6570;&#x636E;&#x5230;Excel&#x6587;&#x4EF6;</li>
+<li>df.to_sql(table_name, connection_object)&#xFF1A;&#x5BFC;&#x51FA;&#x6570;&#x636E;&#x5230;SQL&#x8868;</li>
+<li>df.to_json(filename)&#xFF1A;&#x4EE5;Json&#x683C;&#x5F0F;&#x5BFC;&#x51FA;&#x6570;&#x636E;&#x5230;&#x6587;&#x672C;&#x6587;&#x4EF6;</li>
+</ul>
+<h2 id="&#x521B;&#x5EFA;&#x6D4B;&#x8BD5;&#x5BF9;&#x8C61;"><a name="&#x521B;&#x5EFA;&#x6D4B;&#x8BD5;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;&#x6D4B;&#x8BD5;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521B;&#x5EFA;&#x6D4B;&#x8BD5;&#x5BF9;&#x8C61;</h2>
+<ul>
+<li>pd.DataFrame(np.random.rand(20,5))&#xFF1A;&#x521B;&#x5EFA;20&#x884C;5&#x5217;&#x7684;&#x968F;&#x673A;&#x6570;&#x7EC4;&#x6210;&#x7684;DataFrame&#x5BF9;&#x8C61;</li>
+<li>pd.Series(my_list)&#xFF1A;&#x4ECE;&#x53EF;&#x8FED;&#x4EE3;&#x5BF9;&#x8C61;my_list&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Series&#x5BF9;&#x8C61;</li>
+<li>df.index = pd.date_range(&apos;1900/1/30&apos;, periods=df.shape[0])&#xFF1A;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x65E5;&#x671F;&#x7D22;&#x5F15;</li>
+</ul>
+<h2 id="&#x67E5;&#x770B;&#x3001;&#x68C0;&#x67E5;&#x6570;&#x636E;"><a name="&#x67E5;&#x770B;&#x3001;&#x68C0;&#x67E5;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x3001;&#x68C0;&#x67E5;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;&#x3001;&#x68C0;&#x67E5;&#x6570;&#x636E;</h2>
+<ul>
+<li>df.head(n)&#xFF1A;&#x67E5;&#x770B;DataFrame&#x5BF9;&#x8C61;&#x7684;&#x524D;n&#x884C;</li>
+<li>df.tail(n)&#xFF1A;&#x67E5;&#x770B;DataFrame&#x5BF9;&#x8C61;&#x7684;&#x6700;&#x540E;n&#x884C;</li>
+<li>df.shape()&#xFF1A;&#x67E5;&#x770B;&#x884C;&#x6570;&#x548C;&#x5217;&#x6570;</li>
+<li>df.info()&#xFF1A;&#x67E5;&#x770B;&#x7D22;&#x5F15;&#x3001;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x548C;&#x5185;&#x5B58;&#x4FE1;&#x606F;</li>
+<li>df.describe()&#xFF1A;&#x67E5;&#x770B;&#x6570;&#x503C;&#x578B;&#x5217;&#x7684;&#x6C47;&#x603B;&#x7EDF;&#x8BA1;</li>
+<li>s.value_counts(dropna=False)&#xFF1A;&#x67E5;&#x770B;Series&#x5BF9;&#x8C61;&#x7684;&#x552F;&#x4E00;&#x503C;&#x548C;&#x8BA1;&#x6570;</li>
+<li>df.apply(pd.Series.value_counts)&#xFF1A;&#x67E5;&#x770B;DataFrame&#x5BF9;&#x8C61;&#x4E2D;&#x6BCF;&#x4E00;&#x5217;&#x7684;&#x552F;&#x4E00;&#x503C;&#x548C;&#x8BA1;&#x6570;</li>
+</ul>
+<h2 id="&#x6570;&#x636E;&#x9009;&#x53D6;"><a name="&#x6570;&#x636E;&#x9009;&#x53D6;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x9009;&#x53D6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x9009;&#x53D6;</h2>
+<ul>
+<li>df[col]&#xFF1A;&#x6839;&#x636E;&#x5217;&#x540D;&#xFF0C;&#x5E76;&#x4EE5;Series&#x7684;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#x5217;</li>
+<li>df[[col1, col2]]&#xFF1A;&#x4EE5;DataFrame&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#x591A;&#x5217;</li>
+<li>s.iloc[0]&#xFF1A;&#x6309;&#x4F4D;&#x7F6E;&#x9009;&#x53D6;&#x6570;&#x636E;</li>
+<li>s.loc[&apos;index_one&apos;]&#xFF1A;&#x6309;&#x7D22;&#x5F15;&#x9009;&#x53D6;&#x6570;&#x636E;</li>
+<li>df.iloc[0,:]&#xFF1A;&#x8FD4;&#x56DE;&#x7B2C;&#x4E00;&#x884C;</li>
+<li>df.iloc[0,0]&#xFF1A;&#x8FD4;&#x56DE;&#x7B2C;&#x4E00;&#x5217;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;</li>
+</ul>
+<h2 id="&#x6570;&#x636E;&#x6E05;&#x7406;"><a name="&#x6570;&#x636E;&#x6E05;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x6E05;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x6E05;&#x7406;</h2>
+<ul>
+<li>df.columns = [&apos;a&apos;,&apos;b&apos;,&apos;c&apos;]&#xFF1A;&#x91CD;&#x547D;&#x540D;&#x5217;&#x540D;</li>
+<li>pd.isnull()&#xFF1A;&#x68C0;&#x67E5;DataFrame&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x7A7A;&#x503C;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;Boolean&#x6570;&#x7EC4;</li>
+<li>pd.notnull()&#xFF1A;&#x68C0;&#x67E5;DataFrame&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x975E;&#x7A7A;&#x503C;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;Boolean&#x6570;&#x7EC4;</li>
+<li>df.dropna()&#xFF1A;&#x5220;&#x9664;&#x6240;&#x6709;&#x5305;&#x542B;&#x7A7A;&#x503C;&#x7684;&#x884C;</li>
+<li>df.dropna(axis=1)&#xFF1A;&#x5220;&#x9664;&#x6240;&#x6709;&#x5305;&#x542B;&#x7A7A;&#x503C;&#x7684;&#x5217;</li>
+<li>df.dropna(axis=1,thresh=n)&#xFF1A;&#x5220;&#x9664;&#x6240;&#x6709;&#x5C0F;&#x4E8E;n&#x4E2A;&#x975E;&#x7A7A;&#x503C;&#x7684;&#x884C;</li>
+<li>df.fillna(x)&#xFF1A;&#x7528;x&#x66FF;&#x6362;DataFrame&#x5BF9;&#x8C61;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x7A7A;&#x503C;</li>
+<li>s.astype(float)&#xFF1A;&#x5C06;Series&#x4E2D;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x66F4;&#x6539;&#x4E3A;float&#x7C7B;&#x578B;</li>
+<li>s.replace(1,&apos;one&apos;)&#xFF1A;&#x7528;&#x2018;one&#x2019;&#x4EE3;&#x66FF;&#x6240;&#x6709;&#x7B49;&#x4E8E;1&#x7684;&#x503C;</li>
+<li>s.replace([1,3],[&apos;one&apos;,&apos;three&apos;])&#xFF1A;&#x7528;&apos;one&apos;&#x4EE3;&#x66FF;1&#xFF0C;&#x7528;&apos;three&apos;&#x4EE3;&#x66FF;3</li>
+<li>df.rename(columns=lambda x: x + 1)&#xFF1A;&#x6279;&#x91CF;&#x66F4;&#x6539;&#x5217;&#x540D;</li>
+<li>df.rename(columns={&apos;old<em>name&apos;: &apos;new</em> name&apos;})&#xFF1A;&#x9009;&#x62E9;&#x6027;&#x66F4;&#x6539;&#x5217;&#x540D;</li>
+<li>df.set_index(&apos;column_one&apos;)&#xFF1A;&#x66F4;&#x6539;&#x7D22;&#x5F15;&#x5217;</li>
+<li>df.rename(index=lambda x: x + 1)&#xFF1A;&#x6279;&#x91CF;&#x91CD;&#x547D;&#x540D;&#x7D22;&#x5F15;</li>
+</ul>
+<h2 id="&#x6570;&#x636E;&#x5904;&#x7406;&#xFF1A;filter&#x3001;sort&#x548C;groupby"><a name="&#x6570;&#x636E;&#x5904;&#x7406;&#xFF1A;filter&#x3001;sort&#x548C;groupby" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x5904;&#x7406;&#xFF1A;filter&#x3001;sort&#x548C;groupby"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x5904;&#x7406;&#xFF1A;Filter&#x3001;Sort&#x548C;GroupBy</h2>
+<ul>
+<li>df[df[col] &gt; 0.5]&#xFF1A;&#x9009;&#x62E9;col&#x5217;&#x7684;&#x503C;&#x5927;&#x4E8E;0.5&#x7684;&#x884C;</li>
+<li>df.sort_values(col1)&#xFF1A;&#x6309;&#x7167;&#x5217;col1&#x6392;&#x5E8F;&#x6570;&#x636E;&#xFF0C;&#x9ED8;&#x8BA4;&#x5347;&#x5E8F;&#x6392;&#x5217;</li>
+<li>df.sort_values(col2, ascending=False)&#xFF1A;&#x6309;&#x7167;&#x5217;col1&#x964D;&#x5E8F;&#x6392;&#x5217;&#x6570;&#x636E;</li>
+<li>df.sort_values([col1,col2], ascending=[True,False])&#xFF1A;&#x5148;&#x6309;&#x5217;col1&#x5347;&#x5E8F;&#x6392;&#x5217;&#xFF0C;&#x540E;&#x6309;col2&#x964D;&#x5E8F;&#x6392;&#x5217;&#x6570;&#x636E;</li>
+<li>df.groupby(col)&#xFF1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6309;&#x5217;col&#x8FDB;&#x884C;&#x5206;&#x7EC4;&#x7684;Groupby&#x5BF9;&#x8C61;</li>
+<li>df.groupby([col1,col2])&#xFF1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6309;&#x591A;&#x5217;&#x8FDB;&#x884C;&#x5206;&#x7EC4;&#x7684;Groupby&#x5BF9;&#x8C61;</li>
+<li>df.groupby(col1)[col2]&#xFF1A;&#x8FD4;&#x56DE;&#x6309;&#x5217;col1&#x8FDB;&#x884C;&#x5206;&#x7EC4;&#x540E;&#xFF0C;&#x5217;col2&#x7684;&#x5747;&#x503C;</li>
+<li>df.pivot_table(index=col1, values=[col2,col3], aggfunc=max)&#xFF1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6309;&#x5217;col1&#x8FDB;&#x884C;&#x5206;&#x7EC4;&#xFF0C;&#x5E76;&#x8BA1;&#x7B97;col2&#x548C;col3&#x7684;&#x6700;&#x5927;&#x503C;&#x7684;&#x6570;&#x636E;&#x900F;&#x89C6;&#x8868;</li>
+<li>df.groupby(col1).agg(np.mean)&#xFF1A;&#x8FD4;&#x56DE;&#x6309;&#x5217;col1&#x5206;&#x7EC4;&#x7684;&#x6240;&#x6709;&#x5217;&#x7684;&#x5747;&#x503C;</li>
+<li>data.apply(np.mean)&#xFF1A;&#x5BF9;DataFrame&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x5217;&#x5E94;&#x7528;&#x51FD;&#x6570;np.mean</li>
+<li>data.apply(np.max,axis=1)&#xFF1A;&#x5BF9;DataFrame&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x884C;&#x5E94;&#x7528;&#x51FD;&#x6570;np.max </li>
+</ul>
+<h2 id="&#x6570;&#x636E;&#x5408;&#x5E76;"><a name="&#x6570;&#x636E;&#x5408;&#x5E76;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x5408;&#x5E76;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x5408;&#x5E76;</h2>
+<ul>
+<li>df1.append(df2)&#xFF1A;&#x5C06;df2&#x4E2D;&#x7684;&#x884C;&#x6DFB;&#x52A0;&#x5230;df1&#x7684;&#x5C3E;&#x90E8;</li>
+<li>df.concat([df1, df2],axis=1)&#xFF1A;&#x5C06;df2&#x4E2D;&#x7684;&#x5217;&#x6DFB;&#x52A0;&#x5230;df1&#x7684;&#x5C3E;&#x90E8;</li>
+<li>df1.join(df2,on=col1,how=&apos;inner&apos;)&#xFF1A;&#x5BF9;df1&#x7684;&#x5217;&#x548C;df2&#x7684;&#x5217;&#x6267;&#x884C;SQL&#x5F62;&#x5F0F;&#x7684;join</li>
+</ul>
+<h2 id="&#x6570;&#x636E;&#x7EDF;&#x8BA1;"><a name="&#x6570;&#x636E;&#x7EDF;&#x8BA1;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x7EDF;&#x8BA1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x7EDF;&#x8BA1;</h2>
+<ul>
+<li>df.describe()&#xFF1A;&#x67E5;&#x770B;&#x6570;&#x636E;&#x503C;&#x5217;&#x7684;&#x6C47;&#x603B;&#x7EDF;&#x8BA1;</li>
+<li>df.mean()&#xFF1A;&#x8FD4;&#x56DE;&#x6240;&#x6709;&#x5217;&#x7684;&#x5747;&#x503C;</li>
+<li>df.corr()&#xFF1A;&#x8FD4;&#x56DE;&#x5217;&#x4E0E;&#x5217;&#x4E4B;&#x95F4;&#x7684;&#x76F8;&#x5173;&#x7CFB;&#x6570;</li>
+<li>df.count()&#xFF1A;&#x8FD4;&#x56DE;&#x6BCF;&#x4E00;&#x5217;&#x4E2D;&#x7684;&#x975E;&#x7A7A;&#x503C;&#x7684;&#x4E2A;&#x6570;</li>
+<li>df.max()&#xFF1A;&#x8FD4;&#x56DE;&#x6BCF;&#x4E00;&#x5217;&#x7684;&#x6700;&#x5927;&#x503C;</li>
+<li>df.min()&#xFF1A;&#x8FD4;&#x56DE;&#x6BCF;&#x4E00;&#x5217;&#x7684;&#x6700;&#x5C0F;&#x503C;</li>
+<li>df.median()&#xFF1A;&#x8FD4;&#x56DE;&#x6BCF;&#x4E00;&#x5217;&#x7684;&#x4E2D;&#x4F4D;&#x6570;</li>
+<li>df.std()&#xFF1A;&#x8FD4;&#x56DE;&#x6BCF;&#x4E00;&#x5217;&#x7684;&#x6807;&#x51C6;&#x5DEE;</li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; housegod.cn 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-12-12 15:54:20
+</span></footer> <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> <script>     window.klipse_settings = {         selector: ".language-klipse, .lang-eval-clojure",         selector_eval_js: ".lang-eval-js",         selector_eval_python_client: ".lang-eval-python",         selector_eval_php: ".lang-eval-php",         selector_eval_scheme: ".lang-eval-scheme",         selector_eval_ruby: ".lang-eval-ruby",         selector_reagent: ".lang-reagent",        selector_google_charts: ".lang-google-chart",        selector_es2017: ".lang-eval-es2017",        selector_jsx: ".lang-eval-jsx",        selector_transpile_jsx: ".lang-transpile-jsx",        selector_render_jsx: ".lang-render-jsx",        selector_react: ".lang-react",        selector_eval_markdown: ".lang-render-markdown",        selector_eval_lambdaway: ".lang-render-lambdaway",        selector_eval_cpp: ".lang-eval-cpp",        selector_eval_html: ".lang-render-html",        selector_sql: ".lang-eval-sql",        selector_brainfuck: "lang-eval-brainfuck",        selector_js: ".lang-transpile-cljs"    }; </script> <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="jupyter入门之pandas.html" class="navigation navigation-prev " aria-label="Previous page: jupyter入门之pandas">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="jupyter入门之图像处理.html" class="navigation navigation-next " aria-label="Next page: jupyter入门之图像处理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"jupyter入门之pandas（完）","level":"1.5","depth":1,"next":{"title":"jupyter入门之图像处理","level":"1.6","depth":1,"path":"jupyter/jupyter入门之图像处理.md","ref":"jupyter/jupyter入门之图像处理.md","articles":[]},"previous":{"title":"jupyter入门之pandas","level":"1.4","depth":1,"path":"jupyter/jupyter入门之pandas.md","ref":"jupyter/jupyter入门之pandas.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","theme-comscore","-lunr","-search","highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","disqus@^0.1.0","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx@^3.1.0","local-video@^1.0.1","sitemap-general@^0.1.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","3-ba@^0.9.0","terminal@^0.3.2","alerts@^0.2.0","include-csv@^0.1.0","puml@^1.0.1","musicxml@^1.0.2","klipse@^1.2.0","versions-select@^0.1.1","-sharing","sharing-plus@^0.0.2","graph@^0.1.0","chart@^0.2.0","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © housegod.cn 2018","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"include-csv":{},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"emphasize":{},"ace":{},"github":{"url":"https://github.com/ZHAISHENKING/book.git"},"puml":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"versions-select":{"type":"branches"},"graph":{},"sitemap-general":{"prefix":"http://gitbook.zhangjikai.com"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"musicxml":{},"sectionx":{"tag":"b"},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"alerts":{},"github-buttons":{},"3-ba":{"configuration":"auto","token":"ff100361cdce95dd4c8fb96b4009f7bc"},"expandable-chapters-small":{},"local-video":{},"klipse":{"myConfigKey":"it's the default value"},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"label":"编辑本页","base":"https://github.com/ZHAISHENKING/book/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"chart":{"type":"c3"},"toggle-chapters":{},"search-plus":{}},"theme":"default","author":"zhaishen","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"SUMMARY.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook 使用教程","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://oj.s001.xin"}},"gitbook":"3.2.3","description":"记录 GitBook 的配置和一些插件的使用"},"file":{"path":"jupyter/jupyter入门之pandas（完）.md","mtime":"2018-12-12T07:54:20.231Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-12T07:50:36.945Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-3-ba/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-terminal/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-musicxml/osmd.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-musicxml/musicxml.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-musicxml/promise.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+
