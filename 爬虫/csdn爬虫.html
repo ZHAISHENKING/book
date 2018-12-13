@@ -1,0 +1,2052 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>csdn爬虫 · GitBook 使用教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zhaishen">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-versions-select/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="get.post请求及cookie.html" />
+    
+    
+    <link rel="prev" href="boss直聘.html" />
+    
+
+    
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    <script src="../gitbook/gitbook-plugin-graph/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-graph/function-plot.js"></script>    
+
+    
+        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://oj.s001.xin" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">Jupyter</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../jupyter/jupyter入门之Matplotlib.html">
+            
+                <a href="../jupyter/jupyter入门之Matplotlib.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    jupyter入门之Matplotlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../jupyter/jupyter入门之numpy.html">
+            
+                <a href="../jupyter/jupyter入门之numpy.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    jupyter入门之numpy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../jupyter/jupyter入门之pandas.html">
+            
+                <a href="../jupyter/jupyter入门之pandas.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    jupyter入门之pandas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../jupyter/jupyter入门之pandas（完）.html">
+            
+                <a href="../jupyter/jupyter入门之pandas（完）.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    jupyter入门之pandas（完）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../jupyter/jupyter入门之图像处理.html">
+            
+                <a href="../jupyter/jupyter入门之图像处理.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    jupyter入门之图像处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">python基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../python基础/Dateutil.html">
+            
+                <a href="../python基础/Dateutil.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    Dateutil
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../python基础/ZIP.html">
+            
+                <a href="../python基础/ZIP.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    ZIP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">前端</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../前端/vue-cli 3.0版本webpack打包.html">
+            
+                <a href="../前端/vue-cli 3.0版本webpack打包.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    vue-cli 3.0版本webpack打包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../前端/前端vue优化.html">
+            
+                <a href="../前端/前端vue优化.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    前端vue优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">后端</li>
+        
+        
+    
+
+    
+        
+        <li class="header">django整理</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../后端/django整理/crm管理系统.html">
+            
+                <a href="../后端/django整理/crm管理系统.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    crm管理系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../后端/django整理/Django Debug Toolbar的安装及使用.html">
+            
+                <a href="../后端/django整理/Django Debug Toolbar的安装及使用.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Django Debug Toolbar的安装及使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../后端/django整理/Django-redis.html">
+            
+                <a href="../后端/django整理/Django-redis.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    Django Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../后端/django整理/django中将重要信息存储并引用.html">
+            
+                <a href="../后端/django整理/django中将重要信息存储并引用.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    django中将重要信息存储并引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../后端/django整理/drf技术扩展.html">
+            
+                <a href="../后端/django整理/drf技术扩展.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    drf技术扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../后端/django整理/memcached.html">
+            
+                <a href="../后端/django整理/memcached.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    Memcached
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../后端/django整理/Nginx+Gunicorn部署django.html">
+            
+                <a href="../后端/django整理/Nginx+Gunicorn部署django.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    Nginx+Gunicorn部署django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="../后端/django整理/七牛云存储资源.html">
+            
+                <a href="../后端/django整理/七牛云存储资源.html">
+            
+                    
+                        <b>5.8.</b>
+                    
+                    七牛云存储资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="../后端/django整理/数据库索引相关操作.html">
+            
+                <a href="../后端/django整理/数据库索引相关操作.html">
+            
+                    
+                        <b>5.9.</b>
+                    
+                    数据库索引相关操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="../后端/django整理/用户权限验证.html">
+            
+                <a href="../后端/django整理/用户权限验证.html">
+            
+                    
+                        <b>5.10.</b>
+                    
+                    用户权限验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="../后端/django整理/简约博客.html">
+            
+                <a href="../后端/django整理/简约博客.html">
+            
+                    
+                        <b>5.11.</b>
+                    
+                    简约博客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="../后端/django整理/项目总结.html">
+            
+                <a href="../后端/django整理/项目总结.html">
+            
+                    
+                        <b>5.12.</b>
+                    
+                    项目总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">flask整理</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../后端/flask整理/Flask+Vue快速打造个人网站（一）.html">
+            
+                <a href="../后端/flask整理/Flask+Vue快速打造个人网站（一）.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    Flask+Vue快速打造个人网站（一）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../后端/flask整理/Flask+Vue快速打造个人网站（三）.html">
+            
+                <a href="../后端/flask整理/Flask+Vue快速打造个人网站（三）.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    Flask+Vue快速打造个人网站（三）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../后端/flask整理/Flask+Vue快速打造个人网站（二）.html">
+            
+                <a href="../后端/flask整理/Flask+Vue快速打造个人网站（二）.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    Flask+Vue快速打造个人网站（二）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../后端/flask整理/flask应用.html">
+            
+                <a href="../后端/flask整理/flask应用.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    flask应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../后端/flask整理/flask进阶.html">
+            
+                <a href="../后端/flask整理/flask进阶.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    flask进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../后端/flask整理/iSurvey.html">
+            
+                <a href="../后端/flask整理/iSurvey.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    I Survey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../后端/flask整理/python脚本实现Mp4在Safari播放.html">
+            
+                <a href="../后端/flask整理/python脚本实现Mp4在Safari播放.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    python脚本实现Mp4在Safari播放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="../后端/flask整理/uwsgi部署flask项目.html">
+            
+                <a href="../后端/flask整理/uwsgi部署flask项目.html">
+            
+                    
+                        <b>6.8.</b>
+                    
+                    uwsgi部署flask项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="../后端/flask整理/上传文件接口.html">
+            
+                <a href="../后端/flask整理/上传文件接口.html">
+            
+                    
+                        <b>6.9.</b>
+                    
+                    上传文件接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="../后端/flask整理/常见认证机制.html">
+            
+                <a href="../后端/flask整理/常见认证机制.html">
+            
+                    
+                        <b>6.10.</b>
+                    
+                    常见认证机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="../后端/Celery.html">
+            
+                <a href="../后端/Celery.html">
+            
+                    
+                        <b>6.11.</b>
+                    
+                    Celery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="../后端/token机制.html">
+            
+                <a href="../后端/token机制.html">
+            
+                    
+                        <b>6.12.</b>
+                    
+                    token机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="../后端/web安全防范.html">
+            
+                <a href="../后端/web安全防范.html">
+            
+                    
+                        <b>6.13.</b>
+                    
+                    web安全防范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="../后端/关于主流web框架选择问题.html">
+            
+                <a href="../后端/关于主流web框架选择问题.html">
+            
+                    
+                        <b>6.14.</b>
+                    
+                    关于主流web框架选择问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="../后端/前后端分离项目之python后端部署前的操作.html">
+            
+                <a href="../后端/前后端分离项目之python后端部署前的操作.html">
+            
+                    
+                        <b>6.15.</b>
+                    
+                    前后端分离项目之python后端部署前的操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.16" data-path="../后端/后台框架选型.html">
+            
+                <a href="../后端/后台框架选型.html">
+            
+                    
+                        <b>6.16.</b>
+                    
+                    后台框架选型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.17" data-path="../后端/后端记录.html">
+            
+                <a href="../后端/后端记录.html">
+            
+                    
+                        <b>6.17.</b>
+                    
+                    后端记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.18" data-path="../后端/多人协作项目git免密登录.html">
+            
+                <a href="../后端/多人协作项目git免密登录.html">
+            
+                    
+                        <b>6.18.</b>
+                    
+                    多人协作项目git免密登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">工具</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../工具/gitbook入门.html">
+            
+                <a href="../工具/gitbook入门.html">
+            
+                    
+                        <b>7.1.</b>
+                    
+                    gitbook入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../工具/markdown.html">
+            
+                <a href="../工具/markdown.html">
+            
+                    
+                        <b>7.2.</b>
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">常见坑</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../常见坑/pip安装遇到的坑.html">
+            
+                <a href="../常见坑/pip安装遇到的坑.html">
+            
+                    
+                        <b>8.1.</b>
+                    
+                    pip安装遇到的坑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../常见坑/Reactive-native 运行错误.html">
+            
+                <a href="../常见坑/Reactive-native 运行错误.html">
+            
+                    
+                        <b>8.2.</b>
+                    
+                    Reactive-native 运行错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../常见坑/服务器错误排查.html">
+            
+                <a href="../常见坑/服务器错误排查.html">
+            
+                    
+                        <b>8.3.</b>
+                    
+                    服务器错误排查
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">扩展</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../扩展/Item2.html">
+            
+                <a href="../扩展/Item2.html">
+            
+                    
+                        <b>9.1.</b>
+                    
+                    Item 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="../扩展/MAC上比较好用的开发工具.html">
+            
+                <a href="../扩展/MAC上比较好用的开发工具.html">
+            
+                    
+                        <b>9.2.</b>
+                    
+                    MAC上比较好用的开发工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="../扩展/RPC,微服务架构.html">
+            
+                <a href="../扩展/RPC,微服务架构.html">
+            
+                    
+                        <b>9.3.</b>
+                    
+                    RPC,微服务架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="../扩展/with关键字与上下文管理.html">
+            
+                <a href="../扩展/with关键字与上下文管理.html">
+            
+                    
+                        <b>9.4.</b>
+                    
+                    with关键字与上下文管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="../扩展/前端高级工程师进阶扩展.html">
+            
+                <a href="../扩展/前端高级工程师进阶扩展.html">
+            
+                    
+                        <b>9.5.</b>
+                    
+                    前端高级工程师进阶扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">数据库</li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../数据库/mongo.html">
+            
+                <a href="../数据库/mongo.html">
+            
+                    
+                        <b>10.1.</b>
+                    
+                    Mongo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="../数据库/MongoEngine.html">
+            
+                <a href="../数据库/MongoEngine.html">
+            
+                    
+                        <b>10.2.</b>
+                    
+                    Mongo Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="../数据库/NoSQL数据库.html">
+            
+                <a href="../数据库/NoSQL数据库.html">
+            
+                    
+                        <b>10.3.</b>
+                    
+                    NoSQL数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="../数据库/postgresql.html">
+            
+                <a href="../数据库/postgresql.html">
+            
+                    
+                        <b>10.4.</b>
+                    
+                    Postgresql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="../数据库/related-name.html">
+            
+                <a href="../数据库/related-name.html">
+            
+                    
+                        <b>10.5.</b>
+                    
+                    Related Name
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">机器学习</li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../机器学习/SVM与K-Means.html">
+            
+                <a href="../机器学习/SVM与K-Means.html">
+            
+                    
+                        <b>11.1.</b>
+                    
+                    SVM与K-Means
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="../机器学习/TensorFlow.html">
+            
+                <a href="../机器学习/TensorFlow.html">
+            
+                    
+                        <b>11.2.</b>
+                    
+                    Tensor Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="../机器学习/决策树与贝叶斯.html">
+            
+                <a href="../机器学习/决策树与贝叶斯.html">
+            
+                    
+                        <b>11.3.</b>
+                    
+                    决策树与贝叶斯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="../机器学习/特征工程.html">
+            
+                <a href="../机器学习/特征工程.html">
+            
+                    
+                        <b>11.4.</b>
+                    
+                    特征工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.5" data-path="../机器学习/用机器学习的方法来学习机器学习.html">
+            
+                <a href="../机器学习/用机器学习的方法来学习机器学习.html">
+            
+                    
+                        <b>11.5.</b>
+                    
+                    用机器学习的方法来学习机器学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.6" data-path="../机器学习/题海.html">
+            
+                <a href="../机器学习/题海.html">
+            
+                    
+                        <b>11.6.</b>
+                    
+                    题海
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">爬虫</li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="10 分布式爬虫.html">
+            
+                <a href="10 分布式爬虫.html">
+            
+                    
+                        <b>12.1.</b>
+                    
+                    10 分布式爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.2" data-path="boss直聘.html">
+            
+                <a href="boss直聘.html">
+            
+                    
+                        <b>12.2.</b>
+                    
+                    boss直聘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="12.3" data-path="csdn爬虫.html">
+            
+                <a href="csdn爬虫.html">
+            
+                    
+                        <b>12.3.</b>
+                    
+                    csdn爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.4" data-path="get.post请求及cookie.html">
+            
+                <a href="get.post请求及cookie.html">
+            
+                    
+                        <b>12.4.</b>
+                    
+                    get.post请求及cookie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.5" data-path="pyspider使用.html">
+            
+                <a href="pyspider使用.html">
+            
+                    
+                        <b>12.5.</b>
+                    
+                    pyspider使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.6" data-path="scrapy入门.html">
+            
+                <a href="scrapy入门.html">
+            
+                    
+                        <b>12.6.</b>
+                    
+                    scrapy入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.7" data-path="scrapy实战.html">
+            
+                <a href="scrapy实战.html">
+            
+                    
+                        <b>12.7.</b>
+                    
+                    scrapy实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.8" data-path="selenium使用.html">
+            
+                <a href="selenium使用.html">
+            
+                    
+                        <b>12.8.</b>
+                    
+                    selenium使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.9" data-path="spider项目.html">
+            
+                <a href="spider项目.html">
+            
+                    
+                        <b>12.9.</b>
+                    
+                    spider项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.10" data-path="tinyproxy代理服务器的搭建.html">
+            
+                <a href="tinyproxy代理服务器的搭建.html">
+            
+                    
+                        <b>12.10.</b>
+                    
+                    tinyproxy代理服务器的搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.11" data-path="tinyproxy定时任务.html">
+            
+                <a href="tinyproxy定时任务.html">
+            
+                    
+                        <b>12.11.</b>
+                    
+                    tinyproxy定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.12" data-path="使用CrawlSpider做通用爬虫.html">
+            
+                <a href="使用CrawlSpider做通用爬虫.html">
+            
+                    
+                        <b>12.12.</b>
+                    
+                    使用CrawlSpider做通用爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.13" data-path="如何使你的爬虫更健壮.html">
+            
+                <a href="如何使你的爬虫更健壮.html">
+            
+                    
+                        <b>12.13.</b>
+                    
+                    如何使你的爬虫更健壮
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.14" data-path="常用工具、多线程及分布式.html">
+            
+                <a href="常用工具、多线程及分布式.html">
+            
+                    
+                        <b>12.14.</b>
+                    
+                    常用工具、多线程及分布式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.15" data-path="异步IO.html">
+            
+                <a href="异步IO.html">
+            
+                    
+                        <b>12.15.</b>
+                    
+                    异步IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.16" data-path="爬虫常见问题.html">
+            
+                <a href="爬虫常见问题.html">
+            
+                    
+                        <b>12.16.</b>
+                    
+                    爬虫常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.17" data-path="爬虫进阶（入门）.html">
+            
+                <a href="爬虫进阶（入门）.html">
+            
+                    
+                        <b>12.17.</b>
+                    
+                    爬虫进阶（入门）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.18" data-path="简单爬虫.html">
+            
+                <a href="简单爬虫.html">
+            
+                    
+                        <b>12.18.</b>
+                    
+                    简单爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.19" data-path="线程锁.html">
+            
+                <a href="线程锁.html">
+            
+                    
+                        <b>12.19.</b>
+                    
+                    线程锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.20" data-path="进程线程.html">
+            
+                <a href="进程线程.html">
+            
+                    
+                        <b>12.20.</b>
+                    
+                    进程线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.21" data-path="进程线程协程简单关系.html">
+            
+                <a href="进程线程协程简单关系.html">
+            
+                    
+                        <b>12.21.</b>
+                    
+                    进程线程协程简单关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">电子书</li>
+        
+        
+    
+        <li class="chapter " data-level="13.1" data-path="../电子书/《GitHub入门与实践》一书小记.html">
+            
+                <a href="../电子书/《GitHub入门与实践》一书小记.html">
+            
+                    
+                        <b>13.1.</b>
+                    
+                    《GitHub入门与实践》一书小记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">运维</li>
+        
+        
+    
+        <li class="chapter " data-level="14.1" data-path="../运维/centos新服务器使用.html">
+            
+                <a href="../运维/centos新服务器使用.html">
+            
+                    
+                        <b>14.1.</b>
+                    
+                    centos新服务器使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.2" data-path="../运维/docker+django.html">
+            
+                <a href="../运维/docker+django.html">
+            
+                    
+                        <b>14.2.</b>
+                    
+                    Docker Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.3" data-path="../运维/Doker了解.html">
+            
+                <a href="../运维/Doker了解.html">
+            
+                    
+                        <b>14.3.</b>
+                    
+                    Doker了解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.4" data-path="../运维/Linux Pro.html">
+            
+                <a href="../运维/Linux Pro.html">
+            
+                    
+                        <b>14.4.</b>
+                    
+                    Linux Pro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.5" data-path="../运维/LinuxPro（二）.html">
+            
+                <a href="../运维/LinuxPro（二）.html">
+            
+                    
+                        <b>14.5.</b>
+                    
+                    LinuxPro（二）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.6" data-path="../运维/osi模型：应表会传网数物 七层协议模型.html">
+            
+                <a href="../运维/osi模型：应表会传网数物 七层协议模型.html">
+            
+                    
+                        <b>14.6.</b>
+                    
+                    osi模型：应表会传网数物 七层协议模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.7" data-path="../运维/shell，解放我的双手.html">
+            
+                <a href="../运维/shell，解放我的双手.html">
+            
+                    
+                        <b>14.7.</b>
+                    
+                    shell，解放我的双手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.8" data-path="../运维/ssh免密登陆.html">
+            
+                <a href="../运维/ssh免密登陆.html">
+            
+                    
+                        <b>14.8.</b>
+                    
+                    ssh免密登陆
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.9" data-path="../运维/supervisor.html">
+            
+                <a href="../运维/supervisor.html">
+            
+                    
+                        <b>14.9.</b>
+                    
+                    Supervisor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.10" data-path="../运维/supervisor管理进程.html">
+            
+                <a href="../运维/supervisor管理进程.html">
+            
+                    
+                        <b>14.10.</b>
+                    
+                    supervisor管理进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.11" data-path="../运维/使用dockerfile自定义镜像.html">
+            
+                <a href="../运维/使用dockerfile自定义镜像.html">
+            
+                    
+                        <b>14.11.</b>
+                    
+                    使用dockerfile自定义镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.12" data-path="../运维/使用supervisor进行scrapy-redis部署.html">
+            
+                <a href="../运维/使用supervisor进行scrapy-redis部署.html">
+            
+                    
+                        <b>14.12.</b>
+                    
+                    使用supervisor进行scrapy-redis部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.13" data-path="../运维/开发模式.html">
+            
+                <a href="../运维/开发模式.html">
+            
+                    
+                        <b>14.13.</b>
+                    
+                    开发模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.14" data-path="../运维/管理容器.html">
+            
+                <a href="../运维/管理容器.html">
+            
+                    
+                        <b>14.14.</b>
+                    
+                    管理容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">面试点</li>
+        
+        
+    
+        <li class="chapter " data-level="15.1" data-path="../面试点/基础面试.html">
+            
+                <a href="../面试点/基础面试.html">
+            
+                    
+                        <b>15.1.</b>
+                    
+                    基础面试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.2" data-path="../面试点/目前掌握的技术.html">
+            
+                <a href="../面试点/目前掌握的技术.html">
+            
+                    
+                        <b>15.2.</b>
+                    
+                    目前掌握的技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.3" data-path="../面试点/直击痛点的python面试题.html">
+            
+                <a href="../面试点/直击痛点的python面试题.html">
+            
+                    
+                        <b>15.3.</b>
+                    
+                    直击痛点的python面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.4" data-path="../面试点/项目面试.html">
+            
+                <a href="../面试点/项目面试.html">
+            
+                    
+                        <b>15.4.</b>
+                    
+                    项目面试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >csdn爬虫</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <center>
+    <img src="http://qiniu.s001.xin/s6mu3.jpg">
+</center>
+
+
+
+<font color="blue">123</font>
+
+<center>
+    <img src="http://qiniu.s001.xin/wasoy.jpg">
+</center>
+
+
+
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; housegod.cn 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-12-12 16:22:44
+</span></footer> <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> <script>     window.klipse_settings = {         selector: ".language-klipse, .lang-eval-clojure",         selector_eval_js: ".lang-eval-js",         selector_eval_python_client: ".lang-eval-python",         selector_eval_php: ".lang-eval-php",         selector_eval_scheme: ".lang-eval-scheme",         selector_eval_ruby: ".lang-eval-ruby",         selector_reagent: ".lang-reagent",        selector_google_charts: ".lang-google-chart",        selector_es2017: ".lang-eval-es2017",        selector_jsx: ".lang-eval-jsx",        selector_transpile_jsx: ".lang-transpile-jsx",        selector_render_jsx: ".lang-render-jsx",        selector_react: ".lang-react",        selector_eval_markdown: ".lang-render-markdown",        selector_eval_lambdaway: ".lang-render-lambdaway",        selector_eval_cpp: ".lang-eval-cpp",        selector_eval_html: ".lang-render-html",        selector_sql: ".lang-eval-sql",        selector_brainfuck: "lang-eval-brainfuck",        selector_js: ".lang-transpile-cljs"    }; </script> <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="boss直聘.html" class="navigation navigation-prev " aria-label="Previous page: boss直聘">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="get.post请求及cookie.html" class="navigation navigation-next " aria-label="Next page: get.post请求及cookie">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"csdn爬虫","level":"12.3","depth":1,"next":{"title":"get.post请求及cookie","level":"12.4","depth":1,"path":"爬虫/get.post请求及cookie.md","ref":"爬虫/get.post请求及cookie.md","articles":[]},"previous":{"title":"boss直聘","level":"12.2","depth":1,"path":"爬虫/boss直聘.md","ref":"爬虫/boss直聘.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","theme-comscore","-lunr","-search","highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","disqus@^0.1.0","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx@^3.1.0","local-video@^1.0.1","sitemap-general@^0.1.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","3-ba@^0.9.0","terminal@^0.3.2","alerts@^0.2.0","include-csv@^0.1.0","puml@^1.0.1","musicxml@^1.0.2","klipse@^1.2.0","versions-select@^0.1.1","-sharing","sharing-plus@^0.0.2","graph@^0.1.0","chart@^0.2.0","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © housegod.cn 2018","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"include-csv":{},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"emphasize":{},"ace":{},"github":{"url":"https://github.com/ZHAISHENKING/book.git"},"puml":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"versions-select":{"type":"branches"},"graph":{},"sitemap-general":{"prefix":"http://gitbook.zhangjikai.com"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"musicxml":{},"sectionx":{"tag":"b"},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"alerts":{},"github-buttons":{},"3-ba":{"configuration":"auto","token":"ff100361cdce95dd4c8fb96b4009f7bc"},"expandable-chapters-small":{},"local-video":{},"klipse":{"myConfigKey":"it's the default value"},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"label":"编辑本页","base":"https://github.com/ZHAISHENKING/book/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"chart":{"type":"c3"},"toggle-chapters":{},"search-plus":{}},"theme":"default","author":"zhaishen","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"SUMMARY.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook 使用教程","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://oj.s001.xin"}},"gitbook":"3.2.3","description":"记录 GitBook 的配置和一些插件的使用"},"file":{"path":"爬虫/csdn爬虫.md","mtime":"2018-12-12T08:22:44.289Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-12T12:02:06.958Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-3-ba/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-terminal/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-musicxml/osmd.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-musicxml/musicxml.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-musicxml/promise.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

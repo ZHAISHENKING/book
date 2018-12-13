@@ -1,0 +1,2701 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>jupyter入门之Matplotlib · GitBook 使用教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zhaishen">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-versions-select/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="jupyter入门之numpy.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    <script src="../gitbook/gitbook-plugin-graph/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-graph/function-plot.js"></script>    
+
+    
+        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://oj.s001.xin" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">Jupyter</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="jupyter入门之Matplotlib.html">
+            
+                <a href="jupyter入门之Matplotlib.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    jupyter入门之Matplotlib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="jupyter入门之numpy.html">
+            
+                <a href="jupyter入门之numpy.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    jupyter入门之numpy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="jupyter入门之pandas.html">
+            
+                <a href="jupyter入门之pandas.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    jupyter入门之pandas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="jupyter入门之pandas（完）.html">
+            
+                <a href="jupyter入门之pandas（完）.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    jupyter入门之pandas（完）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="jupyter入门之图像处理.html">
+            
+                <a href="jupyter入门之图像处理.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    jupyter入门之图像处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">python基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../python基础/Dateutil.html">
+            
+                <a href="../python基础/Dateutil.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    Dateutil
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../python基础/ZIP.html">
+            
+                <a href="../python基础/ZIP.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    ZIP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">前端</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../前端/vue-cli 3.0版本webpack打包.html">
+            
+                <a href="../前端/vue-cli 3.0版本webpack打包.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    vue-cli 3.0版本webpack打包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../前端/前端vue优化.html">
+            
+                <a href="../前端/前端vue优化.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    前端vue优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">后端</li>
+        
+        
+    
+
+    
+        
+        <li class="header">django整理</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../后端/django整理/crm管理系统.html">
+            
+                <a href="../后端/django整理/crm管理系统.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    crm管理系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../后端/django整理/Django Debug Toolbar的安装及使用.html">
+            
+                <a href="../后端/django整理/Django Debug Toolbar的安装及使用.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Django Debug Toolbar的安装及使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../后端/django整理/Django-redis.html">
+            
+                <a href="../后端/django整理/Django-redis.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    Django Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../后端/django整理/django中将重要信息存储并引用.html">
+            
+                <a href="../后端/django整理/django中将重要信息存储并引用.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    django中将重要信息存储并引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../后端/django整理/drf技术扩展.html">
+            
+                <a href="../后端/django整理/drf技术扩展.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    drf技术扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../后端/django整理/memcached.html">
+            
+                <a href="../后端/django整理/memcached.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    Memcached
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../后端/django整理/Nginx+Gunicorn部署django.html">
+            
+                <a href="../后端/django整理/Nginx+Gunicorn部署django.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    Nginx+Gunicorn部署django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="../后端/django整理/七牛云存储资源.html">
+            
+                <a href="../后端/django整理/七牛云存储资源.html">
+            
+                    
+                        <b>5.8.</b>
+                    
+                    七牛云存储资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="../后端/django整理/数据库索引相关操作.html">
+            
+                <a href="../后端/django整理/数据库索引相关操作.html">
+            
+                    
+                        <b>5.9.</b>
+                    
+                    数据库索引相关操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="../后端/django整理/用户权限验证.html">
+            
+                <a href="../后端/django整理/用户权限验证.html">
+            
+                    
+                        <b>5.10.</b>
+                    
+                    用户权限验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="../后端/django整理/简约博客.html">
+            
+                <a href="../后端/django整理/简约博客.html">
+            
+                    
+                        <b>5.11.</b>
+                    
+                    简约博客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="../后端/django整理/项目总结.html">
+            
+                <a href="../后端/django整理/项目总结.html">
+            
+                    
+                        <b>5.12.</b>
+                    
+                    项目总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">flask整理</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../后端/flask整理/Flask+Vue快速打造个人网站（一）.html">
+            
+                <a href="../后端/flask整理/Flask+Vue快速打造个人网站（一）.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    Flask+Vue快速打造个人网站（一）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../后端/flask整理/Flask+Vue快速打造个人网站（三）.html">
+            
+                <a href="../后端/flask整理/Flask+Vue快速打造个人网站（三）.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    Flask+Vue快速打造个人网站（三）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../后端/flask整理/Flask+Vue快速打造个人网站（二）.html">
+            
+                <a href="../后端/flask整理/Flask+Vue快速打造个人网站（二）.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    Flask+Vue快速打造个人网站（二）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../后端/flask整理/flask应用.html">
+            
+                <a href="../后端/flask整理/flask应用.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    flask应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../后端/flask整理/flask进阶.html">
+            
+                <a href="../后端/flask整理/flask进阶.html">
+            
+                    
+                        <b>6.5.</b>
+                    
+                    flask进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../后端/flask整理/iSurvey.html">
+            
+                <a href="../后端/flask整理/iSurvey.html">
+            
+                    
+                        <b>6.6.</b>
+                    
+                    I Survey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../后端/flask整理/python脚本实现Mp4在Safari播放.html">
+            
+                <a href="../后端/flask整理/python脚本实现Mp4在Safari播放.html">
+            
+                    
+                        <b>6.7.</b>
+                    
+                    python脚本实现Mp4在Safari播放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="../后端/flask整理/uwsgi部署flask项目.html">
+            
+                <a href="../后端/flask整理/uwsgi部署flask项目.html">
+            
+                    
+                        <b>6.8.</b>
+                    
+                    uwsgi部署flask项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="../后端/flask整理/上传文件接口.html">
+            
+                <a href="../后端/flask整理/上传文件接口.html">
+            
+                    
+                        <b>6.9.</b>
+                    
+                    上传文件接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="../后端/flask整理/常见认证机制.html">
+            
+                <a href="../后端/flask整理/常见认证机制.html">
+            
+                    
+                        <b>6.10.</b>
+                    
+                    常见认证机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="../后端/Celery.html">
+            
+                <a href="../后端/Celery.html">
+            
+                    
+                        <b>6.11.</b>
+                    
+                    Celery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="../后端/token机制.html">
+            
+                <a href="../后端/token机制.html">
+            
+                    
+                        <b>6.12.</b>
+                    
+                    token机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="../后端/web安全防范.html">
+            
+                <a href="../后端/web安全防范.html">
+            
+                    
+                        <b>6.13.</b>
+                    
+                    web安全防范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="../后端/关于主流web框架选择问题.html">
+            
+                <a href="../后端/关于主流web框架选择问题.html">
+            
+                    
+                        <b>6.14.</b>
+                    
+                    关于主流web框架选择问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="../后端/前后端分离项目之python后端部署前的操作.html">
+            
+                <a href="../后端/前后端分离项目之python后端部署前的操作.html">
+            
+                    
+                        <b>6.15.</b>
+                    
+                    前后端分离项目之python后端部署前的操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.16" data-path="../后端/后台框架选型.html">
+            
+                <a href="../后端/后台框架选型.html">
+            
+                    
+                        <b>6.16.</b>
+                    
+                    后台框架选型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.17" data-path="../后端/后端记录.html">
+            
+                <a href="../后端/后端记录.html">
+            
+                    
+                        <b>6.17.</b>
+                    
+                    后端记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.18" data-path="../后端/多人协作项目git免密登录.html">
+            
+                <a href="../后端/多人协作项目git免密登录.html">
+            
+                    
+                        <b>6.18.</b>
+                    
+                    多人协作项目git免密登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">工具</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../工具/gitbook入门.html">
+            
+                <a href="../工具/gitbook入门.html">
+            
+                    
+                        <b>7.1.</b>
+                    
+                    gitbook入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../工具/markdown.html">
+            
+                <a href="../工具/markdown.html">
+            
+                    
+                        <b>7.2.</b>
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">常见坑</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../常见坑/pip安装遇到的坑.html">
+            
+                <a href="../常见坑/pip安装遇到的坑.html">
+            
+                    
+                        <b>8.1.</b>
+                    
+                    pip安装遇到的坑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../常见坑/Reactive-native 运行错误.html">
+            
+                <a href="../常见坑/Reactive-native 运行错误.html">
+            
+                    
+                        <b>8.2.</b>
+                    
+                    Reactive-native 运行错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../常见坑/服务器错误排查.html">
+            
+                <a href="../常见坑/服务器错误排查.html">
+            
+                    
+                        <b>8.3.</b>
+                    
+                    服务器错误排查
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">扩展</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../扩展/Item2.html">
+            
+                <a href="../扩展/Item2.html">
+            
+                    
+                        <b>9.1.</b>
+                    
+                    Item 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="../扩展/MAC上比较好用的开发工具.html">
+            
+                <a href="../扩展/MAC上比较好用的开发工具.html">
+            
+                    
+                        <b>9.2.</b>
+                    
+                    MAC上比较好用的开发工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="../扩展/RPC,微服务架构.html">
+            
+                <a href="../扩展/RPC,微服务架构.html">
+            
+                    
+                        <b>9.3.</b>
+                    
+                    RPC,微服务架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="../扩展/with关键字与上下文管理.html">
+            
+                <a href="../扩展/with关键字与上下文管理.html">
+            
+                    
+                        <b>9.4.</b>
+                    
+                    with关键字与上下文管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="../扩展/前端高级工程师进阶扩展.html">
+            
+                <a href="../扩展/前端高级工程师进阶扩展.html">
+            
+                    
+                        <b>9.5.</b>
+                    
+                    前端高级工程师进阶扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">数据库</li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../数据库/mongo.html">
+            
+                <a href="../数据库/mongo.html">
+            
+                    
+                        <b>10.1.</b>
+                    
+                    Mongo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="../数据库/MongoEngine.html">
+            
+                <a href="../数据库/MongoEngine.html">
+            
+                    
+                        <b>10.2.</b>
+                    
+                    Mongo Engine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="../数据库/NoSQL数据库.html">
+            
+                <a href="../数据库/NoSQL数据库.html">
+            
+                    
+                        <b>10.3.</b>
+                    
+                    NoSQL数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="../数据库/postgresql.html">
+            
+                <a href="../数据库/postgresql.html">
+            
+                    
+                        <b>10.4.</b>
+                    
+                    Postgresql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="../数据库/related-name.html">
+            
+                <a href="../数据库/related-name.html">
+            
+                    
+                        <b>10.5.</b>
+                    
+                    Related Name
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">机器学习</li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../机器学习/SVM与K-Means.html">
+            
+                <a href="../机器学习/SVM与K-Means.html">
+            
+                    
+                        <b>11.1.</b>
+                    
+                    SVM与K-Means
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="../机器学习/TensorFlow.html">
+            
+                <a href="../机器学习/TensorFlow.html">
+            
+                    
+                        <b>11.2.</b>
+                    
+                    Tensor Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="../机器学习/决策树与贝叶斯.html">
+            
+                <a href="../机器学习/决策树与贝叶斯.html">
+            
+                    
+                        <b>11.3.</b>
+                    
+                    决策树与贝叶斯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="../机器学习/特征工程.html">
+            
+                <a href="../机器学习/特征工程.html">
+            
+                    
+                        <b>11.4.</b>
+                    
+                    特征工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.5" data-path="../机器学习/用机器学习的方法来学习机器学习.html">
+            
+                <a href="../机器学习/用机器学习的方法来学习机器学习.html">
+            
+                    
+                        <b>11.5.</b>
+                    
+                    用机器学习的方法来学习机器学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.6" data-path="../机器学习/题海.html">
+            
+                <a href="../机器学习/题海.html">
+            
+                    
+                        <b>11.6.</b>
+                    
+                    题海
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">爬虫</li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="../爬虫/10 分布式爬虫.html">
+            
+                <a href="../爬虫/10 分布式爬虫.html">
+            
+                    
+                        <b>12.1.</b>
+                    
+                    10 分布式爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.2" data-path="../爬虫/boss直聘.html">
+            
+                <a href="../爬虫/boss直聘.html">
+            
+                    
+                        <b>12.2.</b>
+                    
+                    boss直聘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.3" data-path="../爬虫/csdn爬虫.html">
+            
+                <a href="../爬虫/csdn爬虫.html">
+            
+                    
+                        <b>12.3.</b>
+                    
+                    csdn爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.4" data-path="../爬虫/get.post请求及cookie.html">
+            
+                <a href="../爬虫/get.post请求及cookie.html">
+            
+                    
+                        <b>12.4.</b>
+                    
+                    get.post请求及cookie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.5" data-path="../爬虫/pyspider使用.html">
+            
+                <a href="../爬虫/pyspider使用.html">
+            
+                    
+                        <b>12.5.</b>
+                    
+                    pyspider使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.6" data-path="../爬虫/scrapy入门.html">
+            
+                <a href="../爬虫/scrapy入门.html">
+            
+                    
+                        <b>12.6.</b>
+                    
+                    scrapy入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.7" data-path="../爬虫/scrapy实战.html">
+            
+                <a href="../爬虫/scrapy实战.html">
+            
+                    
+                        <b>12.7.</b>
+                    
+                    scrapy实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.8" data-path="../爬虫/selenium使用.html">
+            
+                <a href="../爬虫/selenium使用.html">
+            
+                    
+                        <b>12.8.</b>
+                    
+                    selenium使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.9" data-path="../爬虫/spider项目.html">
+            
+                <a href="../爬虫/spider项目.html">
+            
+                    
+                        <b>12.9.</b>
+                    
+                    spider项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.10" data-path="../爬虫/tinyproxy代理服务器的搭建.html">
+            
+                <a href="../爬虫/tinyproxy代理服务器的搭建.html">
+            
+                    
+                        <b>12.10.</b>
+                    
+                    tinyproxy代理服务器的搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.11" data-path="../爬虫/tinyproxy定时任务.html">
+            
+                <a href="../爬虫/tinyproxy定时任务.html">
+            
+                    
+                        <b>12.11.</b>
+                    
+                    tinyproxy定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.12" data-path="../爬虫/使用CrawlSpider做通用爬虫.html">
+            
+                <a href="../爬虫/使用CrawlSpider做通用爬虫.html">
+            
+                    
+                        <b>12.12.</b>
+                    
+                    使用CrawlSpider做通用爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.13" data-path="../爬虫/如何使你的爬虫更健壮.html">
+            
+                <a href="../爬虫/如何使你的爬虫更健壮.html">
+            
+                    
+                        <b>12.13.</b>
+                    
+                    如何使你的爬虫更健壮
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.14" data-path="../爬虫/常用工具、多线程及分布式.html">
+            
+                <a href="../爬虫/常用工具、多线程及分布式.html">
+            
+                    
+                        <b>12.14.</b>
+                    
+                    常用工具、多线程及分布式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.15" data-path="../爬虫/异步IO.html">
+            
+                <a href="../爬虫/异步IO.html">
+            
+                    
+                        <b>12.15.</b>
+                    
+                    异步IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.16" data-path="../爬虫/爬虫常见问题.html">
+            
+                <a href="../爬虫/爬虫常见问题.html">
+            
+                    
+                        <b>12.16.</b>
+                    
+                    爬虫常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.17" data-path="../爬虫/爬虫进阶（入门）.html">
+            
+                <a href="../爬虫/爬虫进阶（入门）.html">
+            
+                    
+                        <b>12.17.</b>
+                    
+                    爬虫进阶（入门）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.18" data-path="../爬虫/简单爬虫.html">
+            
+                <a href="../爬虫/简单爬虫.html">
+            
+                    
+                        <b>12.18.</b>
+                    
+                    简单爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.19" data-path="../爬虫/线程锁.html">
+            
+                <a href="../爬虫/线程锁.html">
+            
+                    
+                        <b>12.19.</b>
+                    
+                    线程锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.20" data-path="../爬虫/进程线程.html">
+            
+                <a href="../爬虫/进程线程.html">
+            
+                    
+                        <b>12.20.</b>
+                    
+                    进程线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.21" data-path="../爬虫/进程线程协程简单关系.html">
+            
+                <a href="../爬虫/进程线程协程简单关系.html">
+            
+                    
+                        <b>12.21.</b>
+                    
+                    进程线程协程简单关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">电子书</li>
+        
+        
+    
+        <li class="chapter " data-level="13.1" data-path="../电子书/《GitHub入门与实践》一书小记.html">
+            
+                <a href="../电子书/《GitHub入门与实践》一书小记.html">
+            
+                    
+                        <b>13.1.</b>
+                    
+                    《GitHub入门与实践》一书小记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">运维</li>
+        
+        
+    
+        <li class="chapter " data-level="14.1" data-path="../运维/centos新服务器使用.html">
+            
+                <a href="../运维/centos新服务器使用.html">
+            
+                    
+                        <b>14.1.</b>
+                    
+                    centos新服务器使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.2" data-path="../运维/docker+django.html">
+            
+                <a href="../运维/docker+django.html">
+            
+                    
+                        <b>14.2.</b>
+                    
+                    Docker Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.3" data-path="../运维/Doker了解.html">
+            
+                <a href="../运维/Doker了解.html">
+            
+                    
+                        <b>14.3.</b>
+                    
+                    Doker了解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.4" data-path="../运维/Linux Pro.html">
+            
+                <a href="../运维/Linux Pro.html">
+            
+                    
+                        <b>14.4.</b>
+                    
+                    Linux Pro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.5" data-path="../运维/LinuxPro（二）.html">
+            
+                <a href="../运维/LinuxPro（二）.html">
+            
+                    
+                        <b>14.5.</b>
+                    
+                    LinuxPro（二）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.6" data-path="../运维/osi模型：应表会传网数物 七层协议模型.html">
+            
+                <a href="../运维/osi模型：应表会传网数物 七层协议模型.html">
+            
+                    
+                        <b>14.6.</b>
+                    
+                    osi模型：应表会传网数物 七层协议模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.7" data-path="../运维/shell，解放我的双手.html">
+            
+                <a href="../运维/shell，解放我的双手.html">
+            
+                    
+                        <b>14.7.</b>
+                    
+                    shell，解放我的双手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.8" data-path="../运维/ssh免密登陆.html">
+            
+                <a href="../运维/ssh免密登陆.html">
+            
+                    
+                        <b>14.8.</b>
+                    
+                    ssh免密登陆
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.9" data-path="../运维/supervisor.html">
+            
+                <a href="../运维/supervisor.html">
+            
+                    
+                        <b>14.9.</b>
+                    
+                    Supervisor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.10" data-path="../运维/supervisor管理进程.html">
+            
+                <a href="../运维/supervisor管理进程.html">
+            
+                    
+                        <b>14.10.</b>
+                    
+                    supervisor管理进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.11" data-path="../运维/使用dockerfile自定义镜像.html">
+            
+                <a href="../运维/使用dockerfile自定义镜像.html">
+            
+                    
+                        <b>14.11.</b>
+                    
+                    使用dockerfile自定义镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.12" data-path="../运维/使用supervisor进行scrapy-redis部署.html">
+            
+                <a href="../运维/使用supervisor进行scrapy-redis部署.html">
+            
+                    
+                        <b>14.12.</b>
+                    
+                    使用supervisor进行scrapy-redis部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.13" data-path="../运维/开发模式.html">
+            
+                <a href="../运维/开发模式.html">
+            
+                    
+                        <b>14.13.</b>
+                    
+                    开发模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.14" data-path="../运维/管理容器.html">
+            
+                <a href="../运维/管理容器.html">
+            
+                    
+                        <b>14.14.</b>
+                    
+                    管理容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">面试点</li>
+        
+        
+    
+        <li class="chapter " data-level="15.1" data-path="../面试点/基础面试.html">
+            
+                <a href="../面试点/基础面试.html">
+            
+                    
+                        <b>15.1.</b>
+                    
+                    基础面试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.2" data-path="../面试点/目前掌握的技术.html">
+            
+                <a href="../面试点/目前掌握的技术.html">
+            
+                    
+                        <b>15.2.</b>
+                    
+                    目前掌握的技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.3" data-path="../面试点/直击痛点的python面试题.html">
+            
+                <a href="../面试点/直击痛点的python面试题.html">
+            
+                    
+                        <b>15.3.</b>
+                    
+                    直击痛点的python面试题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.4" data-path="../面试点/项目面试.html">
+            
+                <a href="../面试点/项目面试.html">
+            
+                    
+                        <b>15.4.</b>
+                    
+                    项目面试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >jupyter入门之Matplotlib</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="jupyter&#x5165;&#x95E8;&#x4E4B;matplotlib"><a name="jupyter&#x5165;&#x95E8;&#x4E4B;matplotlib" class="anchor-navigation-ex-anchor" href="#jupyter&#x5165;&#x95E8;&#x4E4B;matplotlib"><i class="fa fa-link" aria-hidden="true"></i></a>jupyter&#x5165;&#x95E8;&#x4E4B;Matplotlib</h2>
+<h3 id="&#x4E00;-matplotlib&#x57FA;&#x7840;&#x77E5;&#x8BC6;"><a name="&#x4E00;-matplotlib&#x57FA;&#x7840;&#x77E5;&#x8BC6;" class="anchor-navigation-ex-anchor" href="#&#x4E00;-matplotlib&#x57FA;&#x7840;&#x77E5;&#x8BC6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;. Matplotlib&#x57FA;&#x7840;&#x77E5;&#x8BC6;</h3>
+<p>Matplotlib&#x4E2D;&#x7684;&#x57FA;&#x672C;&#x56FE;&#x8868;&#x5305;&#x62EC;&#x7684;&#x5143;&#x7D20;</p>
+<ul>
+<li><p>x&#x8F74;&#x548C;y&#x8F74; axis &#x6C34;&#x5E73;&#x548C;&#x5782;&#x76F4;&#x7684;&#x8F74;&#x7EBF;</p>
+</li>
+<li><p>&#x8F74;&#x6807;&#x7B7E; axisLabel &#x6C34;&#x5E73;&#x548C;&#x5782;&#x76F4;&#x7684;&#x8F74;&#x6807;&#x7B7E;</p>
+</li>
+<li><p>x&#x8F74;&#x548C;y&#x8F74;&#x523B;&#x5EA6; tick &#x523B;&#x5EA6;&#x6807;&#x793A;&#x5750;&#x6807;&#x8F74;&#x7684;&#x5206;&#x9694;&#xFF0C;&#x5305;&#x62EC;&#x6700;&#x5C0F;&#x523B;&#x5EA6;&#x548C;&#x6700;&#x5927;&#x523B;&#x5EA6;</p>
+</li>
+<li><p>x&#x8F74;&#x548C;y&#x8F74;&#x523B;&#x5EA6;&#x6807;&#x7B7E; tick label &#x8868;&#x793A;&#x7279;&#x5B9A;&#x5750;&#x6807;&#x8F74;&#x7684;&#x503C;</p>
+</li>
+<li><p>&#x7ED8;&#x56FE;&#x533A;&#x57DF;&#xFF08;&#x5750;&#x6807;&#x7CFB;&#xFF09; axes &#x5B9E;&#x9645;&#x7ED8;&#x56FE;&#x7684;&#x533A;&#x57DF;</p>
+</li>
+<li><p>&#x753B;&#x5E03; figure &#x5448;&#x73B0;&#x6240;&#x6709;&#x7684;&#x5750;&#x6807;&#x7CFB;</p>
+</li>
+</ul>
+<p>&#x53EF;&#x4EE5;&#x7528;&#x4E0B;&#x56FE;&#x6765;&#x6982;&#x62EC;</p>
+<p><img src="http://qiniu.s001.xin/matplot/tushi1.png" width="500"></p>
+<h4 id="1&#x5B50;&#x753B;&#x5E03;"><a name="1&#x5B50;&#x753B;&#x5E03;" class="anchor-navigation-ex-anchor" href="#1&#x5B50;&#x753B;&#x5E03;"><i class="fa fa-link" aria-hidden="true"></i></a>1.&#x5B50;&#x753B;&#x5E03;</h4>
+<p>&#x4F9D;&#x8D56;&#x5BFC;&#x5165;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd
+<span class="hljs-keyword">from</span> pandas <span class="hljs-keyword">import</span> Series,DataFrame
+
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+%matplotlib inline
+</code></pre>
+<p><strong>&#x53EA;&#x542B;&#x5355;&#x4E00;&#x66F2;&#x7EBF;&#x7684;&#x56FE;</strong></p>
+<p>1&#x3001;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x591A;&#x4E2A;plot&#x51FD;&#x6570;&#xFF08;&#x63A8;&#x8350;&#xFF09;&#xFF0C;&#x5728;&#x4E00;&#x4E2A;&#x56FE;&#x4E2D;&#x7ED8;&#x5236;&#x591A;&#x4E2A;&#x66F2;&#x7EBF;</p>
+<p>2&#x3001;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x4E2A;plot&#x51FD;&#x6570;&#x4E2D;&#x4F20;&#x5165;&#x591A;&#x5BF9;X,Y&#x503C;&#xFF0C;&#x5728;&#x4E00;&#x4E2A;&#x56FE;&#x4E2D;&#x7ED8;&#x5236;&#x591A;&#x4E2A;&#x66F2;&#x7EBF; </p>
+<pre><code class="lang-python">x = np.arange(<span class="hljs-number">0</span>,<span class="hljs-number">10</span>,step=<span class="hljs-number">1</span>)
+s1 = Series(x,index=list(<span class="hljs-string">&apos;abcdefghij&apos;</span>))
+s2 = Series(x**<span class="hljs-number">2</span>,index=s1.index)
+
+<span class="hljs-comment"># &#x7D22;&#x5F15;&#x548C;&#x503C;&#x4E00;&#x8D77;&#x8BBE;&#x7F6E;</span>
+plt.plot(x,x*<span class="hljs-number">2</span>,x,x*<span class="hljs-number">3</span>,x,x)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/tushi2.png" width="400"></p>
+<p><strong>&#x8BBE;&#x7F6E;&#x5B50;&#x753B;&#x5E03;</strong></p>
+<p><code>axes = plt.subplot()</code></p>
+<pre><code class="lang-python"><span class="hljs-comment"># 221&#x7684;&#x542B;&#x4E49;&#x662F;&#x5C06;&#x753B;&#x5E03;&#x5206;&#x4E3A;&#x4E24;&#x884C;&#x4E24;&#x5217;&#xFF0C;</span>
+<span class="hljs-comment"># axes1&#x5728;&#x7B2C;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;</span>
+axes1 = plt.subplot(<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>)
+axes1.plot(x,x**<span class="hljs-number">2</span>)
+<span class="hljs-comment"># axes2&#x5728;&#x7B2C;&#x56DB;&#x4E2A;&#x4F4D;&#x7F6E;</span>
+axes2 = plt.subplot(<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">4</span>)
+axes2.plot(x,x**<span class="hljs-number">3</span>)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/tushi3.png" width="400"></p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5B50;&#x753B;&#x5E03;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x4E0D;&#x540C;&#x7684;&#x6BD4;&#x4F8B;&#x8FDB;&#x884C;&#x62C6;&#x5206;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x4E2A;&#x7248;&#x9762;&#x5185;&#x5171;&#x5B58;&#xFF0C;</span>
+<span class="hljs-comment"># &#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x5B50;&#x753B;&#x5E03;&#x6709;&#x91CD;&#x53E0;&#x90E8;&#x5206;&#xFF0C;&#x540E;&#x7ED8;&#x5236;&#x7684;&#x753B;&#x5E03;&#x4F1A;&#x8986;&#x76D6;&#x5148;&#x7ED8;&#x5236;&#x7684;&#x753B;&#x5E03;</span>
+axes2 = plt.subplot(<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>)
+axes2.plot(x,x**<span class="hljs-number">2</span>)
+
+axes1 = plt.subplot(<span class="hljs-number">3</span>,<span class="hljs-number">3</span>,<span class="hljs-number">1</span>)
+axes1.plot(x,x*<span class="hljs-number">2</span>)
+</code></pre>
+<p>&#x7F51;&#x683C;&#x7EBF;</p>
+<h4 id="2-&#x7ED8;&#x5236;&#x6B63;&#x5F26;&#x4F59;&#x5F26;"><a name="2-&#x7ED8;&#x5236;&#x6B63;&#x5F26;&#x4F59;&#x5F26;" class="anchor-navigation-ex-anchor" href="#2-&#x7ED8;&#x5236;&#x6B63;&#x5F26;&#x4F59;&#x5F26;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x7ED8;&#x5236;&#x6B63;&#x5F26;&#x4F59;&#x5F26;</h4>
+<pre><code class="lang-python">x = np.linspace(<span class="hljs-number">0</span>,<span class="hljs-number">2</span>*np.pi,<span class="hljs-number">100</span>)
+y1 = np.sin(x)
+y2 = np.cos(x)
+<span class="hljs-comment"># &#x81EA;&#x52A8;&#x9009;&#x62E9;&#x6700;&#x8FD1;&#x7684;&#x753B;&#x5E03;&#x8FDB;&#x884C;&#x5F00;&#x542F;</span>
+plt.grid(<span class="hljs-keyword">True</span>)
+plt.plot(x,y1,x,y2)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/tushi5.png" width="400"></p>
+<pre><code class="lang-python">axes1 = plt.subplot(<span class="hljs-number">221</span>)
+<span class="hljs-comment"># True &#x5F00;&#x542F;&#x7F51;&#x683C;&#x7EBF;</span>
+<span class="hljs-comment"># linewidth&#x8BBE;&#x7F6E;&#x7F51;&#x683C;&#x7EBF;&#x7684;&#x7C97;&#x7EC6;</span>
+axes1.grid(<span class="hljs-keyword">True</span>,linewidth=<span class="hljs-number">2</span>)
+
+axes2 = plt.subplot(<span class="hljs-number">222</span>)
+<span class="hljs-comment"># alpha&#x8BBE;&#x7F6E;&#x900F;&#x660E;&#x5EA6; 0-1&#x4E4B;&#x95F4;&#x7684;&#x6570;</span>
+axes2.grid(<span class="hljs-keyword">True</span>,alpha=<span class="hljs-number">0.5</span>)
+
+axes3 = plt.subplot(<span class="hljs-number">223</span>)
+axes3.grid(<span class="hljs-keyword">True</span>,color=<span class="hljs-string">&apos;green&apos;</span>)
+
+axes4 = plt.subplot(<span class="hljs-number">224</span>)
+<span class="hljs-comment"># &#x8BBE;&#x7F6E;&#x7F51;&#x683C;&#x7EBF;&#x65B9;&#x5411;</span>
+<span class="hljs-comment"># linestyle/ls&#x8BBE;&#x7F6E;&#x865A;&#x7EBF;</span>
+axes4.grid(<span class="hljs-keyword">True</span>,axis=<span class="hljs-string">&apos;x&apos;</span>)
+</code></pre>
+<p>&#x4F7F;&#x7528;plt.grid&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5F00;&#x542F;&#x7F51;&#x683C;&#x7EBF;&#xFF0C;&#x4F7F;&#x7528;plt&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x521B;&#x5EFA;&#x591A;&#x4E2A;&#x5B50;&#x56FE;&#x663E;&#x793A;&#x4E0D;&#x540C;&#x7F51;&#x683C;&#x7EBF;</p>
+<ul>
+<li>lw&#x4EE3;&#x8868;linewidth&#xFF0C;&#x7EBF;&#x7684;&#x7C97;&#x7EC6;</li>
+<li>alpha&#x8868;&#x793A;&#x7EBF;&#x7684;&#x660E;&#x6697;&#x7A0B;&#x5EA6;</li>
+<li>color&#x4EE3;&#x8868;&#x989C;&#x8272;</li>
+<li>axis&#x663E;&#x793A;&#x8F74;&#x5411;</li>
+</ul>
+<p><img src="http://qiniu.s001.xin/matplot/tushi6.png" width="400"></p>
+<p><strong>&#x5750;&#x6807;&#x8F74;&#x754C;&#x9650;</strong></p>
+<p><code>plt.axis([xmin,xmax,ymin,ymax])</code></p>
+<pre><code class="lang-python">plt.plot(x,y1)
+<span class="hljs-comment"># &#x6CE8;&#x610F;&#xFF1A;&#x5FC5;&#x987B;x,y&#x8F74;&#x540C;&#x65F6;&#x8BBE;&#x7F6E;&#x754C;&#x9650;</span>
+plt.axis([<span class="hljs-number">-1</span>,<span class="hljs-number">7.2</span>,<span class="hljs-number">-2</span>,<span class="hljs-number">2</span>])
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/tushi7.png" width="400"></p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x753B;&#x5706;</span>
+x = np.linspace(<span class="hljs-number">-1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">100</span>)
+f = <span class="hljs-keyword">lambda</span> x:(<span class="hljs-number">1</span>-x**<span class="hljs-number">2</span>)**<span class="hljs-number">0.5</span>
+plt.plot(x,f(x),x,-f(x))
+<span class="hljs-comment"># &#x4F7F;&#x7528;axis&#x51FD;&#x6570;&#x8BBE;&#x7F6E;&#x5750;&#x6807;&#x8F74;&#x7684;&#x663E;&#x793A;&#x98CE;&#x683C;</span>
+plt.axis(<span class="hljs-string">&apos;equal&apos;</span>)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/tushi8.png" width="400"></p>
+<pre><code class="lang-python">axes = plt.subplot(<span class="hljs-number">111</span>)
+axes.plot(x,f(x),x,-f(x))
+axes.axis(<span class="hljs-string">&apos;equal&apos;</span>)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/tushi8.png" width="400"></p>
+<p><strong>xlim&#x65B9;&#x6CD5;&#x548C;ylim&#x65B9;&#x6CD5;</strong></p>
+<p>&#x9664;&#x4E86;plt.axis&#x65B9;&#x6CD5;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;xlim&#xFF0C;ylim&#x65B9;&#x6CD5;&#x8BBE;&#x7F6E;&#x5750;&#x6807;&#x8F74;&#x8303;&#x56F4;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5206;&#x522B;&#x8BBE;&#x7F6E;x&#x8F74;&#x548C;y&#x8F74;&#x754C;&#x9650;</span>
+plt.plot(x,y2)
+plt.xlim(<span class="hljs-number">-2</span>,<span class="hljs-number">20</span>)
+plt.ylim(<span class="hljs-number">-2</span>,<span class="hljs-number">2</span>)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/tushi9.png" width="400"></p>
+<p>&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x98CE;&#x683C;&#x8BBE;&#x7F6E;&#x753B;&#x5E03;&#x6837;&#x5F0F;</p>
+<pre><code class="lang-python">axes = plt.subplot(<span class="hljs-number">111</span>)
+axes.plot(x,y2)
+<span class="hljs-comment"># &#x4F7F;&#x7528;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x98CE;&#x683C;&#x8BBE;&#x7F6E;&#x753B;&#x5E03;&#x6837;&#x5F0F;&#xFF0C;&#x5982;&#x679C;&#x5C5E;&#x6027;&#x627E;&#x4E0D;&#x5230;&#xFF0C;&#x5C31;&#x4F7F;&#x7528;set_XX&#x51FD;&#x6570;&#x8BBE;&#x7F6E;</span>
+<span class="hljs-comment"># .+Tab&#x952E;,&#x5FEB;&#x6377;&#x67E5;&#x770B;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;</span>
+axes.set_xlim(<span class="hljs-number">-5</span>,<span class="hljs-number">5</span>)
+axes.set_ylim(<span class="hljs-number">-5</span>,<span class="hljs-number">5</span>)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/tushi10.png" width="400"></p>
+<p><strong>&#x5750;&#x6807;&#x8F74;&#x6807;&#x7B7E;</strong></p>
+<p>xlabel&#x65B9;&#x6CD5;&#x548C;ylabel&#x65B9;&#x6CD5;
+plt.ylabel(&apos;y = x^2 + 5&apos;,rotation = 60)&#x65CB;&#x8F6C;</p>
+<ul>
+<li>color &#x6807;&#x7B7E;&#x989C;&#x8272;</li>
+<li>fontsize &#x5B57;&#x4F53;&#x5927;&#x5C0F;</li>
+<li>rotation &#x65CB;&#x8F6C;&#x89D2;&#x5EA6;</li>
+</ul>
+<pre><code class="lang-python">plt.plot(x,y1)
+plt.xlabel(<span class="hljs-string">&apos;x_label&apos;</span>,fontsize=<span class="hljs-number">35</span>)
+plt.ylabel(<span class="hljs-string">&apos;y-label&apos;</span>,color=<span class="hljs-string">&apos;pink&apos;</span>,fontsize=<span class="hljs-number">40</span>)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/tushi11.png" width="400"></p>
+<pre><code class="lang-python">axes = plt.subplot(<span class="hljs-number">111</span>)
+axes.plot(x,y1)
+<span class="hljs-comment"># HTML&#x652F;&#x6301;&#x7684;&#x5B57;&#x4F53;&#x8BBE;&#x7F6E;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;color fontsize linestyle linewidth</span>
+<span class="hljs-comment"># fontsize &#x5B57;&#x4F53;&#x5927;&#x5C0F;</span>
+<span class="hljs-comment"># color &#x5B57;&#x4F53;&#x989C;&#x8272;</span>
+<span class="hljs-comment"># rotation &#x65CB;&#x8F6C;&#x89D2;&#x5EA6;</span>
+axes.set_ylabel(<span class="hljs-string">&apos;y_label&apos;</span>,fontsize=<span class="hljs-number">30</span>,color=<span class="hljs-string">&apos;red&apos;</span>,rotation=<span class="hljs-number">90</span>)
+
+<span class="hljs-comment"># &#x4F7F;&#x7528;&#x5B57;&#x5178;&#x8BBE;&#x7F6E;&#x5B57;&#x4F53;</span>
+axes.set_xlabel(<span class="hljs-string">&apos;x_label&apos;</span>,fontdict={
+    <span class="hljs-string">&apos;fontsize&apos;</span>:<span class="hljs-number">40</span>,
+    <span class="hljs-string">&apos;color&apos;</span>:<span class="hljs-string">&apos;blue&apos;</span>
+})
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/tushi12.png" width="400"></p>
+<p><strong>&#x6807;&#x9898;</strong></p>
+<p>plt.title()&#x65B9;&#x6CD5;</p>
+<ul>
+<li>loc {left,center,right}</li>
+<li>color &#x6807;&#x7B7E;&#x989C;&#x8272;</li>
+<li>fontsize &#x5B57;&#x4F53;&#x5927;&#x5C0F;</li>
+<li>rotation &#x65CB;&#x8F6C;&#x89D2;&#x5EA6;</li>
+</ul>
+<pre><code class="lang-python">plt.plot(x,y1)
+
+<span class="hljs-comment"># loc&#x8BBE;&#x7F6E;&#x6807;&#x9898;&#x663E;&#x793A;&#x4F4D;&#x7F6E;&#xFF08;left,right,center&#xFF09;</span>
+
+plt.title(<span class="hljs-string">&apos;SIN(X)&apos;</span>,fontsize=<span class="hljs-number">60</span>,color=<span class="hljs-string">&apos;purple&apos;</span>,rotation=<span class="hljs-number">45</span>,loc=<span class="hljs-string">&apos;left&apos;</span>)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/tushi13.png" width="400"></p>
+<p><strong>&#x6CE8;&#xFF1A;matplotlib&#x663E;&#x793A;&#x4E2D;&#x6587;&#x5982;&#x4F55;&#x5904;&#x7406;?</strong></p>
+<p>Windows&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> pylab <span class="hljs-keyword">import</span> mpl
+<span class="hljs-comment"># &#x6307;&#x5B9A;&#x9ED8;&#x8BA4;&#x5B57;&#x4F53;</span>
+mpl.rcParams[<span class="hljs-string">&apos;font.sans-serif&apos;</span>] = [<span class="hljs-string">&apos;FangSong&apos;</span>] 
+<span class="hljs-comment"># &#x89E3;&#x51B3;&#x4FDD;&#x5B58;&#x56FE;&#x50CF;&#x662F;&#x8D1F;&#x53F7;&apos;-&apos;&#x663E;&#x793A;&#x4E3A;&#x65B9;&#x5757;&#x7684;&#x95EE;&#x9898;</span>
+mpl.rcParams[<span class="hljs-string">&apos;axes.unicode_minus&apos;</span>] = <span class="hljs-keyword">False</span>
+</code></pre>
+<p>Mac:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<span class="hljs-keyword">import</span> matplotlib
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+<span class="hljs-keyword">from</span> matplotlib.font_manager <span class="hljs-keyword">import</span> 
+FontProperties
+<span class="hljs-comment"># &#x5BFC;&#x5165;&#x672C;&#x5730;&#x5B57;&#x4F53;&#x6587;&#x4EF6;</span>
+font = FontProperties(fname=<span class="hljs-string">&apos;/Library/Fonts/Songti.ttc&apos;</span>)
+
+<span class="hljs-comment"># Fixing random state for reproducibility</span>
+np.random.seed(<span class="hljs-number">19680801</span>)
+<span class="hljs-comment"># &#x8BBE;&#x7F6E;&#x4E3A;FALSE &#x89E3;&#x51B3;&#x8D1F;&#x53F7;&#x663E;&#x793A;&#x4E3A;&#x6846;&#x7684;&#x95EE;&#x9898;</span>
+matplotlib.rcParams[<span class="hljs-string">&apos;axes.unicode_minus&apos;</span>] = <span class="hljs-keyword">False</span>
+fig, ax = plt.subplots()
+ax.plot(<span class="hljs-number">10</span>*np.random.randn(<span class="hljs-number">100</span>), <span class="hljs-number">10</span>*np.random.randn(<span class="hljs-number">100</span>), <span class="hljs-string">&apos;o&apos;</span>)
+<span class="hljs-comment"># &#x7528;fontproperties&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x5B57;&#x4F53;&#x4E3A;&#x81EA;&#x5B9A;&#x4E49;&#x5B57;&#x4F53;</span>
+ax.set_title(<span class="hljs-string">u&apos;&#x6563;&#x70B9;&#x56FE;&apos;</span>,fontproperties=font,fontsize=<span class="hljs-number">30</span>)
+plt.show()
+</code></pre>
+<h4 id="3&#x56FE;&#x4F8B;"><a name="3&#x56FE;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#3&#x56FE;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>3.&#x56FE;&#x4F8B;</h4>
+<p><strong>&#x539F;&#x59CB;&#x65B9;&#x6CD5;</strong></p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x76F8;&#x5173;&#x4F9D;&#x8D56;&#x5BFC;&#x5165;</span>
+...
+df = DataFrame(data=np.random.randint(<span class="hljs-number">0</span>,<span class="hljs-number">100</span>,size=(<span class="hljs-number">5</span>,<span class="hljs-number">3</span>)),columns=list(<span class="hljs-string">&apos;abc&apos;</span>))
+df.plot()
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/tuli1.png" width="400"></p>
+<p><strong>legend&#x65B9;&#x6CD5;</strong></p>
+<p>&#x4E24;&#x79CD;&#x4F20;&#x53C2;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<ul>
+<li>&#x5206;&#x522B;&#x5728;plot&#x51FD;&#x6570;&#x4E2D;&#x589E;&#x52A0;label&#x53C2;&#x6570;,&#x518D;&#x8C03;&#x7528;legend()&#x65B9;&#x6CD5;&#x663E;&#x793A;</li>
+<li>&#x76F4;&#x63A5;&#x5728;legend&#x65B9;&#x6CD5;&#x4E2D;&#x4F20;&#x5165;&#x5B57;&#x7B26;&#x4E32;&#x5217;&#x8868;</li>
+</ul>
+<pre><code class="lang-python">x = np.arange(<span class="hljs-number">0</span>,<span class="hljs-number">10</span>,step=<span class="hljs-number">1</span>)
+plt.plot(x,x,x,x*<span class="hljs-number">2</span>,x,x/<span class="hljs-number">2</span>)
+<span class="hljs-comment"># &#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x53C2;&#x6570;&#xFF0C;&#x53C2;&#x6570;&#x5185;&#x5BB9;&#x5C31;&#x662F;&#x6BCF;&#x4E00;&#x4E2A;data&#x7684;&#x8BF4;&#x660E;</span>
+plt.legend([<span class="hljs-string">&apos;fast&apos;</span>,<span class="hljs-string">&apos;normal&apos;</span>,<span class="hljs-string">&apos;slow&apos;</span>])
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/tuli2.png" width="400"></p>
+<p>&#x7B2C;&#x4E8C;&#x79CD;&#x4F20;&#x53C2;</p>
+<pre><code class="lang-python">plt.plot(x,x,label=<span class="hljs-string">&apos;normal&apos;</span>)
+plt.plot(x,x*<span class="hljs-number">2</span>,label=<span class="hljs-string">&apos;fast&apos;</span>)
+plt.plot(x,x/<span class="hljs-number">2</span>,label=<span class="hljs-string">&apos;slow&apos;</span>)
+plt.legend(loc=<span class="hljs-number">10</span>)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/tuli3.png" width="400"></p>
+<p><strong>loc&#x53C2;&#x6570;</strong></p>
+<ul>
+<li>loc&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x56FE;&#x4F8B;&#x6807;&#x7B7E;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x4E00;&#x822C;&#x5728;legend&#x51FD;&#x6570;&#x5185;</li>
+<li>matplotlib&#x5DF2;&#x7ECF;&#x9884;&#x5B9A;&#x4E49;&#x597D;&#x51E0;&#x79CD;&#x6570;&#x5B57;&#x8868;&#x793A;&#x7684;&#x4F4D;&#x7F6E;</li>
+</ul>
+<p>loc&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x662F;2&#x5143;&#x7D20;&#x7684;&#x5143;&#x7EC4;&#xFF0C;&#x8868;&#x793A;&#x56FE;&#x4F8B;&#x5DE6;&#x4E0B;&#x89D2;&#x7684;&#x5750;&#x6807;</p>
+<ul>
+<li>[0,0] &#x5DE6;&#x4E0B;</li>
+<li>[0,1] &#x5DE6;&#x4E0A;</li>
+<li>[1,0] &#x53F3;&#x4E0B;</li>
+<li>[1,1] &#x53F3;&#x4E0A;</li>
+<li>&#x56FE;&#x4F8B;&#x4E5F;&#x53EF;&#x4EE5;&#x8D85;&#x8FC7;&#x56FE;&#x7684;&#x754C;&#x9650;loc = (-0.1,0.9)</li>
+</ul>
+<pre><code class="lang-python">plt.plot(x,x,label=<span class="hljs-string">&apos;normal&apos;</span>)
+plt.plot(x,x*<span class="hljs-number">2</span>,label=<span class="hljs-string">&apos;fast&apos;</span>)
+plt.plot(x,x/<span class="hljs-number">2</span>,label=<span class="hljs-string">&apos;slow&apos;</span>)
+plt.legend(loc=[<span class="hljs-number">0.4</span>,<span class="hljs-number">1.1</span>],ncol=<span class="hljs-number">3</span>)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/tuli4.png" width="400"></p>
+<p><strong>ncol&#x53C2;&#x6570;</strong></p>
+<p>ncol&#x63A7;&#x5236;&#x56FE;&#x4F8B;&#x4E2D;&#x6709;&#x51E0;&#x5217;,&#x5728;legend&#x4E2D;&#x8BBE;&#x7F6E;ncol,&#x9700;&#x8981;&#x8BBE;&#x7F6E;loc</p>
+<p><strong>linestyle&#x3001;color&#x3001;marker</strong></p>
+<p>&#x4FEE;&#x6539;&#x7EBF;&#x6761;&#x6837;&#x5F0F;</p>
+<h4 id="4&#x4FDD;&#x5B58;&#x56FE;&#x7247;"><a name="4&#x4FDD;&#x5B58;&#x56FE;&#x7247;" class="anchor-navigation-ex-anchor" href="#4&#x4FDD;&#x5B58;&#x56FE;&#x7247;"><i class="fa fa-link" aria-hidden="true"></i></a>4.&#x4FDD;&#x5B58;&#x56FE;&#x7247;</h4>
+<p>&#x4F7F;&#x7528;figure&#x5BF9;&#x8C61;&#x7684;savefig&#x7684;&#x51FD;&#x6570;</p>
+<ul>
+<li><code>filename</code>
+&#x542B;&#x6709;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;Python&#x7684;&#x6587;&#x4EF6;&#x578B;&#x5BF9;&#x8C61;&#x3002;&#x56FE;&#x50CF;&#x683C;&#x5F0F;&#x7531;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;&#x63A8;&#x65AD;&#x5F97;&#x51FA;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;.pdf&#x63A8;&#x65AD;&#x51FA;PDF&#xFF0C;.png&#x63A8;&#x65AD;&#x51FA;PNG &#xFF08;&#x201C;png&#x201D;&#x3001;&#x201C;pdf&#x201D;&#x3001;&#x201C;svg&#x201D;&#x3001;&#x201C;ps&#x201D;&#x3001;&#x201C;eps&#x201D;&#x2026;&#x2026;&#xFF09;</li>
+<li><code>dpi</code>
+&#x56FE;&#x50CF;&#x5206;&#x8FA8;&#x7387;&#xFF08;&#x6BCF;&#x82F1;&#x5BF8;&#x70B9;&#x6570;&#xFF09;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;100</li>
+<li><code>facecolor</code>
+&#x56FE;&#x50CF;&#x7684;&#x80CC;&#x666F;&#x8272;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x201C;w&#x201D;&#xFF08;&#x767D;&#x8272;&#xFF09;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x83B7;&#x53D6;figure&#x5BF9;&#x8C61;&#xFF08;&#x753B;&#x5E03;&#x5BF9;&#x8C61;&#xFF09;</span>
+<span class="hljs-comment"># &#x8BBE;&#x7F6E;&#x753B;&#x5E03;&#x7684;&#x80CC;&#x666F;&#x8272;</span>
+figure = plt.figure(facecolor=<span class="hljs-string">&apos;cyan&apos;</span>)
+
+<span class="hljs-comment"># &#x8BBE;&#x7F6E;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x80CC;&#x666F;&#x8272;</span>
+axes = plt.subplot(<span class="hljs-number">111</span>,facecolor=<span class="hljs-string">&apos;blue&apos;</span>)
+
+<span class="hljs-comment"># &#x8BBE;&#x7F6E;&#x7EBF;&#x6761;&#x7684;&#x989C;&#x8272;</span>
+axes.plot(x,x,x,x*<span class="hljs-number">2</span>,color=<span class="hljs-string">&apos;yellow&apos;</span>)
+
+<span class="hljs-comment"># dpi&#x8BBE;&#x7F6E;&#x50CF;&#x7D20;&#x5927;&#x5C0F;</span>
+figure.savefig(<span class="hljs-string">&apos;18011.png&apos;</span>,dpi=<span class="hljs-number">50</span>)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/bg.png" width="400"></p>
+<h3 id="&#x4E8C;-&#x8BBE;&#x7F6E;plot&#x7684;&#x98CE;&#x683C;&#x548C;&#x6837;&#x5F0F;"><a name="&#x4E8C;-&#x8BBE;&#x7F6E;plot&#x7684;&#x98CE;&#x683C;&#x548C;&#x6837;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;-&#x8BBE;&#x7F6E;plot&#x7684;&#x98CE;&#x683C;&#x548C;&#x6837;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;. &#x8BBE;&#x7F6E;plot&#x7684;&#x98CE;&#x683C;&#x548C;&#x6837;&#x5F0F;</h3>
+<blockquote>
+<p>plot&#x8BED;&#x53E5;&#x4E2D;&#x652F;&#x6301;&#x9664;X,Y&#x4EE5;&#x5916;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x4EE5;&#x5B57;&#x7B26;&#x4E32;&#x5F62;&#x5F0F;&#x5B58;&#x5728;&#xFF0C;&#x6765;&#x63A7;&#x5236;&#x989C;&#x8272;&#x3001;&#x7EBF;&#x578B;&#x3001;&#x70B9;&#x578B;&#x7B49;&#x8981;&#x7D20;&#xFF0C;&#x8BED;&#x6CD5;&#x5F62;&#x5F0F;&#x4E3A;&#xFF1A; plt.plot(X, Y, &apos;format&apos;, ...)</p>
+</blockquote>
+<h4 id="1&#x70B9;&#x548C;&#x7EBF;&#x7684;&#x6837;&#x5F0F;"><a name="1&#x70B9;&#x548C;&#x7EBF;&#x7684;&#x6837;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#1&#x70B9;&#x548C;&#x7EBF;&#x7684;&#x6837;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.&#x70B9;&#x548C;&#x7EBF;&#x7684;&#x6837;&#x5F0F;</h4>
+<p><strong>&#x989C;&#x8272;</strong></p>
+<p>&#x53C2;&#x6570;<code>color</code>&#x6216;<code>c</code></p>
+<pre><code class="lang-python">plt.plot(x,x,color=<span class="hljs-string">&apos;c&apos;</span>)
+</code></pre>
+<p>&#x5E38;&#x7528;&#x8272;&#x5F69;&#x540D;&#x4E0E;&#x522B;&#x540D;</p>
+<p><strong>&#x900F;&#x660E;&#x5EA6;</strong></p>
+<p><code>alpha</code></p>
+<pre><code class="lang-python">plt.plot(x,x,alpha=<span class="hljs-number">0.3</span>,color=<span class="hljs-string">&apos;r&apos;</span>)
+</code></pre>
+<p><strong>&#x80CC;&#x666F;&#x8272;</strong></p>
+<p>&#x8BBE;&#x7F6E;&#x80CC;&#x666F;&#x8272;&#xFF0C;&#x901A;&#x8FC7;<code>plt.subplot()</code>&#x65B9;&#x6CD5;&#x4F20;&#x5165;<code>facecolor</code>&#x53C2;&#x6570;&#xFF0C;&#x6765;&#x8BBE;&#x7F6E;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x80CC;&#x666F;&#x8272;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x8BBE;&#x7F6E;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x80CC;&#x666F;</span>
+plt.subplot(facecolor=<span class="hljs-string">&apos;red&apos;</span>)
+plt.plot(x,np.sin(x))
+</code></pre>
+<p><strong>&#x7EBF;&#x578B;</strong></p>
+<p>&#x53C2;&#x6570;<code>linestyle</code>&#x6216;<code>ls</code></p>
+<pre><code class="lang-python">plt.plot(x,x,ls=<span class="hljs-string">&apos;:&apos;</span>)
+plt.plot(x,x*<span class="hljs-number">2</span>,ls=<span class="hljs-string">&apos;steps&apos;</span>)
+plt.plot(x,x/<span class="hljs-number">2</span>,ls=<span class="hljs-string">&apos;None&apos;</span>)
+</code></pre>
+<p>&#x5E38;&#x7528;&#x7EBF;&#x578B;</p>
+<p><img src="http://qiniu.s001.xin/matplot/xianxing.png" width="400"></p>
+<p><strong>&#x7EBF;&#x5BBD;</strong></p>
+<p><code>linewidth</code>&#x6216;<code>lw</code>&#x53C2;&#x6570;</p>
+<p><strong>&#x4E0D;&#x540C;&#x5BBD;&#x5EA6;&#x7684;&#x7834;&#x6298;&#x7EBF;</strong></p>
+<p><code>dashes</code>&#x53C2;&#x6570; eg.dashes = [20,50,5,2,10,5]</p>
+<p>&#x8BBE;&#x7F6E;&#x7834;&#x6298;&#x53F7;&#x5E8F;&#x5217;&#x5404;&#x6BB5;&#x7684;&#x5BBD;&#x5EA6;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># dashes&#x81EA;&#x5B9A;&#x4E49;&#x7834;&#x6298;&#x7EBF;&#x7684;&#x6837;&#x5F0F;</span>
+plt.plot(x,x,dashes=[<span class="hljs-number">10</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">5</span>])
+</code></pre>
+<p><strong>&#x70B9;&#x578B;</strong></p>
+<ul>
+<li>marker &#x8BBE;&#x7F6E;&#x70B9;&#x5F62;</li>
+<li>markersize &#x8BBE;&#x7F6E;&#x70B9;&#x5F62;&#x5927;&#x5C0F;</li>
+</ul>
+<pre><code class="lang-python">x = np.random.randint(<span class="hljs-number">0</span>,<span class="hljs-number">10</span>,size=<span class="hljs-number">6</span>)
+plt.plot(x,marker=<span class="hljs-string">&apos;s&apos;</span>,markersize=<span class="hljs-number">60</span>)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/marker.png" width="400"></p>
+<p>&#x5E38;&#x7528;&#x70B9;&#x578B;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;</p>
+<p><img src="http://qiniu.s001.xin/matplot/dianxing.png" width="400"></p>
+<pre><code class="lang-python">plt.plot(x,marker=<span class="hljs-string">&apos;4&apos;</span>,markersize=<span class="hljs-number">30</span>)
+plt.plot(x,x*<span class="hljs-number">2</span>,marker=<span class="hljs-string">&apos;3&apos;</span>,markersize=<span class="hljs-number">40</span>)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/sanjiao.png" width="400"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x6807;&#x8BB0;</th>
+<th style="text-align:center">&#x63CF;&#x8FF0;</th>
+<th style="text-align:center">&#x6807;&#x8BB0;</th>
+<th style="text-align:center">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&apos;s&apos;</td>
+<td style="text-align:center">&#x6B63;&#x65B9;&#x5F62;</td>
+<td style="text-align:center">&apos;p&apos;</td>
+<td style="text-align:center">&#x4E94;&#x8FB9;&#x5F62;</td>
+</tr>
+<tr>
+<td style="text-align:center">&apos;h&apos;</td>
+<td style="text-align:center">&#x516D;&#x8FB9;&#x5F62;1</td>
+<td style="text-align:center">&apos;H&apos;</td>
+<td style="text-align:center">&#x516D;&#x8FB9;&#x5F62;2</td>
+</tr>
+<tr>
+<td style="text-align:center">&apos;8&apos;</td>
+<td style="text-align:center">&#x516B;&#x8FB9;&#x5F62;</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-python">plt.plot(np.random.randint(<span class="hljs-number">0</span>,<span class="hljs-number">10</span>,size=<span class="hljs-number">10</span>),marker=<span class="hljs-string">&apos;h&apos;</span>,markersize=<span class="hljs-number">20</span>,label=<span class="hljs-string">&apos;&#x516D;&#x8FB9;&#x5F62;1&apos;</span>,)
+plt.plot(np.random.randint(<span class="hljs-number">0</span>,<span class="hljs-number">10</span>,size=<span class="hljs-number">10</span>),marker=<span class="hljs-string">&apos;H&apos;</span>,markersize=<span class="hljs-number">20</span>,label=<span class="hljs-string">&apos;&#x516D;&#x8FB9;&#x5F62;2&apos;</span>)
+plt.plot(np.random.randint(<span class="hljs-number">0</span>,<span class="hljs-number">10</span>,size=<span class="hljs-number">10</span>),marker=<span class="hljs-string">&apos;8&apos;</span>,markersize=<span class="hljs-number">20</span>,label=<span class="hljs-string">&apos;&#x516B;&#x8FB9;&#x5F62;&apos;</span>)
+plt.plot(np.random.randint(<span class="hljs-number">0</span>,<span class="hljs-number">10</span>,size=<span class="hljs-number">10</span>),marker=<span class="hljs-string">&apos;p&apos;</span>,markersize=<span class="hljs-number">20</span>,label=<span class="hljs-string">&apos;&#x4E94;&#x8FB9;&#x5F62;&apos;</span>)
+plt.legend()
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/tuxing.png" width="400"></p>
+<p>&#x6807;&#x8BB0;&#x53C2;&#x6570;</p>
+<p><img src="http://qiniu.s001.xin/matplot/biaoji.png" width="400"></p>
+<h4 id="2&#x591A;&#x53C2;&#x6570;&#x8FDE;&#x7528;"><a name="2&#x591A;&#x53C2;&#x6570;&#x8FDE;&#x7528;" class="anchor-navigation-ex-anchor" href="#2&#x591A;&#x53C2;&#x6570;&#x8FDE;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>2.&#x591A;&#x53C2;&#x6570;&#x8FDE;&#x7528;</h4>
+<blockquote>
+<p>&#x989C;&#x8272;&#x3001;&#x70B9;&#x578B;&#x3001;&#x7EBF;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x628A;&#x51E0;&#x79CD;&#x53C2;&#x6570;&#x5199;&#x5728;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5185;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E; &apos;r-.o&apos;</p>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x53C2;&#x6570;&#x8FDE;&#x7528;&#x9700;&#x8981;&#x5BF9;&#x4E0D;&#x540C;&#x7684;&#x7EBF;&#x8FDB;&#x884C;&#x5206;&#x522B;&#x8BBE;&#x7F6E;</span>
+plt.plot(x,x,<span class="hljs-string">&apos;r:v&apos;</span>,x,x*<span class="hljs-number">2</span>,<span class="hljs-string">&apos;b--h&apos;</span>)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/many.png" width="400"></p>
+<p><strong>&#x66F4;&#x591A;&#x70B9;&#x548C;&#x7EBF;&#x7684;&#x8BBE;&#x7F6E;</strong></p>
+<blockquote>
+<ul>
+<li>markeredgecolor = &apos;green&apos;,</li>
+<li>markeredgewidth = 2,</li>
+<li>markerfacecolor = &apos;purple&apos;</li>
+</ul>
+</blockquote>
+<p><img src="http://qiniu.s001.xin/matplot/manysetting.png" width="400"></p>
+<p><strong>&#x591A;&#x4E2A;&#x66F2;&#x7EBF;&#x540C;&#x4E00;&#x8BBE;&#x7F6E;</strong></p>
+<blockquote>
+<p>&#x5C5E;&#x6027;&#x540D;&#x58F0;&#x660E;,&#x4E0D;&#x53EF;&#x4EE5;&#x591A;&#x53C2;&#x6570;&#x8FDE;&#x7528;</p>
+<p>plt.plot(x1, y1, x2, y2, fmt, ...)</p>
+</blockquote>
+<pre><code class="lang-python">x = np.arange(<span class="hljs-number">0</span>,<span class="hljs-number">10</span>,<span class="hljs-number">1</span>)
+<span class="hljs-comment"># &#x7EDF;&#x4E00;&#x8BBE;&#x7F6E;</span>
+plt.plot(x,x,x,x*<span class="hljs-number">2</span>,x,x/<span class="hljs-number">2</span>,linewidth=<span class="hljs-number">3</span>,color=<span class="hljs-string">&apos;blue&apos;</span>)
+<span class="hljs-comment"># &#x5206;&#x522B;&#x8BBE;&#x7F6E;</span>
+plt.plot(x,x,<span class="hljs-string">&apos;r-.s&apos;</span>,x,x*<span class="hljs-number">2</span>,<span class="hljs-string">&apos;b--h&apos;</span>)
+</code></pre>
+<p><strong>&#x591A;&#x66F2;&#x7EBF;&#x4E0D;&#x540C;&#x8BBE;&#x7F6E;</strong></p>
+<blockquote>
+<p>&#x591A;&#x4E2A;&#x90FD;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#x65F6;&#xFF0C;&#x591A;&#x53C2;&#x6570;&#x8FDE;&#x7528; plt.plot(x1, y1, fmt1, x2, y2, fmt2, ...)</p>
+</blockquote>
+<p><strong>&#x4E09;&#x79CD;&#x8BBE;&#x7F6E;&#x65B9;&#x5F0F;</strong></p>
+<ol>
+<li><h5 id="&#x5411;&#x65B9;&#x6CD5;&#x4F20;&#x5165;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;"><a name="&#x5411;&#x65B9;&#x6CD5;&#x4F20;&#x5165;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x5411;&#x65B9;&#x6CD5;&#x4F20;&#x5165;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5411;&#x65B9;&#x6CD5;&#x4F20;&#x5165;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;</h5>
+<ul>
+<li>import matplotlib as mpl</li>
+</ul>
+</li>
+<li><h5 id="&#x5BF9;&#x5B9E;&#x4F8B;&#x4F7F;&#x7528;&#x4E00;&#x7CFB;&#x5217;&#x7684;setter&#x65B9;&#x6CD5;"><a name="&#x5BF9;&#x5B9E;&#x4F8B;&#x4F7F;&#x7528;&#x4E00;&#x7CFB;&#x5217;&#x7684;setter&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x5BF9;&#x5B9E;&#x4F8B;&#x4F7F;&#x7528;&#x4E00;&#x7CFB;&#x5217;&#x7684;setter&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BF9;&#x5B9E;&#x4F8B;&#x4F7F;&#x7528;&#x4E00;&#x7CFB;&#x5217;&#x7684;setter&#x65B9;&#x6CD5;</h5>
+<p>plt.plot()&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x6240;&#x6709;&#x7EBF;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x8BBE;&#x7F6E;&#x6BCF;&#x4E00;&#x4E2A;&#x7EBF;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x8BE5;&#x7EBF;&#x5BF9;&#x8C61;</p>
+<ul>
+<li>eg: lines = plt.plot(); line = lines[0]</li>
+<li>line.set_linewith()</li>
+<li>line.set_linestyle()</li>
+<li>line.set_color()</li>
+</ul>
+</li>
+<li><h5 id="&#x5BF9;&#x5750;&#x6807;&#x7CFB;&#x4F7F;&#x7528;&#x4E00;&#x7CFB;&#x5217;&#x7684;setter&#x65B9;&#x6CD5;"><a name="&#x5BF9;&#x5750;&#x6807;&#x7CFB;&#x4F7F;&#x7528;&#x4E00;&#x7CFB;&#x5217;&#x7684;setter&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x5BF9;&#x5750;&#x6807;&#x7CFB;&#x4F7F;&#x7528;&#x4E00;&#x7CFB;&#x5217;&#x7684;setter&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BF9;&#x5750;&#x6807;&#x7CFB;&#x4F7F;&#x7528;&#x4E00;&#x7CFB;&#x5217;&#x7684;setter&#x65B9;&#x6CD5;</h5>
+<p>axes = plt.subplot()&#x83B7;&#x53D6;&#x5750;&#x6807;&#x7CFB;</p>
+<ul>
+<li>set_title()</li>
+<li>set_facecolor()</li>
+<li>set_xticks&#x3001;set_yticks &#x8BBE;&#x7F6E;&#x523B;&#x5EA6;&#x503C;</li>
+<li>set_xticklabels&#x3001;set_yticklabels &#x8BBE;&#x7F6E;&#x523B;&#x5EA6;&#x540D;&#x79F0;</li>
+</ul>
+</li>
+</ol>
+<p>&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-python">lines = plt.plot(x,x,x,x*<span class="hljs-number">2</span>,x,x/<span class="hljs-number">2</span>)
+
+<span class="hljs-comment"># &#x6839;&#x636E;line&#x5BF9;&#x8C61;&#x8BBE;&#x7F6E;line&#x7684;&#x5C5E;&#x6027;</span>
+lines[<span class="hljs-number">0</span>].set_linewidth(<span class="hljs-number">3</span>)
+lines[<span class="hljs-number">1</span>].set_color(<span class="hljs-string">&apos;cyan&apos;</span>)
+lines[<span class="hljs-number">2</span>].set_linestyle(<span class="hljs-string">&apos;--&apos;</span>)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/sett.png" width="400"></p>
+<p><strong>X&#x3001;Y&#x8F74;&#x5750;&#x6807;&#x523B;&#x5EA6;</strong></p>
+<blockquote>
+<p>plt.xticks()&#x548C;plt.yticks()&#x65B9;&#x6CD5;</p>
+<ul>
+<li>&#x9700;&#x6307;&#x5B9A;&#x523B;&#x5EA6;&#x503C;&#x548C;&#x523B;&#x5EA6;&#x540D;&#x79F0; plt.xticks([&#x523B;&#x5EA6;&#x5217;&#x8868;],[&#x540D;&#x79F0;&#x5217;&#x8868;])</li>
+<li>&#x652F;&#x6301;fontsize&#x3001;rotation&#x3001;color&#x7B49;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;</li>
+</ul>
+</blockquote>
+<pre><code class="lang-python">x = np.linspace(<span class="hljs-number">0</span>,<span class="hljs-number">2</span>*np.pi,<span class="hljs-number">100</span>)
+plt.plot(x,np.sin(x))
+
+<span class="hljs-comment"># xticks&#x51FD;&#x6570;&#x8BBE;&#x7F6E;&#x5750;&#x6807;&#x8F74;&#x523B;&#x5EA6;&#x548C;&#x6807;&#x7B7E;</span>
+plt.xticks([<span class="hljs-number">0</span>,np.pi/<span class="hljs-number">2</span>,np.pi,<span class="hljs-number">3</span>*np.pi/<span class="hljs-number">2</span>,<span class="hljs-number">2</span>*np.pi],[<span class="hljs-string">&apos;0&apos;</span>,<span class="hljs-string">&apos;&#x3C0;/2&apos;</span>,<span class="hljs-string">&apos;&#x3C0;&apos;</span>,<span class="hljs-string">&apos;3&#x3C0;/2&apos;</span>,<span class="hljs-string">&apos;2&#x3C0;&apos;</span>])
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/stick.png" width="400"></p>
+<pre><code class="lang-python">axes = plt.subplot(<span class="hljs-number">111</span>)
+axes.plot(x,np.sin(x))
+<span class="hljs-comment"># &#x4F7F;&#x7528;&#x753B;&#x5E03;&#x5BF9;&#x8C61;&#x8BBE;&#x7F6E;&#x5750;&#x6807;&#x8F74;&#x523B;&#x5EA6;&#x548C;&#x5750;&#x6807;&#x8F74;&#x523B;&#x5EA6;&#x6807;&#x7B7E;</span>
+axes.set_xticks([<span class="hljs-number">0</span>,np.pi/<span class="hljs-number">2</span>,np.pi,<span class="hljs-number">3</span>*np.pi/<span class="hljs-number">2</span>,<span class="hljs-number">2</span>*np.pi])
+axes.set_xticklabels([<span class="hljs-string">&apos;0&apos;</span>,<span class="hljs-string">&apos;$\pi$/2&apos;</span>,<span class="hljs-string">&apos;&#x3C0;&apos;</span>,<span class="hljs-string">&apos;3&#x3C0;/2&apos;</span>,<span class="hljs-string">&apos;2&#x3C0;&apos;</span>],fontsize=<span class="hljs-number">20</span>)
+
+axes.set_yticks([<span class="hljs-number">-1</span>,<span class="hljs-number">0</span>,<span class="hljs-number">1</span>])
+axes.set_yticklabels([<span class="hljs-string">&apos;min&apos;</span>,<span class="hljs-number">0</span>,<span class="hljs-string">&apos;max&apos;</span>],fontsize=<span class="hljs-number">20</span>)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/xstick.png" width="400"></p>
+<h3 id="&#x4E09;&#x3001;2d&#x56FE;&#x5F62;"><a name="&#x4E09;&#x3001;2d&#x56FE;&#x5F62;" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x3001;2d&#x56FE;&#x5F62;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E09;&#x3001;2D&#x56FE;&#x5F62;</h3>
+<h4 id="1&#x76F4;&#x65B9;&#x56FE;"><a name="1&#x76F4;&#x65B9;&#x56FE;" class="anchor-navigation-ex-anchor" href="#1&#x76F4;&#x65B9;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>1.&#x76F4;&#x65B9;&#x56FE;</h4>
+<blockquote>
+<p>&#x3010;&#x76F4;&#x65B9;&#x56FE;&#x7684;&#x53C2;&#x6570;&#x53EA;&#x6709;&#x4E00;&#x4E2A;x&#xFF01;&#xFF01;&#xFF01;&#x4E0D;&#x50CF;&#x6761;&#x5F62;&#x56FE;&#x9700;&#x8981;&#x4F20;&#x5165;x,y&#x3011;</p>
+</blockquote>
+<p><strong>hist()&#x7684;&#x53C2;&#x6570;</strong></p>
+<ul>
+<li>bins
+&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;bin&#x6570;&#x91CF;&#x7684;&#x6574;&#x6570;&#x503C;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x8868;&#x793A;bin&#x7684;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;10</li>
+<li>normed
+&#x5982;&#x679C;&#x503C;&#x4E3A;True&#xFF0C;&#x76F4;&#x65B9;&#x56FE;&#x7684;&#x503C;&#x5C06;&#x8FDB;&#x884C;&#x5F52;&#x4E00;&#x5316;&#x5904;&#x7406;&#xFF0C;&#x5F62;&#x6210;&#x6982;&#x7387;&#x5BC6;&#x5EA6;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;False</li>
+<li>color
+&#x6307;&#x5B9A;&#x76F4;&#x65B9;&#x56FE;&#x7684;&#x989C;&#x8272;&#x3002;&#x53EF;&#x4EE5;&#x662F;&#x5355;&#x4E00;&#x989C;&#x8272;&#x503C;&#x6216;&#x989C;&#x8272;&#x7684;&#x5E8F;&#x5217;&#x3002;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x96C6;&#x5408;&#xFF0C;&#x989C;&#x8272;&#x5E8F;&#x5217;&#x5C06;&#x4F1A;&#x8BBE;&#x7F6E;&#x4E3A;&#x76F8;&#x540C;&#x7684;&#x987A;&#x5E8F;&#x3002;&#x5982;&#x679C;&#x672A;&#x6307;&#x5B9A;&#xFF0C;&#x5C06;&#x4F1A;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x7EBF;&#x6761;&#x989C;&#x8272;</li>
+<li>orientation
+&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;orientation&#x4E3A;horizontal&#x521B;&#x5EFA;&#x6C34;&#x5E73;&#x76F4;&#x65B9;&#x56FE;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;vertical</li>
+</ul>
+<pre><code class="lang-python">x = np.random.randint(<span class="hljs-number">0</span>,<span class="hljs-number">100</span>,size=<span class="hljs-number">100</span>)
+plt.hist(x,bins=<span class="hljs-number">5</span>)
+</code></pre>
+<h4 id="2-&#x6761;&#x5F62;&#x56FE;"><a name="2-&#x6761;&#x5F62;&#x56FE;" class="anchor-navigation-ex-anchor" href="#2-&#x6761;&#x5F62;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x6761;&#x5F62;&#x56FE;</h4>
+<blockquote>
+<p>&#x3010;&#x6761;&#x5F62;&#x56FE;&#x6709;&#x4E24;&#x4E2A;&#x53C2;&#x6570;x,y&#x3011;</p>
+<ul>
+<li>width &#x7EB5;&#x5411;&#x8BBE;&#x7F6E;&#x6761;&#x5F62;&#x5BBD;&#x5EA6;</li>
+<li>height &#x6A2A;&#x5411;&#x8BBE;&#x7F6E;&#x6761;&#x5F62;&#x9AD8;&#x5EA6;</li>
+<li>bar()&#x3001;barh()</li>
+</ul>
+</blockquote>
+<pre><code class="lang-python">x = np.array([<span class="hljs-number">2</span>,<span class="hljs-number">5</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>,<span class="hljs-number">8</span>])
+<span class="hljs-comment"># x &#x5C31;&#x662F;&#x5E95;&#x8F74;&#x523B;&#x5EA6;&#x6807;&#x7B7E;</span>
+<span class="hljs-comment"># height &#x5C31;&#x662F;&#x67F1;&#x5F62;&#x56FE;&#x7684;&#x67F1;&#x9AD8;</span>
+<span class="hljs-comment"># width &#x8868;&#x793A;&#x67F1;&#x5BBD; (0-1&#x53D6;&#x503C;)</span>
+plt.bar(x=list(<span class="hljs-string">&apos;abcdefg&apos;</span>),height=x,width=<span class="hljs-number">1</span>)
+
+<span class="hljs-comment"># y &#x5C31;&#x662F;&#x5E95;&#x8F74;&#x523B;&#x5EA6;&#x6807;&#x7B7E;</span>
+<span class="hljs-comment"># width &#x5C31;&#x662F;&#x67F1;&#x5F62;&#x56FE;&#x7684;&#x67F1;&#x9AD8;</span>
+<span class="hljs-comment"># height &#x8868;&#x793A;&#x67F1;&#x5BBD;</span>
+plt.barh(y=list(<span class="hljs-string">&apos;abcdefg&apos;</span>),width=x,height=<span class="hljs-number">1</span>)
+</code></pre>
+<h4 id="3-&#x997C;&#x56FE;"><a name="3-&#x997C;&#x56FE;" class="anchor-navigation-ex-anchor" href="#3-&#x997C;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x997C;&#x56FE;</h4>
+<blockquote>
+<p>&#x3010;&#x997C;&#x56FE;&#x4E5F;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x53C2;&#x6570;x&#xFF01;&#x3011;</p>
+<p>pie()
+<strong>&#x997C;&#x56FE;&#x9002;&#x5408;&#x5C55;&#x793A;&#x5404;&#x90E8;&#x5206;&#x5360;&#x603B;&#x4F53;&#x7684;&#x6BD4;&#x4F8B;&#xFF0C;&#x6761;&#x5F62;&#x56FE;&#x9002;&#x5408;&#x6BD4;&#x8F83;&#x5404;&#x90E8;&#x5206;&#x7684;&#x5927;&#x5C0F;</strong></p>
+</blockquote>
+<p><strong>&#x666E;&#x901A;&#x90E8;&#x5206;&#x5360;&#x6EE1;&#x997C;&#x56FE;</strong></p>
+<pre><code class="lang-python">x = [<span class="hljs-number">45</span>,<span class="hljs-number">6</span>]
+plt.pie(x)
+</code></pre>
+<p>&#x666E;&#x901A;&#x672A;&#x5360;&#x6EE1;&#x997C;&#x56FE;</p>
+<pre><code class="lang-python">x = [<span class="hljs-number">0.4</span>,<span class="hljs-number">0.3</span>]
+plt.pie(x)
+</code></pre>
+<blockquote>
+<p>&#x997C;&#x56FE;&#x9634;&#x5F71;&#x3001;&#x5206;&#x88C2;&#x7B49;&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;</p>
+<ul>
+<li>labels&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x6BCF;&#x4E00;&#x5757;&#x7684;&#x6807;&#x7B7E;&#xFF1B;</li>
+<li>labeldistance&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x6807;&#x7B7E;&#x8DDD;&#x79BB;&#x5706;&#x5FC3;&#x7684;&#x8DDD;&#x79BB;&#xFF08;&#x6BD4;&#x4F8B;&#x503C;,&#x53EA;&#x80FD;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x6D6E;&#x70B9;&#x5C0F;&#x6570;&#xFF09;</li>
+<li>autopct&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x6BD4;&#x4F8B;&#x503C;&#x7684;&#x663E;&#x793A;&#x683C;&#x5F0F;(%1.1f%%)&#xFF1B;</li>
+<li>pctdistance&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x6BD4;&#x4F8B;&#x503C;&#x6587;&#x5B57;&#x8DDD;&#x79BB;&#x5706;&#x5FC3;&#x7684;&#x8DDD;&#x79BB;</li>
+<li>explode&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x6BCF;&#x4E00;&#x5757;&#x9876;&#x70B9;&#x8DDD;&#x5706;&#x5F62;&#x7684;&#x957F;&#x5EA6;&#xFF08;&#x6BD4;&#x4F8B;&#x503C;,&#x5217;&#x8868;&#xFF09;&#xFF1B;</li>
+<li>colors&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x6BCF;&#x4E00;&#x5757;&#x7684;&#x989C;&#x8272;&#xFF08;&#x5217;&#x8868;&#xFF09;&#xFF1B;</li>
+<li>shadow&#x53C2;&#x6570;&#x4E3A;&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x7ED8;&#x5236;&#x9634;&#x5F71;</li>
+<li>startangle&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x997C;&#x56FE;&#x8D77;&#x59CB;&#x89D2;&#x5EA6;</li>
+</ul>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-comment"># labeldistance&#x53EA;&#x80FD;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x5C0F;&#x6570;</span>
+plt.pie(x,labels=[<span class="hljs-string">&apos;&#x7537;&apos;</span>,<span class="hljs-string">&apos;&#x5973;&apos;</span>],labeldistance=<span class="hljs-number">0.3</span>,
+        autopct=<span class="hljs-string">&quot;%1.2f%%&quot;</span>,pctdistance=<span class="hljs-number">0.8</span>,
+       explode=[<span class="hljs-number">0.1</span>,<span class="hljs-number">0.0</span>],
+       colors=[<span class="hljs-string">&apos;blue&apos;</span>,<span class="hljs-string">&apos;yellow&apos;</span>],
+       startangle=<span class="hljs-number">90</span>,
+       shadow=<span class="hljs-keyword">True</span>)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/bing.png" width="400"></p>
+<h4 id="4-&#x6563;&#x70B9;&#x56FE;"><a name="4-&#x6563;&#x70B9;&#x56FE;" class="anchor-navigation-ex-anchor" href="#4-&#x6563;&#x70B9;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x6563;&#x70B9;&#x56FE;</h4>
+<blockquote>
+<p>&#x3010; &#x6563;&#x70B9;&#x56FE;&#x9700;&#x8981;&#x4E24;&#x4E2A;&#x53C2;&#x6570;x,y&#xFF0C;&#x4F46;&#x6B64;&#x65F6;x&#x4E0D;&#x662F;&#x8868;&#x793A;x&#x8F74;&#x7684;&#x523B;&#x5EA6;&#xFF0C;&#x800C;&#x662F;&#x6BCF;&#x4E2A;&#x70B9;&#x7684;&#x6A2A;&#x5750;&#x6807;&#xFF01;&#x3011;</p>
+<p>scatter()</p>
+</blockquote>
+<pre><code class="lang-python">x = np.random.normal(size=<span class="hljs-number">1000</span>)
+y = np.random.normal(size=<span class="hljs-number">1000</span>)
+
+<span class="hljs-comment"># &#x751F;&#x6210;1000&#x4E2A;&#x968F;&#x673A;&#x989C;&#x8272;</span>
+colors = np.random.random(size=(<span class="hljs-number">1000</span>,<span class="hljs-number">3</span>))
+<span class="hljs-comment"># &#x4F7F;&#x7528;c&#x53C2;&#x6570;&#x6765;&#x8BBE;&#x7F6E;&#x989C;&#x8272;</span>
+plt.scatter(x,y,marker=<span class="hljs-string">&apos;d&apos;</span>,c=colors)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/sandian.png" width="400"></p>
+<h3 id="&#x56DB;3d&#x56FE;"><a name="&#x56DB;3d&#x56FE;" class="anchor-navigation-ex-anchor" href="#&#x56DB;3d&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56DB;.3D&#x56FE;</h3>
+<h4 id="&#x66F2;&#x9762;&#x56FE;"><a name="&#x66F2;&#x9762;&#x56FE;" class="anchor-navigation-ex-anchor" href="#&#x66F2;&#x9762;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x66F2;&#x9762;&#x56FE;</h4>
+<blockquote>
+<p>&#x5BFC;&#x5305;</p>
+<ul>
+<li>from mpl_toolkits.mplot3d.axes3d import Axes3D</li>
+</ul>
+<p>&#x4F7F;&#x7528;mershgrid&#x51FD;&#x6570;&#x5207;&#x5272;x,y&#x8F74;</p>
+<ul>
+<li>X,Y = np.meshgrid(x, y)</li>
+</ul>
+<p>&#x521B;&#x5EFA;3d&#x5750;&#x6807;&#x7CFB;</p>
+<ul>
+<li>axes = plt.subplot(projection=&apos;3d&apos;)</li>
+</ul>
+<p>&#x7ED8;&#x5236;3d&#x56FE;&#x5F62;</p>
+<ul>
+<li>p = axes.plot_surface(X,Y,Z,color=&apos;red&apos;,cmap=&apos;summer&apos;,rstride=5,cstride=5)</li>
+</ul>
+<p>&#x6DFB;&#x52A0;colorbar</p>
+<ul>
+<li>plt.colorbar(p,shrink=0.5)</li>
+</ul>
+</blockquote>
+<p>&#x4F8B;&gt;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">createZ</span><span class="hljs-params">(x,y)</span>:</span>
+    <span class="hljs-keyword">return</span> np.sin(x) + np.cos(y)*<span class="hljs-number">2</span> - np.pi/<span class="hljs-number">5</span>
+
+<span class="hljs-keyword">from</span> mpl_toolkits.mplot3d.axes3d <span class="hljs-keyword">import</span> Axes3D
+axes = plt.subplot(projection=<span class="hljs-string">&apos;3d&apos;</span>)
+
+x = np.linspace(-np.pi,np.pi,<span class="hljs-number">100</span>)
+y = np.linspace(-np.pi,np.pi,<span class="hljs-number">100</span>)
+
+<span class="hljs-comment"># &#x4F7F;&#x7528;x,y&#x751F;&#x6210;&#x4E00;&#x7EC4;&#x7F51;&#x683C;</span>
+X,Y = np.meshgrid(x,y)
+Z = createZ(X,Y)
+
+p = axes.plot_surface(X,Y,Z,cmap=<span class="hljs-string">&apos;summer&apos;</span>,rstride=<span class="hljs-number">5</span>,cstride=<span class="hljs-number">5</span>)
+
+plt.colorbar(p,shrink=<span class="hljs-number">0.5</span>)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/3d.png" width="400"></p>
+<h3 id="&#x4E94;&#x73AB;&#x7470;&#x56FE;&#x6781;&#x5750;&#x6807;&#x6761;&#x5F62;&#x56FE;"><a name="&#x4E94;&#x73AB;&#x7470;&#x56FE;&#x6781;&#x5750;&#x6807;&#x6761;&#x5F62;&#x56FE;" class="anchor-navigation-ex-anchor" href="#&#x4E94;&#x73AB;&#x7470;&#x56FE;&#x6781;&#x5750;&#x6807;&#x6761;&#x5F62;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E94;.&#x73AB;&#x7470;&#x56FE;/&#x6781;&#x5750;&#x6807;&#x6761;&#x5F62;&#x56FE;</h3>
+<blockquote>
+<p>&#x521B;&#x5EFA;&#x6781;&#x5750;&#x6807;&#xFF0C;&#x8BBE;&#x7F6E;polar&#x5C5E;&#x6027;</p>
+<ul>
+<li>plt.axes(polar = True)</li>
+</ul>
+<p>&#x7ED8;&#x5236;&#x6781;&#x5750;&#x6807;&#x6761;&#x5F62;&#x56FE;</p>
+<ul>
+<li>index = np.arange(-np.pi,np.pi,2*np.pi/6)</li>
+<li>plt.bar(x=index ,height = [1,2,3,4,5,6] ,width = 2*np.pi/6)</li>
+</ul>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x73AB;&#x7470;&#x56FE;</span>
+x = np.array([<span class="hljs-number">2</span>,<span class="hljs-number">5</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>,<span class="hljs-number">8</span>])
+plt.axes(polar = <span class="hljs-keyword">True</span>)
+plt.bar(x=list(<span class="hljs-string">&apos;abcdefg&apos;</span>),height=x)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/rose.png" width="400"></p>
+<h3 id="&#x516D;&#x56FE;&#x5F62;&#x5185;&#x7684;&#x6587;&#x5B57;&#x3001;&#x6CE8;&#x91CA;&#x3001;&#x7BAD;&#x5934;"><a name="&#x516D;&#x56FE;&#x5F62;&#x5185;&#x7684;&#x6587;&#x5B57;&#x3001;&#x6CE8;&#x91CA;&#x3001;&#x7BAD;&#x5934;" class="anchor-navigation-ex-anchor" href="#&#x516D;&#x56FE;&#x5F62;&#x5185;&#x7684;&#x6587;&#x5B57;&#x3001;&#x6CE8;&#x91CA;&#x3001;&#x7BAD;&#x5934;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x516D;.&#x56FE;&#x5F62;&#x5185;&#x7684;&#x6587;&#x5B57;&#x3001;&#x6CE8;&#x91CA;&#x3001;&#x7BAD;&#x5934;</h3>
+<h4 id="1&#x63A7;&#x5236;&#x6587;&#x5B57;&#x5C5E;&#x6027;&#x7684;&#x65B9;&#x6CD5;"><a name="1&#x63A7;&#x5236;&#x6587;&#x5B57;&#x5C5E;&#x6027;&#x7684;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#1&#x63A7;&#x5236;&#x6587;&#x5B57;&#x5C5E;&#x6027;&#x7684;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.&#x63A7;&#x5236;&#x6587;&#x5B57;&#x5C5E;&#x6027;&#x7684;&#x65B9;&#x6CD5;</h4>
+<p>Prop</p>
+<p>&#x6240;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;matplotlib.text.Text&#x5BF9;&#x8C61;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x753B;&#x5E03;</span>
+figure = plt.figure()
+<span class="hljs-comment"># figure.text(x=1,y=1,s=&apos;&#x8FD9;&#x662F;figure&#x5BF9;&#x8C61;&#x7684;&#x6CE8;&#x91CA;&apos;)</span>
+figure.suptitle(<span class="hljs-string">&apos;figure  title&apos;</span>)
+<span class="hljs-comment"># &#x7B49;&#x5DEE;&#x6570;&#x5217;</span>
+x = np.linspace(-np.pi,np.pi,<span class="hljs-number">100</span>)
+axes1 = plt.subplot(<span class="hljs-number">221</span>)
+axes1.plot(x,np.sin(x))
+<span class="hljs-comment"># x,y&#x662F;&#x4EE5;&#x5750;&#x6807;&#x8F74;&#x523B;&#x5EA6;&#x4E3A;&#x51C6;&#x7684;&#x4E00;&#x7EC4;&#x6570;&#x636E;&#xFF0C;&#x63CF;&#x8FF0;&#x4E86;&#x6CE8;&#x91CA;&#x4FE1;&#x606F;&#x7684;&#x6CE8;&#x91CA;&#x4F4D;&#x7F6E;</span>
+axes1.text(x=<span class="hljs-number">0.5</span>,y=<span class="hljs-number">0.5</span>,s=<span class="hljs-string">&apos;&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x6CE8;&#x91CA;&apos;</span>)
+
+axes2 = plt.subplot(<span class="hljs-number">222</span>)
+axes2.plot(x,np.cos(x),color=<span class="hljs-string">&apos;red&apos;</span>)
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/figure.png" width="400"></p>
+<h4 id="2&#x56FE;&#x5F62;&#x5185;&#x7684;&#x6587;&#x5B57;"><a name="2&#x56FE;&#x5F62;&#x5185;&#x7684;&#x6587;&#x5B57;" class="anchor-navigation-ex-anchor" href="#2&#x56FE;&#x5F62;&#x5185;&#x7684;&#x6587;&#x5B57;"><i class="fa fa-link" aria-hidden="true"></i></a>2.&#x56FE;&#x5F62;&#x5185;&#x7684;&#x6587;&#x5B57;</h4>
+<p><code>text()</code></p>
+<h4 id="3-&#x6CE8;&#x91CA;"><a name="3-&#x6CE8;&#x91CA;" class="anchor-navigation-ex-anchor" href="#3-&#x6CE8;&#x91CA;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x6CE8;&#x91CA;</h4>
+<p><code>annotate()</code></p>
+<blockquote>
+<ul>
+<li>xy&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x7BAD;&#x5934;&#x6307;&#x793A;&#x7684;&#x4F4D;&#x7F6E;</li>
+<li>xytext&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x6CE8;&#x91CA;&#x6587;&#x5B57;&#x7684;&#x4F4D;&#x7F6E;</li>
+<li>arrowprops&#x53C2;&#x6570;&#x4EE5;&#x5B57;&#x5178;&#x7684;&#x5F62;&#x5F0F;&#x8BBE;&#x7F6E;&#x7BAD;&#x5934;&#x7684;&#x6837;&#x5F0F;</li>
+<li>width&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x7BAD;&#x5934;&#x957F;&#x65B9;&#x5F62;&#x90E8;&#x5206;&#x7684;&#x5BBD;&#x5EA6;</li>
+<li>headlength&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x7BAD;&#x5934;&#x5C16;&#x7AEF;&#x7684;&#x957F;&#x5EA6;&#xFF0C;</li>
+<li>headwidth&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x7BAD;&#x5934;&#x5C16;&#x7AEF;&#x5E95;&#x90E8;&#x7684;&#x5BBD;&#x5EA6;</li>
+<li>shrink&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x7BAD;&#x5934;&#x9876;&#x70B9;&#x3001;&#x5C3E;&#x90E8;&#x4E0E;&#x6307;&#x793A;&#x70B9;&#x3001;&#x6CE8;&#x91CA;&#x6587;&#x5B57;&#x7684;&#x8DDD;&#x79BB;&#xFF08;&#x6BD4;&#x4F8B;&#x503C;&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x63A7;&#x5236;&#x7BAD;&#x5934;&#x7684;&#x957F;&#x5EA6;</li>
+</ul>
+</blockquote>
+<pre><code class="lang-python">figure = plt.figure(figsize=(<span class="hljs-number">8</span>,<span class="hljs-number">6</span>))
+axes = plt.subplot(<span class="hljs-number">111</span>)
+axes.plot(x,np.sin(x))
+
+<span class="hljs-comment"># s &#x6CE8;&#x91CA;&#x7684;&#x6587;&#x5B57;</span>
+<span class="hljs-comment"># xy  &#x7BAD;&#x5934;&#x6307;&#x5411;&#x7684;&#x4F4D;&#x7F6E;</span>
+<span class="hljs-comment"># xytext &#x6CE8;&#x91CA;&#x6587;&#x5B57;&#x653E;&#x7F6E;&#x7684;&#x4F4D;&#x7F6E;</span>
+<span class="hljs-comment"># arrowprops&#x6CA1;&#x6709;arrowstyle&#x952E;&#x7684;&#x8BBE;&#x7F6E;&#x65B9;&#x5F0F;</span>
+axes.annotate(s=<span class="hljs-string">&apos;this is a annotate&apos;</span>,xy=(<span class="hljs-number">0.5</span>,<span class="hljs-number">0.5</span>),xytext=(<span class="hljs-number">0.8</span>,<span class="hljs-number">0.8</span>),
+             arrowprops = {
+                 <span class="hljs-string">&apos;width&apos;</span>:<span class="hljs-number">10</span>,
+                 <span class="hljs-string">&apos;headlength&apos;</span>:<span class="hljs-number">12</span>,
+                 <span class="hljs-string">&apos;headwidth&apos;</span>:<span class="hljs-number">15</span>,
+                 <span class="hljs-string">&apos;shrink&apos;</span>:<span class="hljs-number">0.2</span>
+             })
+
+<span class="hljs-comment"># &#x4F7F;&#x7528;arrowstyle&#x8BBE;&#x7F6E;&#x7BAD;&#x5934;&#x6837;&#x5F0F;</span>
+axes.annotate(s=<span class="hljs-string">&apos;this is a good text&apos;</span>,xy=(<span class="hljs-number">-0.2</span>,<span class="hljs-number">-0.2</span>),xytext=(<span class="hljs-number">-0.4</span>,<span class="hljs-number">-0.6</span>),
+             arrowprops = {
+                <span class="hljs-string">&apos;arrowstyle&apos;</span>: <span class="hljs-string">&apos;fancy&apos;</span>
+             })
+</code></pre>
+<p><img src="http://qiniu.s001.xin/matplot/zhushi.png" width="400"></p>
+<p><img src="http://qiniu.s001.xin/matplot/jiantou.png"></p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; housegod.cn 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-12-12 16:22:44
+</span></footer> <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"> <script>     window.klipse_settings = {         selector: ".language-klipse, .lang-eval-clojure",         selector_eval_js: ".lang-eval-js",         selector_eval_python_client: ".lang-eval-python",         selector_eval_php: ".lang-eval-php",         selector_eval_scheme: ".lang-eval-scheme",         selector_eval_ruby: ".lang-eval-ruby",         selector_reagent: ".lang-reagent",        selector_google_charts: ".lang-google-chart",        selector_es2017: ".lang-eval-es2017",        selector_jsx: ".lang-eval-jsx",        selector_transpile_jsx: ".lang-transpile-jsx",        selector_render_jsx: ".lang-render-jsx",        selector_react: ".lang-react",        selector_eval_markdown: ".lang-render-markdown",        selector_eval_lambdaway: ".lang-render-lambdaway",        selector_eval_cpp: ".lang-eval-cpp",        selector_eval_html: ".lang-render-html",        selector_sql: ".lang-eval-sql",        selector_brainfuck: "lang-eval-brainfuck",        selector_js: ".lang-transpile-cljs"    }; </script> <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="jupyter入门之numpy.html" class="navigation navigation-next " aria-label="Next page: jupyter入门之numpy">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"jupyter入门之Matplotlib","level":"1.2","depth":1,"next":{"title":"jupyter入门之numpy","level":"1.3","depth":1,"path":"jupyter/jupyter入门之numpy.md","ref":"jupyter/jupyter入门之numpy.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"SUMMARY.md","ref":"SUMMARY.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters","theme-comscore","-lunr","-search","highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","disqus@^0.1.0","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx@^3.1.0","local-video@^1.0.1","sitemap-general@^0.1.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","3-ba@^0.9.0","terminal@^0.3.2","alerts@^0.2.0","include-csv@^0.1.0","puml@^1.0.1","musicxml@^1.0.2","klipse@^1.2.0","versions-select@^0.1.1","-sharing","sharing-plus@^0.0.2","graph@^0.1.0","chart@^0.2.0","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © housegod.cn 2018","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"include-csv":{},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"emphasize":{},"ace":{},"github":{"url":"https://github.com/ZHAISHENKING/book.git"},"puml":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"versions-select":{"type":"branches"},"graph":{},"sitemap-general":{"prefix":"http://gitbook.zhangjikai.com"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"musicxml":{},"sectionx":{"tag":"b"},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"alerts":{},"github-buttons":{},"3-ba":{"configuration":"auto","token":"ff100361cdce95dd4c8fb96b4009f7bc"},"expandable-chapters-small":{},"local-video":{},"klipse":{"myConfigKey":"it's the default value"},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"edit-link":{"label":"编辑本页","base":"https://github.com/ZHAISHENKING/book/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"chart":{"type":"c3"},"toggle-chapters":{},"search-plus":{}},"theme":"default","author":"zhaishen","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"SUMMARY.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook 使用教程","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://oj.s001.xin"}},"gitbook":"3.2.3","description":"记录 GitBook 的配置和一些插件的使用"},"file":{"path":"jupyter/jupyter入门之Matplotlib.md","mtime":"2018-12-12T08:22:44.246Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-12T12:02:06.958Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-3-ba/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-terminal/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-musicxml/osmd.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-musicxml/musicxml.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-musicxml/promise.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+
