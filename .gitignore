@@ -1,8 +1,2 @@
-_book/
-node_modules/
-*.jpg
-*.png
-*.mp4
-*.xmind
-*.sql
-*.pdf
+*~
+_book
