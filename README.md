@@ -5,4 +5,4 @@
 
 部署到git page上
 
-项目地址 `zhaishenking.github.io`
+项目地址 https://zhaishenking.github.io/book
