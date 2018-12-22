@@ -81,3 +81,16 @@ https://pay.weixin.qq.com/
 ### 支付完善
 
 退款记录(时间、金额、状态)、交易负责人
+
+
+
+```python
+from account.models import User
+from submission.models import *
+user=User.objects.get(username="jamie")
+p = Problem.objects.get(_id="181")
+s=Submission.objects.get(username=user.username,problem=p)
+s.result=0
+s.save()
+```
+
