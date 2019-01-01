@@ -21,9 +21,5 @@ Flask与Celery结合极其简单，无需其他扩展。一个使用Celery的Fla
 
 
 
-```
-# connect('ultrabear_courses',username='jamie',password='jamie199469',host='127.0.0.1',port=27676,serverSelectionTimeoutMS=3)
-```
-
 
 

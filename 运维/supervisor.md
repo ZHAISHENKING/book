@@ -26,13 +26,7 @@ echo_supervisord_conf	# 输出配置文件
 
 ## 配置
 
-首先查看一下/etc/supercisord.conf文件是否存在，如果不存在，则使用下面的命令创建：
-
-```bash
-echo_supervisord_conf > /etc/supervisord.conf
-```
-
-> 该配置文件以分号（;）作为注释
+首先查看一下/etc/supercisord.conf文件是否存在，
 
 surpervisor查找配置文件的顺序是这样的：
 
@@ -47,13 +41,20 @@ surpervisor查找配置文件的顺序是这样的：
 
 如果在以上目录都未能查找到配置文件则supervisor启动失败
 
-我们可以手动指定配置文件的路径
+如果不存在，则使用下面的命令创建：
 
+```bash
+# 直接创建可能会有权限错误，先创建到家目录
+$ echo_supervisord_conf > ~/supervisord.conf
+# 移动到/etc下
+$ sudo mv ~/supervisord.conf /etc
 ```
-supervisord -c /tmp/supervisord.conf
-```
+
+
 
 ## 配置文件
+
+> 该配置文件以分号（;）作为注释
 
 ```ini
 [unix_http_server]
@@ -109,13 +110,6 @@ command=/root/.pyenv/shims/scrapy crawl discovery
 directory=/root/xinpianchang/xpc
 redirect_stderr=true          ; redirect proc stderr to stdout (default false)
 stdout_logfile=/tmp/discovery1.log        ; stdout log path, NONE for none; default AUTO
-```
-
-```python
-import redis
-r=redis.Redis()
-for proxy in settings.getlist('PROXIES'):
-    r.sadd('discovery:proxies', proxy)
 ```
 
 

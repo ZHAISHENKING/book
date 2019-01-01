@@ -92,6 +92,13 @@ programs=discovery1
 root@iZuf:~/xpc_redis# supervisord
 ```
 
+```python
+import redis
+r=redis.Redis()
+for proxy in settings.getlist('PROXIES'):
+    r.sadd('discovery:proxies', proxy)
+```
+
 
 
 ### 访问下面的地址

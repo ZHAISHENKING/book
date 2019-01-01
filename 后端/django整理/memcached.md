@@ -14,6 +14,46 @@ apt install memcached
 
 > https://memcached.org/
 
+### 查看帮助
+
+```bash
+memcached -h
+
+# 说明
+-p <num> 　　TCP监听端口(default: 11211)
+-U <num> 　　 UDP监听端口(default: 11211, 0 is off)
+-s <file> 　　 UNIX套接字路径侦听
+-a <mask> 　　 UNIX套接字的访问掩码，八进制（默认值：0700）
+-l <addr> 　　 侦听接口地址默认为所以地址可以指定主机加端口可以使用逗号分隔多个地址
+-d 　　 作为守护进程运行
+-r　　 最大文件描述符
+-u <username>　　 指定运行用户
+-m <num> 　　 最大内存(默认为64 MB)
+-M 　　 内存耗尽时返回错误而不删除项目
+-c <num> 　　 最大同时连接数默认为1024
+-k 　　 锁定所有分页内存
+-v 　　 显示错误或警告事件
+-vv 　　 相信错误
+-vvv 　　 详细错误信息及内部状态转换
+-h 　　 打印此帮助
+-i 　　 打印内存缓存和许可证
+-P <file> 　　 指定PID文件，只与-d选择一起使用
+-f <factor> 　　 块大小生长因子，默认值为1.25
+-n <bytes> 　　 为键值标志的最小空间，默认为48
+-L 　　 使用大内存页，增加的内存页大小可以减少TLB命中数提高性能
+-D <char> 　　 使用<char>作为密钥前缀和IDS之间的分隔符
+-t <num> 　　 使用的线程数，默认为4
+-R 　　 每个事件的最大请求数默认为20
+-C　　 禁用CAS的使用
+-b <num> 　　 设置积压队列限制默认值1024
+-B　　 绑定协议——ASCII、二进制或AUTO（默认）之一
+-I 　　 重写每个板页的大小。调整最大项目大小（默认值：1MB，MI:1K，MAX：128M）
+-S 　　 打开SASL认证
+-o 　　 逗号分隔的扩展或实验选项列表
+```
+
+
+
 ## 启动
 
 ```bash
@@ -47,7 +87,7 @@ pip install python-memcached
 
 ## 在Django中使用memcache
 
-```bash
+```python
 from django.core.cache import cache
 cache.set('a', 1)
 cache.get('a')
@@ -67,4 +107,12 @@ cache.get('a')
 
 
 
-## 
+## 在Flask中使用memcache
+
+```python
+from werkzeug.contrib.cache import MemcachedCache
+cache = MemcachedCache(["127.0.0.1:11211"])
+```
+
+
+
